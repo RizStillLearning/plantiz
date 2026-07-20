@@ -1,0 +1,515 @@
+[
+  {
+    "id": "snake-plant",
+    "common_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "low",
+    "humidity": "low",
+    "temperature_min_c": 15,
+    "temperature_max_c": 30,
+    "space": ["small", "medium", "large"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "An almost indestructible upright succulent with stiff, sword-like leaves. Thrives on neglect and tolerates almost any light condition.",
+    "care_tips": [
+      "Let soil dry out completely between waterings",
+      "Tolerates low light but grows faster in bright indirect light",
+      "Mildly toxic to cats and dogs if chewed"
+    ]
+  },
+  {
+    "id": "pothos",
+    "common_name": "Pothos",
+    "scientific_name": "Epipremnum aureum",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "low",
+    "humidity": "low",
+    "temperature_min_c": 18,
+    "temperature_max_c": 30,
+    "space": ["small", "medium", "large"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "A fast-growing trailing vine with heart-shaped leaves, famous for surviving low light and irregular watering.",
+    "care_tips": [
+      "Water when the top 3-5cm of soil is dry",
+      "Trim vines to keep growth bushy",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "zz-plant",
+    "common_name": "ZZ Plant",
+    "scientific_name": "Zamioculcas zamiifolia",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "low",
+    "humidity": "low",
+    "temperature_min_c": 18,
+    "temperature_max_c": 26,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "Glossy, waxy leaflets on upright stems. Stores water in rhizomes, making it extremely drought tolerant.",
+    "care_tips": [
+      "Water only every 2-3 weeks, less in winter",
+      "Thrives in low light offices with no windows",
+      "All parts are toxic if ingested by pets or people"
+    ]
+  },
+  {
+    "id": "spider-plant",
+    "common_name": "Spider Plant",
+    "scientific_name": "Chlorophytum comosum",
+    "light": ["medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "medium",
+    "temperature_min_c": 13,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": true,
+    "description": "Arching, variegated leaves that produce dangling plantlets. A classic, pet-safe hanging basket plant.",
+    "care_tips": [
+      "Water when the top inch of soil dries out",
+      "Produces baby plantlets you can propagate in water",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "peace-lily",
+    "common_name": "Peace Lily",
+    "scientific_name": "Spathiphyllum wallisii",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "high",
+    "humidity": "high",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "intermediate",
+    "pet_friendly": false,
+    "description": "Dark glossy leaves and elegant white blooms. Dramatically droops when thirsty, then perks back up after watering.",
+    "care_tips": [
+      "Keep soil consistently moist but not soggy",
+      "Avoid direct sun, which scorches the leaves",
+      "Toxic to cats and dogs if chewed"
+    ]
+  },
+  {
+    "id": "aloe-vera",
+    "common_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "light": ["bright", "direct"],
+    "water_frequency": "low",
+    "humidity": "low",
+    "temperature_min_c": 13,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "A spiky succulent whose gel-filled leaves are prized for soothing minor burns. Needs strong light to stay compact.",
+    "care_tips": [
+      "Water deeply, then let soil dry out completely",
+      "Give it the sunniest windowsill you have",
+      "Mildly toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "boston-fern",
+    "common_name": "Boston Fern",
+    "scientific_name": "Nephrolepis exaltata",
+    "light": ["medium", "bright"],
+    "water_frequency": "high",
+    "humidity": "high",
+    "temperature_min_c": 16,
+    "temperature_max_c": 24,
+    "space": ["medium", "large"],
+    "difficulty": "intermediate",
+    "pet_friendly": true,
+    "description": "Lush, feathery fronds that make a dramatic hanging display. Craves humidity and will crisp up in dry air.",
+    "care_tips": [
+      "Mist regularly or use a pebble tray to boost humidity",
+      "Keep soil evenly moist, never let it fully dry",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "fiddle-leaf-fig",
+    "common_name": "Fiddle Leaf Fig",
+    "scientific_name": "Ficus lyrata",
+    "light": ["bright"],
+    "water_frequency": "medium",
+    "humidity": "medium",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["large"],
+    "difficulty": "expert",
+    "pet_friendly": false,
+    "description": "A statement plant with huge violin-shaped leaves. Sensitive to changes in light, water, and location.",
+    "care_tips": [
+      "Keep in bright indirect light and avoid moving it around",
+      "Water when the top 3-5cm of soil is dry",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "rubber-plant",
+    "common_name": "Rubber Plant",
+    "scientific_name": "Ficus elastica",
+    "light": ["medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "medium",
+    "temperature_min_c": 16,
+    "temperature_max_c": 27,
+    "space": ["medium", "large"],
+    "difficulty": "intermediate",
+    "pet_friendly": false,
+    "description": "Broad, glossy burgundy-green leaves on a sturdy trunk. More forgiving than its fiddle-leaf cousin.",
+    "care_tips": [
+      "Water when the top inch of soil is dry",
+      "Wipe leaves occasionally to keep them glossy and dust-free",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "philodendron",
+    "common_name": "Heartleaf Philodendron",
+    "scientific_name": "Philodendron hederaceum",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "medium",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "A trailing vine with heart-shaped leaves that grows quickly and adapts to almost any indoor spot.",
+    "care_tips": [
+      "Water when the top inch of soil feels dry",
+      "Provide a pole or trellis to climb if desired",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "chinese-evergreen",
+    "common_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema commutatum",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "medium",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "Patterned silver-and-green leaves that bring color to low-light rooms. Very tolerant of neglect.",
+    "care_tips": [
+      "Water when the top inch of soil is dry",
+      "Keep away from cold drafts and doorways",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "cast-iron-plant",
+    "common_name": "Cast Iron Plant",
+    "scientific_name": "Aspidistra elatior",
+    "light": ["low", "medium"],
+    "water_frequency": "low",
+    "humidity": "low",
+    "temperature_min_c": 10,
+    "temperature_max_c": 27,
+    "space": ["small", "medium", "large"],
+    "difficulty": "beginner",
+    "pet_friendly": true,
+    "description": "Broad, dark green leaves that live up to the plant's name by tolerating poor light, dry air, and irregular care.",
+    "care_tips": [
+      "Water only when soil is fully dry",
+      "Perfect for dim hallways and offices",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "areca-palm",
+    "common_name": "Areca Palm",
+    "scientific_name": "Dypsis lutescens",
+    "light": ["medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "high",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["medium", "large"],
+    "difficulty": "intermediate",
+    "pet_friendly": true,
+    "description": "Feathery, arching fronds that give rooms a tropical feel and help humidify dry indoor air.",
+    "care_tips": [
+      "Keep soil lightly moist, not waterlogged",
+      "Mist fronds or use a humidifier in dry climates",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "orchid",
+    "common_name": "Moth Orchid",
+    "scientific_name": "Phalaenopsis amabilis",
+    "light": ["medium", "bright"],
+    "water_frequency": "low",
+    "humidity": "high",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["small"],
+    "difficulty": "expert",
+    "pet_friendly": true,
+    "description": "Elegant long-lasting blooms on arching stems. Grows in bark mix rather than soil and needs careful watering.",
+    "care_tips": [
+      "Water by soaking roots weekly, then drain fully",
+      "Avoid direct sun which burns the leaves",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "english-ivy",
+    "common_name": "English Ivy",
+    "scientific_name": "Hedera helix",
+    "light": ["medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "medium",
+    "temperature_min_c": 10,
+    "temperature_max_c": 24,
+    "space": ["small", "medium"],
+    "difficulty": "intermediate",
+    "pet_friendly": false,
+    "description": "A classic trailing or climbing vine with lobed leaves, often used in hanging baskets or as ground cover indoors.",
+    "care_tips": [
+      "Keep soil evenly moist and mist for humidity",
+      "Prune regularly to prevent legginess",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "calathea",
+    "common_name": "Calathea",
+    "scientific_name": "Calathea orbifolia",
+    "light": ["medium", "bright"],
+    "water_frequency": "high",
+    "humidity": "high",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "expert",
+    "pet_friendly": true,
+    "description": "Striking striped leaves that rise and fold at night. Fussy about water quality and humidity but pet-safe.",
+    "care_tips": [
+      "Use filtered or distilled water to avoid leaf browning",
+      "Keep humidity high with a pebble tray or humidifier",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "dracaena-marginata",
+    "common_name": "Dragon Tree",
+    "scientific_name": "Dracaena marginata",
+    "light": ["medium", "bright"],
+    "water_frequency": "low",
+    "humidity": "medium",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["medium", "large"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "Slender, twisting stems topped with spiky red-edged leaves. Handsome architectural floor plant that's easy to care for.",
+    "care_tips": [
+      "Let soil dry out between waterings",
+      "Use filtered water since it's sensitive to fluoride",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "anthurium",
+    "common_name": "Anthurium",
+    "scientific_name": "Anthurium andraeanum",
+    "light": ["medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "high",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "intermediate",
+    "pet_friendly": false,
+    "description": "Glossy heart-shaped leaves and long-lasting waxy red blooms that flower nearly year-round.",
+    "care_tips": [
+      "Water when the top inch of soil is dry",
+      "Boost humidity for best flowering",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "jade-plant",
+    "common_name": "Jade Plant",
+    "scientific_name": "Crassula ovata",
+    "light": ["bright", "direct"],
+    "water_frequency": "low",
+    "humidity": "low",
+    "temperature_min_c": 15,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": false,
+    "description": "A classic succulent with thick, glossy oval leaves on woody stems. Said to bring good luck and lives for decades.",
+    "care_tips": [
+      "Let soil dry out fully between waterings",
+      "Give it as much direct sun as possible",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "bird-of-paradise",
+    "common_name": "Bird of Paradise",
+    "scientific_name": "Strelitzia reginae",
+    "light": ["bright", "direct"],
+    "water_frequency": "high",
+    "humidity": "medium",
+    "temperature_min_c": 18,
+    "temperature_max_c": 30,
+    "space": ["large"],
+    "difficulty": "expert",
+    "pet_friendly": false,
+    "description": "A bold tropical statement plant with huge paddle-shaped leaves that can eventually produce exotic orange blooms.",
+    "care_tips": [
+      "Keep soil consistently moist during the growing season",
+      "Needs a sunny spot and plenty of floor space",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "croton",
+    "common_name": "Croton",
+    "scientific_name": "Codiaeum variegatum",
+    "light": ["bright", "direct"],
+    "water_frequency": "medium",
+    "humidity": "high",
+    "temperature_min_c": 18,
+    "temperature_max_c": 30,
+    "space": ["small", "medium"],
+    "difficulty": "expert",
+    "pet_friendly": false,
+    "description": "Bold, multicolored leaves in shades of red, orange, and yellow. Needs strong light to keep its vivid coloring.",
+    "care_tips": [
+      "Keep soil evenly moist, never bone dry",
+      "Give it bright light for the best leaf color",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "peperomia",
+    "common_name": "Baby Rubber Plant",
+    "scientific_name": "Peperomia obtusifolia",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "low",
+    "humidity": "medium",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["small"],
+    "difficulty": "beginner",
+    "pet_friendly": true,
+    "description": "Compact plant with thick, glossy, spoon-shaped leaves. Stores water in its leaves, so it's forgiving of missed waterings.",
+    "care_tips": [
+      "Let soil dry out between waterings",
+      "Great for small spaces like desks and shelves",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "basil",
+    "common_name": "Basil",
+    "scientific_name": "Ocimum basilicum",
+    "light": ["bright", "direct"],
+    "water_frequency": "high",
+    "humidity": "medium",
+    "temperature_min_c": 18,
+    "temperature_max_c": 30,
+    "space": ["small"],
+    "difficulty": "intermediate",
+    "pet_friendly": true,
+    "description": "A fast-growing kitchen herb that rewards a sunny windowsill with fragrant leaves for cooking.",
+    "care_tips": [
+      "Keep soil consistently moist and never let it wilt",
+      "Give it at least 6 hours of bright light a day",
+      "Pinch off flower buds to keep leaves productive"
+    ]
+  },
+  {
+    "id": "mint",
+    "common_name": "Mint",
+    "scientific_name": "Mentha spicata",
+    "light": ["medium", "bright"],
+    "water_frequency": "high",
+    "humidity": "medium",
+    "temperature_min_c": 15,
+    "temperature_max_c": 27,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": true,
+    "description": "A vigorous, aromatic herb that grows so readily it's best kept contained in its own pot.",
+    "care_tips": [
+      "Keep soil consistently moist",
+      "Grow in a dedicated pot since it spreads aggressively",
+      "Harvest often to encourage bushy growth"
+    ]
+  },
+  {
+    "id": "string-of-pearls",
+    "common_name": "String of Pearls",
+    "scientific_name": "Curio rowleyanus",
+    "light": ["bright", "direct"],
+    "water_frequency": "low",
+    "humidity": "low",
+    "temperature_min_c": 15,
+    "temperature_max_c": 27,
+    "space": ["small"],
+    "difficulty": "intermediate",
+    "pet_friendly": false,
+    "description": "A trailing succulent with bead-like leaves that cascade beautifully from a hanging pot or high shelf.",
+    "care_tips": [
+      "Let soil dry out completely between waterings",
+      "Give it bright light to keep pearls plump and round",
+      "Toxic to cats and dogs if ingested"
+    ]
+  },
+  {
+    "id": "money-tree",
+    "common_name": "Money Tree",
+    "scientific_name": "Pachira aquatica",
+    "light": ["medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "high",
+    "temperature_min_c": 18,
+    "temperature_max_c": 27,
+    "space": ["medium", "large"],
+    "difficulty": "intermediate",
+    "pet_friendly": true,
+    "description": "Often sold with braided trunks, this glossy-leaved plant is considered a symbol of good fortune and prosperity.",
+    "care_tips": [
+      "Water when the top inch of soil is dry",
+      "Boost humidity with occasional misting",
+      "Safe for cats and dogs"
+    ]
+  },
+  {
+    "id": "parlor-palm",
+    "common_name": "Parlor Palm",
+    "scientific_name": "Chamaedorea elegans",
+    "light": ["low", "medium", "bright"],
+    "water_frequency": "medium",
+    "humidity": "medium",
+    "temperature_min_c": 16,
+    "temperature_max_c": 24,
+    "space": ["small", "medium"],
+    "difficulty": "beginner",
+    "pet_friendly": true,
+    "description": "A compact, low-maintenance palm that tolerates low light better than almost any other palm species.",
+    "care_tips": [
+      "Water when the top inch of soil is dry",
+      "Thrives in low light corners away from direct sun",
+      "Safe for cats and dogs"
+    ]
+  }
+]
