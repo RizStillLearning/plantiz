@@ -6,6 +6,8 @@ Light = Literal["low", "medium", "bright", "direct"]
 Humidity = Literal["low", "medium", "high"]
 Space = Literal["small", "medium", "large"]
 Experience = Literal["beginner", "intermediate", "expert"]
+Weather = Literal["sunny", "cloudy", "rainy", "windy"]
+Dryness = Literal["low", "medium", "high"]
 Organ = Literal["leaf", "flower", "fruit", "bark", "auto"]
 
 
@@ -16,6 +18,8 @@ class EnvironmentRequest(BaseModel):
     space: Space
     experience: Experience
     pets: bool = False
+    weather: Weather = "sunny"
+    dryness: Dryness = "medium"
 
 
 class PlantResult(BaseModel):
@@ -34,6 +38,15 @@ class PlantResult(BaseModel):
 
 class RecommendResponse(BaseModel):
     results: list[PlantResult]
+
+
+class ChatRequest(BaseModel):
+    question: str
+    context: Optional[list[str]] = None
+
+
+class ChatResponse(BaseModel):
+    reply: str
 
 
 class IdentificationCandidate(BaseModel):
