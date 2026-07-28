@@ -124,15 +124,6 @@ function Home() {
                     </div>
                 </section>
 
-                <section className="py-5">
-                    <div className="container-fluid px-5">
-                        <div className="cta-banner rounded-4 p-5 text-center text-white">
-                            <h2 className="fw-bold mb-3">Ready to discover the right plant for your space?</h2>
-                            <p className="mb-4 opacity-75">Use the planner page to get tailored recommendations for your home.</p>
-                            <Link to="/planner" className="btn btn-light btn-lg rounded-4 px-5 fw-semibold text-success">Open the planner</Link>
-                        </div>
-                    </div>
-                </section>
             </main>
 
             <footer className="bg-dark text-light-emphasis py-4">

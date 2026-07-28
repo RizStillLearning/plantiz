@@ -35,3 +35,12 @@ export async function identifyPlant(file, organ) {
     throw new Error(extractErrorMessage(error))
   }
 }
+
+export async function sendChatMessage(question, context) {
+  try {
+    const { data } = await client.post('/api/chat', { question, context })
+    return data.reply
+  } catch (error) {
+    throw new Error(extractErrorMessage(error))
+  }
+}

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { supabase } from '../api/supabaseClient'
 import AuthLayout from '../components/AuthLayout'
-import Planner from './Planner'
 
 function Login() {
     const navigate = useNavigate()
