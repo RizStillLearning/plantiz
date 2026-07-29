@@ -84,7 +84,7 @@ function Classify() {
                                         <div className="form-text mb-3">JPEG or PNG. A clear photo of a leaf or flower works best.</div>
 
                                         {previewUrl ? (
-                                            <img src={previewUrl} alt="Selected plant preview" className="img-fluid rounded-4 mb-3 border" />
+                                            <img src={previewUrl} alt="Selected plant preview" className="img-fluid d-block rounded-4 mb-3 border" />
                                         ) : null}
 
                                         <label className="form-label fw-semibold">Plant part</label>
