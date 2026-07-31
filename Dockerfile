@@ -1,3 +1,7 @@
+# check=skip=SecretsUsedInArgOrEnv
+# VITE_SUPABASE_PUBLISHABLE_KEY is Supabase's public/anon key, not a secret —
+# it must be baked into the client bundle, and access control is enforced by
+# Supabase row-level security, not by hiding this value.
 FROM node:22-alpine AS frontend-build
 
 WORKDIR /frontend
