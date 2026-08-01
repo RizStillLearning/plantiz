@@ -1,0 +1,11 @@
+:80 {
+	reverse_proxy app:8000
+}
+
+# Once you point a domain at this server, replace the line above with:
+#
+# your-domain.com {
+# 	reverse_proxy app:8000
+# }
+#
+# Caddy will then automatically provision and renew HTTPS via Let's Encrypt.
