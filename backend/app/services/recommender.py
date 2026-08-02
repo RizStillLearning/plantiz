@@ -19,6 +19,17 @@ _PET_WEIGHT = 5
 _WEATHER_WEIGHT = 10
 _DRYNESS_WEIGHT = 10
 
+_TOTAL_WEIGHT = (
+    _LIGHT_WEIGHT
+    + _HUMIDITY_WEIGHT
+    + _TEMPERATURE_WEIGHT
+    + _SPACE_WEIGHT
+    + _EXPERIENCE_WEIGHT
+    + _PET_WEIGHT
+    + _WEATHER_WEIGHT
+    + _DRYNESS_WEIGHT
+)
+
 
 @lru_cache
 def _load_plants() -> list[dict]:
@@ -109,7 +120,7 @@ def score_plant(plant: dict, env: EnvironmentRequest) -> int:
         + _weather_score(plant, env.weather) * _WEATHER_WEIGHT
         + _dryness_score(plant, env.dryness) * _DRYNESS_WEIGHT
     )
-    return round(total)
+    return round(total / _TOTAL_WEIGHT * 100)
 
 
 def _to_result(plant: dict, score: int) -> PlantResult:
