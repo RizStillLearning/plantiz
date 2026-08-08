@@ -1,34 +1,31 @@
 import json
+import math
 from functools import lru_cache
 from pathlib import Path
+
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 
 from app.schemas import EnvironmentRequest, PlantResult
 
 DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "plants.json"
 
-_DIFFICULTY_RANK = {"beginner": 1, "intermediate": 2, "expert": 3}
-_LIGHT_RANK = {"low": 1, "medium": 2, "bright": 3, "direct": 4}
-_HUMIDITY_RANK = {"low": 1, "medium": 2, "high": 3}
+_LIGHT_LEVELS = ["low", "medium", "bright", "direct"]
+_HUMIDITY_LEVELS = ["low", "medium", "high"]
+_SPACE_LEVELS = ["small", "medium", "large"]
+_WATER_LEVELS = ["low", "medium", "high"]
+_DIFFICULTY_LEVELS = ["beginner", "intermediate", "expert"]
 
-_LIGHT_WEIGHT = 25
-_HUMIDITY_WEIGHT = 20
-_TEMPERATURE_WEIGHT = 20
-_SPACE_WEIGHT = 15
-_EXPERIENCE_WEIGHT = 10
-_PET_WEIGHT = 5
-_WEATHER_WEIGHT = 10
-_DRYNESS_WEIGHT = 10
+_TEMPERATURE_MIN_C = -10.0
+_TEMPERATURE_MAX_C = 50.0
 
-_TOTAL_WEIGHT = (
-    _LIGHT_WEIGHT
-    + _HUMIDITY_WEIGHT
-    + _TEMPERATURE_WEIGHT
-    + _SPACE_WEIGHT
-    + _EXPERIENCE_WEIGHT
-    + _PET_WEIGHT
-    + _WEATHER_WEIGHT
-    + _DRYNESS_WEIGHT
-)
+_LIGHT_WEIGHT = 2.5
+_HUMIDITY_WEIGHT = 2.0
+_TEMPERATURE_WEIGHT = 2.0
+_SPACE_WEIGHT = 1.5
+_WATER_WEIGHT = 1.5
+_DIFFICULTY_WEIGHT = 1.2
+_PET_WEIGHT = 1.0
 
 
 @lru_cache
@@ -37,90 +34,80 @@ def _load_plants() -> list[dict]:
         return json.load(f)
 
 
-def _light_score(plant: dict, light: str) -> float:
-    if light in plant["light"]:
-        return 1.0
-    distance = min(abs(_LIGHT_RANK[light] - _LIGHT_RANK[opt]) for opt in plant["light"])
-    return max(0.0, 1.0 - distance * 0.34)
+def _one_hot(levels: list[str], value: str, weight: float) -> list[float]:
+    scale = math.sqrt(weight)
+    return [scale if level == value else 0.0 for level in levels]
 
 
-def _humidity_score(plant: dict, humidity: str) -> float:
-    distance = abs(_HUMIDITY_RANK[humidity] - _HUMIDITY_RANK[plant["humidity"]])
-    return max(0.0, 1.0 - distance * 0.5)
+def _multi_hot(levels: list[str], values: list[str], weight: float) -> list[float]:
+    scale = math.sqrt(weight)
+    return [scale if level in values else 0.0 for level in levels]
 
 
-def _temperature_score(plant: dict, temperature_c: float) -> float:
-    low, high = plant["temperature_min_c"], plant["temperature_max_c"]
-    if low <= temperature_c <= high:
-        return 1.0
-    overshoot = low - temperature_c if temperature_c < low else temperature_c - high
-    return max(0.0, 1.0 - overshoot / 10)
+def _cumulative_hot(levels: list[str], up_to: str, weight: float) -> list[float]:
+    scale = math.sqrt(weight)
+    cutoff = levels.index(up_to)
+    return [scale if index <= cutoff else 0.0 for index in range(len(levels))]
 
 
-def _space_score(plant: dict, space: str) -> float:
-    return 1.0 if space in plant["space"] else 0.3
+def _normalized(value: float, low: float, high: float) -> float:
+    clamped = min(max(value, low), high)
+    return (clamped - low) / (high - low)
 
 
-def _experience_score(plant: dict, experience: str) -> float:
-    return 1.0 if _DIFFICULTY_RANK[plant["difficulty"]] <= _DIFFICULTY_RANK[experience] else 0.4
+def _temperature_features(min_c: float, max_c: float, weight: float) -> list[float]:
+    scale = math.sqrt(weight / 2)
+    return [
+        scale * _normalized(min_c, _TEMPERATURE_MIN_C, _TEMPERATURE_MAX_C),
+        scale * _normalized(max_c, _TEMPERATURE_MIN_C, _TEMPERATURE_MAX_C),
+    ]
 
 
-def _weather_score(plant: dict, weather: str) -> float:
-    if weather == "sunny":
-        if any(level in ["bright", "direct"] for level in plant["light"]):
-            return 1.0
-        if "medium" in plant["light"]:
-            return 0.7
-        return 0.3
-    if weather == "cloudy":
-        if "low" in plant["light"] or "medium" in plant["light"]:
-            return 1.0
-        return 0.5
-    if weather == "rainy":
-        if plant["humidity"] == "high" or plant["water_frequency"] == "high":
-            return 1.0
-        return 0.6
-    if plant["humidity"] in ["medium", "high"] or plant["water_frequency"] != "low":
-        return 0.9
-    return 0.5
+def _target_water_level(weather: str, dryness: str) -> str:
+    """Blend forecast weather with soil dryness into a target watering demand."""
+    if dryness == "high" or weather == "sunny":
+        return "low"
+    if dryness == "low" or weather == "rainy":
+        return "high"
+    return "medium"
 
 
-def _dryness_score(plant: dict, dryness: str) -> float:
-    if dryness == "high":
-        if plant["water_frequency"] == "low" and plant["humidity"] == "low":
-            return 1.0
-        if plant["water_frequency"] == "medium":
-            return 0.75
-        return 0.3
-    if dryness == "low":
-        if plant["water_frequency"] == "high" or plant["humidity"] == "high":
-            return 1.0
-        if plant["water_frequency"] == "medium":
-            return 0.7
-        return 0.4
-    if plant["water_frequency"] != "high":
-        return 0.9
-    return 0.6
+def _plant_vector(plant: dict, include_pet: bool) -> list[float]:
+    vector = [
+        *_multi_hot(_LIGHT_LEVELS, plant["light"], _LIGHT_WEIGHT),
+        *_one_hot(_HUMIDITY_LEVELS, plant["humidity"], _HUMIDITY_WEIGHT),
+        *_temperature_features(plant["temperature_min_c"], plant["temperature_max_c"], _TEMPERATURE_WEIGHT),
+        *_multi_hot(_SPACE_LEVELS, plant["space"], _SPACE_WEIGHT),
+        *_one_hot(_WATER_LEVELS, plant["water_frequency"], _WATER_WEIGHT),
+        *_one_hot(_DIFFICULTY_LEVELS, plant["difficulty"], _DIFFICULTY_WEIGHT),
+    ]
+    if include_pet:
+        vector.append(math.sqrt(_PET_WEIGHT) if plant["pet_friendly"] else 0.0)
+    return vector
 
 
-def _pet_score(plant: dict, pets: bool) -> float:
-    if not pets:
-        return 1.0
-    return 1.0 if plant["pet_friendly"] else 0.0
+def _environment_vector(env: EnvironmentRequest) -> list[float]:
+    temperature_scale = math.sqrt(_TEMPERATURE_WEIGHT / 2)
+    temperature_norm = _normalized(env.temperature_c, _TEMPERATURE_MIN_C, _TEMPERATURE_MAX_C)
+    vector = [
+        *_one_hot(_LIGHT_LEVELS, env.light, _LIGHT_WEIGHT),
+        *_one_hot(_HUMIDITY_LEVELS, env.humidity, _HUMIDITY_WEIGHT),
+        temperature_scale * temperature_norm,
+        temperature_scale * temperature_norm,
+        *_one_hot(_SPACE_LEVELS, env.space, _SPACE_WEIGHT),
+        *_one_hot(_WATER_LEVELS, _target_water_level(env.weather, env.dryness), _WATER_WEIGHT),
+        *_cumulative_hot(_DIFFICULTY_LEVELS, env.experience, _DIFFICULTY_WEIGHT),
+    ]
+    if env.pets:
+        vector.append(math.sqrt(_PET_WEIGHT))
+    return vector
 
 
-def score_plant(plant: dict, env: EnvironmentRequest) -> int:
-    total = (
-        _light_score(plant, env.light) * _LIGHT_WEIGHT
-        + _humidity_score(plant, env.humidity) * _HUMIDITY_WEIGHT
-        + _temperature_score(plant, env.temperature_c) * _TEMPERATURE_WEIGHT
-        + _space_score(plant, env.space) * _SPACE_WEIGHT
-        + _experience_score(plant, env.experience) * _EXPERIENCE_WEIGHT
-        + _pet_score(plant, env.pets) * _PET_WEIGHT
-        + _weather_score(plant, env.weather) * _WEATHER_WEIGHT
-        + _dryness_score(plant, env.dryness) * _DRYNESS_WEIGHT
-    )
-    return round(total / _TOTAL_WEIGHT * 100)
+def score_plants(plants: list[dict], env: EnvironmentRequest) -> list[int]:
+    plant_matrix = np.array([_plant_vector(plant, include_pet=env.pets) for plant in plants])
+    env_vector = np.array([_environment_vector(env)])
+    similarities = cosine_similarity(plant_matrix, env_vector).flatten()
+    return [round(max(0.0, min(1.0, similarity)) * 100) for similarity in similarities]
 
 
 def _to_result(plant: dict, score: int) -> PlantResult:
@@ -141,7 +128,12 @@ def _to_result(plant: dict, score: int) -> PlantResult:
 
 def recommend_plants(env: EnvironmentRequest, top_n: int = 5) -> list[PlantResult]:
     plants = _load_plants()
-    scored = [(plant, score_plant(plant, env)) for plant in plants]
+    # Pet safety is a hard constraint, not a similarity signal: never recommend a
+    # toxic plant to a pet owner just because it scores well on other features.
+    candidates = [plant for plant in plants if plant["pet_friendly"]] if env.pets else plants
+    if not candidates:
+        return []
+    scored = list(zip(candidates, score_plants(candidates, env)))
     scored.sort(key=lambda pair: pair[1], reverse=True)
     return [_to_result(plant, score) for plant, score in scored[:top_n]]
 
