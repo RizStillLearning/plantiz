@@ -1,7 +1,3 @@
-# check=skip=SecretsUsedInArgOrEnv
-# VITE_SUPABASE_PUBLISHABLE_KEY is Supabase's public/anon key, not a secret —
-# it must be baked into the client bundle, and access control is enforced by
-# Supabase row-level security, not by hiding this value.
 FROM node:22-alpine AS frontend-build
 
 WORKDIR /frontend
@@ -12,11 +8,7 @@ RUN npm ci
 COPY frontend/ ./
 
 ARG VITE_API_BASE_URL=
-ARG VITE_SUPABASE_URL
-ARG VITE_SUPABASE_PUBLISHABLE_KEY
-ENV VITE_API_BASE_URL=$VITE_API_BASE_URL \
-    VITE_SUPABASE_URL=$VITE_SUPABASE_URL \
-    VITE_SUPABASE_PUBLISHABLE_KEY=$VITE_SUPABASE_PUBLISHABLE_KEY
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 
 RUN npm run build
 

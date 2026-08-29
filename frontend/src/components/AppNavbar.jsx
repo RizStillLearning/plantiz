@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import { clearToken } from "../api/client";
 
 const NAV_LINKS = [
   { to: "/planner", label: "Plant recommender" },
@@ -12,6 +13,7 @@ function AppNavbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   function handleSignOut() {
+    clearToken();
     navigate("/login");
   }
 

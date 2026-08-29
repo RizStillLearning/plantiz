@@ -1,6 +1,6 @@
 from typing import Literal, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, EmailStr, Field
 
 Light = Literal["low", "medium", "bright", "direct"]
 Humidity = Literal["low", "medium", "high"]
@@ -60,3 +60,23 @@ class IdentificationCandidate(BaseModel):
 class IdentifyResponse(BaseModel):
     candidates: list[IdentificationCandidate]
     remaining_requests: Optional[int] = None
+
+
+class SignUpRequest(BaseModel):
+    email: EmailStr
+    password: str = Field(min_length=6)
+
+
+class LoginRequest(BaseModel):
+    email: EmailStr
+    password: str
+
+
+class AuthResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+
+
+class UserResponse(BaseModel):
+    id: str
+    email: str

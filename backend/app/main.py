@@ -6,9 +6,12 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from app.config import get_settings
-from app.routers import chat, identify, recommend
+from app.db import Base, engine
+from app.routers import auth, chat, identify, recommend
 
 settings = get_settings()
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Plantiz API", version="1.0.0")
 
@@ -23,6 +26,7 @@ app.add_middleware(
 app.include_router(recommend.router)
 app.include_router(chat.router)
 app.include_router(identify.router)
+app.include_router(auth.router)
 
 
 @app.get("/api/health")

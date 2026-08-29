@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { supabase } from '../api/supabaseClient'
+import { signUp } from '../api/client'
 import AuthLayout from '../components/AuthLayout'
 
 function SignUp() {
@@ -9,13 +9,11 @@ function SignUp() {
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
     const [error, setError] = useState('')
-    const [success, setSuccess] = useState('')
     const [loading, setLoading] = useState(false)
 
     async function handleSubmit(e) {
         e.preventDefault()
         setError('')
-        setSuccess('')
 
         if (password !== confirmPassword) {
             setError('Passwords do not match.')
@@ -27,26 +25,19 @@ function SignUp() {
         }
 
         setLoading(true)
-        const { data, error } = await supabase.auth.signUp({ email, password })
-        setLoading(false)
-
-        if (error) {
-            setError(error.message)
-            return
-        }
-
-        if (data.session) {
+        try {
+            await signUp(email, password)
             navigate('/')
-            return
+        } catch (err) {
+            setError(err.message)
+        } finally {
+            setLoading(false)
         }
-
-        setSuccess('Account created! Check your email to confirm it before logging in.')
     }
 
     return (
         <AuthLayout title="Create your account" subtitle="Join Plantiz and start growing smarter.">
             {error && <div className="alert alert-danger" role="alert">{error}</div>}
-            {success && <div className="alert alert-success" role="alert">{success}</div>}
             <form onSubmit={handleSubmit} noValidate>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label fw-semibold">Email</label>
