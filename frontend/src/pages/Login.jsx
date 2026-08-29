@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { supabase } from '../api/supabaseClient'
+import { login } from '../api/client'
 import AuthLayout from '../components/AuthLayout'
 
 function Login() {
@@ -15,14 +15,14 @@ function Login() {
         setError('')
         setLoading(true)
 
-        const { error } = await supabase.auth.signInWithPassword({ email, password })
-
-        setLoading(false)
-        if (error) {
-            setError(error.message)
-            return
+        try {
+            await login(email, password)
+            navigate('/planner')
+        } catch (err) {
+            setError(err.message)
+        } finally {
+            setLoading(false)
         }
-        navigate('/planner')
     }
 
     return (
