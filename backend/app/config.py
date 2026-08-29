@@ -10,8 +10,11 @@ class Settings(BaseSettings):
     cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
     plantnet_project: str = "all"
 
-    database_url: str = "postgresql+psycopg://plantiz:plantiz@localhost:5432/plantiz"
-    jwt_secret: str = "dev-secret-change-me"
+    # No hardcoded fallback: a guessable default here would let anyone forge
+    # auth tokens against a deployment where it was left unset. Set both in
+    # .env — see backend/.env.example.
+    database_url: str
+    jwt_secret: str
     jwt_algorithm: str = "HS256"
     jwt_expire_minutes: int = 60 * 24 * 7
 

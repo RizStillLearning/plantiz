@@ -7,7 +7,7 @@ services:
     environment:
       PLANTNET_API_KEY: ${PLANTNET_API_KEY:-}
       CORS_ORIGINS: ${CORS_ORIGINS:-}
-      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-plantiz}:${POSTGRES_PASSWORD:-plantiz}@db:5432/${POSTGRES_DB:-plantiz}
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-plantiz}:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@db:5432/${POSTGRES_DB:-plantiz}
       JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
     restart: unless-stopped
     depends_on:
@@ -21,7 +21,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-plantiz}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-plantiz}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
       POSTGRES_DB: ${POSTGRES_DB:-plantiz}
     ports:
       - "127.0.0.1:5432:5432"
