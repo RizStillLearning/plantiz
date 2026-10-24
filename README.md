@@ -1,5 +1,7 @@
 # Plantiz
 
+**Live site: [plantiz.vercel.app](https://plantiz.vercel.app/)**
+
 A field guide to over 1,000 plant species, with:
 
 - **Plant library**: every species in a drop-down with its light, water,
