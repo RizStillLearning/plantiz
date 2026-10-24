@@ -1,0 +1,1007 @@
+id,common_name,botanical_name,category,setting,light,water,care_level,lifecycle,zone_min,zone_max,height_ft_min,height_ft_max,popularity
+african-violet,African Violet,Saintpaulia ionantha,Houseplant,indoor,bright indirect,moderate,moderate,perennial,11,12,0.3,0.5,1
+air-plant,Air Plant,Tillandsia ionantha,Houseplant,indoor,bright indirect,moderate,easy,perennial,9,11,0.2,0.3,1
+alocasia-polly,Alocasia Polly,Alocasia × amazonica,Houseplant,indoor,bright indirect,moderate,challenging,perennial,10,12,1,2,1
+anthurium,Anthurium,Anthurium andraeanum,Houseplant,indoor,bright indirect,moderate,moderate,perennial,11,12,1,2,1
+arrowhead-plant,Arrowhead Plant,Syngonium podophyllum,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,1,3,1
+baby-rubber-plant,Baby Rubber Plant,Peperomia obtusifolia,Houseplant,indoor,bright indirect;medium indirect,low,easy,perennial,10,12,0.5,1,1
+bird-of-paradise,Bird of Paradise,Strelitzia reginae,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,10,12,3,6,1
+chinese-evergreen,Chinese Evergreen,Aglaonema commutatum,Houseplant,indoor,medium indirect;low light,moderate,easy,perennial,10,12,1,3,1
+chinese-money-plant,Chinese Money Plant,Pilea peperomioides,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,11,0.7,1,1
+croton,Croton,Codiaeum variegatum,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,10,12,3,6,1
+dragon-tree,Dragon Tree,Dracaena marginata,Houseplant,indoor,bright indirect;medium indirect,low,easy,perennial,10,12,5,8,1
+fiddle-leaf-fig,Fiddle Leaf Fig,Ficus lyrata,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,6,10,1
+heartleaf-philodendron,Heartleaf Philodendron,Philodendron hederaceum,Houseplant,indoor,bright indirect;medium indirect;low light,moderate,easy,perennial,10,12,4,8,1
+lucky-bamboo,Lucky Bamboo,Dracaena sanderiana,Houseplant,indoor,bright indirect;medium indirect,high,easy,perennial,10,11,1,3,1
+money-tree,Money Tree,Pachira aquatica,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,3,6,1
+monstera,Monstera,Monstera deliciosa,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,6,10,1
+moth-orchid,Moth Orchid,Phalaenopsis spp.,Houseplant,indoor,bright indirect;medium indirect,moderate,moderate,perennial,10,12,1,2,1
+nerve-plant,Nerve Plant,Fittonia albivenis,Houseplant,indoor,medium indirect,high,moderate,perennial,11,12,0.3,0.5,1
+parlor-palm,Parlor Palm,Chamaedorea elegans,Houseplant,indoor,medium indirect;low light,moderate,easy,perennial,10,12,2,6,1
+peace-lily,Peace Lily,Spathiphyllum wallisii,Houseplant,indoor,medium indirect;low light,moderate,easy,perennial,10,12,1,3,1
+poinsettia,Poinsettia,Euphorbia pulcherrima,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,9,11,1,10,1
+polka-dot-begonia,Polka Dot Begonia,Begonia maculata,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,2,4,1
+pothos,Pothos,Epipremnum aureum,Houseplant,indoor,bright indirect;medium indirect;low light,moderate,easy,perennial,10,12,6,10,1
+prayer-plant,Prayer Plant,Maranta leuconeura,Houseplant,indoor,bright indirect;medium indirect,high,moderate,perennial,11,12,0.5,1,1
+rubber-plant,Rubber Plant,Ficus elastica,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,6,10,1
+sago-palm,Sago Palm,Cycas revoluta,Houseplant,indoor;outdoor,full sun;bright indirect,low,easy,perennial,8,11,2,10,1
+snake-plant,Snake Plant,Dracaena trifasciata,Houseplant,indoor,bright indirect;medium indirect;low light,low,easy,perennial,10,12,1,4,1
+spider-plant,Spider Plant,Chlorophytum comosum,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,9,11,1,2,1
+swiss-cheese-vine,Swiss Cheese Vine,Monstera adansonii,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,3,8,1
+wandering-dude,Wandering Dude,Tradescantia zebrina,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,9,11,0.5,1,1
+watermelon-peperomia,Watermelon Peperomia,Peperomia argyreia,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,0.5,1,1
+wax-plant-hoya,Wax Plant (Hoya),Hoya carnosa,Houseplant,indoor,bright indirect,low,easy,perennial,10,12,4,10,1
+weeping-fig,Weeping Fig,Ficus benjamina,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,4,10,1
+zz-plant,ZZ Plant,Zamioculcas zamiifolia,Houseplant,indoor,bright indirect;medium indirect;low light,low,easy,perennial,10,12,2,3,1
+aloe-vera,Aloe Vera,Aloe vera,Succulent & Cactus,indoor;outdoor,full sun;bright indirect,low,easy,perennial,9,11,1,2,1
+century-plant,Century Plant,Agave americana,Succulent & Cactus,outdoor,full sun,low,easy,perennial,8,11,3,6,1
+christmas-cactus,Christmas Cactus,Schlumbergera × buckleyi,Succulent & Cactus,indoor,bright indirect,moderate,easy,perennial,10,12,0.5,1,1
+flaming-katy,Flaming Katy,Kalanchoe blossfeldiana,Succulent & Cactus,indoor;outdoor,full sun;bright indirect,low,easy,perennial,10,12,0.5,1.5,1
+hens-and-chicks,Hens and Chicks,Sempervivum tectorum,Succulent & Cactus,outdoor,full sun,low,easy,perennial,3,8,0.2,0.5,1
+jade-plant,Jade Plant,Crassula ovata,Succulent & Cactus,indoor;outdoor,full sun;bright indirect,low,easy,perennial,10,11,1,6,1
+mexican-snowball,Mexican Snowball,Echeveria elegans,Succulent & Cactus,indoor;outdoor,full sun;bright indirect,low,easy,perennial,9,11,0.2,0.5,1
+showy-stonecrop,Showy Stonecrop,Hylotelephium spectabile,Succulent & Cactus,outdoor,full sun,low,easy,perennial,3,9,1,2,1
+string-of-hearts,String of Hearts,Ceropegia woodii,Succulent & Cactus,indoor,bright indirect,low,easy,perennial,10,11,2,4,1
+string-of-pearls,String of Pearls,Curio rowleyanus,Succulent & Cactus,indoor,bright indirect,low,moderate,perennial,9,11,2,3,1
+zebra-haworthia,Zebra Haworthia,Haworthiopsis attenuata,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,9,11,0.3,0.5,1
+birds-nest-fern,Bird's Nest Fern,Asplenium nidus,Fern,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,11,1,3,1
+boston-fern,Boston Fern,Nephrolepis exaltata,Fern,indoor;outdoor,partial shade;bright indirect,high,moderate,perennial,9,11,1,3,1
+japanese-painted-fern,Japanese Painted Fern,Athyrium niponicum,Fern,outdoor,partial shade;full shade,high,easy,perennial,4,8,1,2,1
+maidenhair-fern,Maidenhair Fern,Adiantum raddianum,Fern,indoor,bright indirect;medium indirect,high,challenging,perennial,10,11,1,2,1
+staghorn-fern,Staghorn Fern,Platycerium bifurcatum,Fern,indoor;outdoor,partial shade;bright indirect,moderate,moderate,perennial,9,11,2,3,1
+venus-flytrap,Venus Flytrap,Dionaea muscipula,Carnivorous,indoor;outdoor,full sun,high,challenging,perennial,8,10,0.2,0.5,1
+astilbe,Astilbe,Astilbe × arendsii,Perennial,outdoor,partial shade;full shade,high,easy,perennial,4,8,1,4,1
+babys-breath,Baby's Breath,Gypsophila paniculata,Perennial,outdoor,full sun,low,easy,perennial,3,9,2,3,1
+bee-balm,Bee Balm,Monarda didyma,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,2,4,1
+black-eyed-susan,Black-Eyed Susan,Rudbeckia hirta,Perennial,outdoor,full sun,moderate,easy,perennial,3,9,1,3,1
+blanket-flower,Blanket Flower,Gaillardia × grandiflora,Perennial,outdoor,full sun,low,easy,perennial,3,10,2,3,1
+blazing-star,Blazing Star,Liatris spicata,Perennial,outdoor,full sun,moderate,easy,perennial,3,8,2,4,1
+bleeding-heart,Bleeding Heart,Lamprocapnos spectabilis,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,9,2,3,1
+bloody-cranesbill,Bloody Cranesbill,Geranium sanguineum,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,0.75,1.5,1
+butterfly-weed,Butterfly Weed,Asclepias tuberosa,Perennial,outdoor,full sun,low,easy,perennial,3,9,1,2.5,1
+carnation,Carnation,Dianthus caryophyllus,Perennial,outdoor,full sun,moderate,moderate,perennial,6,9,1,2,1
+catmint,Catmint,Nepeta × faassenii,Perennial,outdoor,full sun,low,easy,perennial,3,8,1,2,1
+columbine,Columbine,Aquilegia vulgaris,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,1,3,1
+coral-bells,Coral Bells,Heuchera spp.,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,4,9,1,2,1
+daylily,Daylily,Hemerocallis spp.,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,1,4,1
+delphinium,Delphinium,Delphinium elatum,Perennial,outdoor,full sun,moderate,challenging,perennial,3,7,3,6,1
+forget-me-not,Forget-Me-Not,Myosotis sylvatica,Perennial,outdoor,partial shade;full shade,high,easy,biennial,5,9,0.5,1,1
+foxglove,Foxglove,Digitalis purpurea,Perennial,outdoor,full sun;partial shade,moderate,easy,biennial,4,8,3,5,1
+garden-mum,Garden Mum,Chrysanthemum × morifolium,Perennial,outdoor,full sun,moderate,easy,perennial,5,9,1,3,1
+garden-phlox,Garden Phlox,Phlox paniculata,Perennial,outdoor,full sun;partial shade,moderate,moderate,perennial,4,8,2,4,1
+gerbera-daisy,Gerbera Daisy,Gerbera jamesonii,Perennial,indoor;outdoor,full sun,moderate,moderate,perennial,8,11,1,1.5,1
+hardy-hibiscus,Hardy Hibiscus,Hibiscus moscheutos,Perennial,outdoor,full sun,high,easy,perennial,4,9,3,7,1
+hollyhock,Hollyhock,Alcea rosea,Perennial,outdoor,full sun,moderate,easy,biennial,3,8,5,8,1
+hosta,Hosta,Hosta spp.,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,9,0.5,3,1
+lambs-ear,Lamb's Ear,Stachys byzantina,Perennial,outdoor,full sun,low,easy,perennial,4,8,0.5,1.5,1
+lenten-rose,Lenten Rose,Helleborus × hybridus,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,4,9,1,1.5,1
+lupine,Lupine,Lupinus polyphyllus,Perennial,outdoor,full sun,moderate,moderate,perennial,4,8,3,4,1
+new-england-aster,New England Aster,Symphyotrichum novae-angliae,Perennial,outdoor,full sun,moderate,easy,perennial,4,8,3,6,1
+peony,Peony,Paeonia lactiflora,Perennial,outdoor,full sun,moderate,easy,perennial,3,8,2,3,1
+purple-coneflower,Purple Coneflower,Echinacea purpurea,Perennial,outdoor,full sun,low,easy,perennial,3,8,2,4,1
+russian-sage,Russian Sage,Salvia yangii,Perennial,outdoor,full sun,low,easy,perennial,4,9,3,5,1
+shasta-daisy,Shasta Daisy,Leucanthemum × superbum,Perennial,outdoor,full sun,moderate,easy,perennial,5,9,1,3,1
+woodland-sage,Woodland Sage,Salvia nemorosa,Perennial,outdoor,full sun,low,easy,perennial,4,8,1,3,1
+yarrow,Yarrow,Achillea millefolium,Perennial,outdoor,full sun,low,easy,perennial,3,9,1,3,1
+california-poppy,California Poppy,Eschscholzia californica,Annual,outdoor,full sun,low,easy,annual,,,0.5,1,1
+celosia,Celosia,Celosia argentea,Annual,outdoor,full sun,moderate,easy,annual,,,0.5,3,1
+coleus,Coleus,Coleus scutellarioides,Annual,indoor;outdoor,partial shade;full shade,moderate,easy,perennial,10,11,1,3,1
+cornflower,Cornflower,Centaurea cyanus,Annual,outdoor,full sun,low,easy,annual,,,1,3,1
+cosmos,Cosmos,Cosmos bipinnatus,Annual,outdoor,full sun,low,easy,annual,,,2,5,1
+french-marigold,French Marigold,Tagetes patula,Annual,outdoor,full sun,moderate,easy,annual,,,0.5,1,1
+impatiens,Impatiens,Impatiens walleriana,Annual,outdoor,partial shade;full shade,moderate,easy,perennial,10,11,0.5,2,1
+madagascar-periwinkle,Madagascar Periwinkle,Catharanthus roseus,Annual,outdoor,full sun,low,easy,perennial,10,11,0.5,1.5,1
+million-bells,Million Bells,Calibrachoa × hybrida,Annual,outdoor,full sun,moderate,easy,perennial,9,11,0.5,1,1
+moss-rose,Moss Rose,Portulaca grandiflora,Annual,outdoor,full sun,low,easy,annual,,,0.3,0.7,1
+nasturtium,Nasturtium,Tropaeolum majus,Annual,outdoor,full sun,low,easy,annual,,,1,3,1
+pansy,Pansy,Viola × wittrockiana,Annual,outdoor,full sun;partial shade,moderate,easy,annual,,,0.5,0.75,1
+petunia,Petunia,Petunia × atkinsiana,Annual,outdoor,full sun,moderate,easy,annual,,,0.5,1.5,1
+pot-marigold,Pot Marigold,Calendula officinalis,Annual,outdoor,full sun,moderate,easy,annual,,,1,2,1
+snapdragon,Snapdragon,Antirrhinum majus,Annual,outdoor,full sun,moderate,easy,perennial,7,10,1,3,1
+sunflower,Sunflower,Helianthus annuus,Annual,outdoor,full sun,moderate,easy,annual,,,3,10,1
+sweet-alyssum,Sweet Alyssum,Lobularia maritima,Annual,outdoor,full sun;partial shade,moderate,easy,annual,,,0.3,0.5,1
+sweet-pea,Sweet Pea,Lathyrus odoratus,Annual,outdoor,full sun,moderate,moderate,annual,,,4,8,1
+wax-begonia,Wax Begonia,Begonia × semperflorens-cultorum,Annual,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,10,11,0.5,1,1
+zinnia,Zinnia,Zinnia elegans,Annual,outdoor,full sun,moderate,easy,annual,,,1,4,1
+zonal-geranium,Zonal Geranium,Pelargonium × hortorum,Annual,indoor;outdoor,full sun,moderate,easy,perennial,10,11,1,2,1
+agapanthus,Agapanthus,Agapanthus praecox,Bulb,outdoor,full sun,moderate,easy,perennial,8,11,2,4,1
+amaryllis,Amaryllis,Hippeastrum × hybridum,Bulb,indoor;outdoor,full sun;bright indirect,moderate,easy,perennial,8,10,1,2,1
+asiatic-lily,Asiatic Lily,Lilium Asiatic hybrids,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,2,5,1
+bearded-iris,Bearded Iris,Iris germanica,Bulb,outdoor,full sun,low,easy,perennial,3,9,2,3,1
+caladium,Caladium,Caladium bicolor,Bulb,indoor;outdoor,partial shade;full shade,moderate,easy,perennial,9,11,1,2,1
+calla-lily,Calla Lily,Zantedeschia aethiopica,Bulb,indoor;outdoor,full sun;partial shade,high,easy,perennial,8,10,2,3,1
+canna-lily,Canna Lily,Canna × generalis,Bulb,outdoor,full sun,high,easy,perennial,8,11,3,6,1
+daffodil,Daffodil,Narcissus pseudonarcissus,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,1,1.5,1
+dahlia,Dahlia,Dahlia pinnata,Bulb,outdoor,full sun,moderate,moderate,perennial,8,11,1,5,1
+dutch-crocus,Dutch Crocus,Crocus vernus,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,0.3,0.5,1
+elephant-ear,Elephant Ear,Colocasia esculenta,Bulb,outdoor,full sun;partial shade,high,easy,perennial,8,11,3,6,1
+gladiolus,Gladiolus,Gladiolus × hortulanus,Bulb,outdoor,full sun,moderate,easy,perennial,7,10,2,5,1
+hyacinth,Hyacinth,Hyacinthus orientalis,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,0.5,1,1
+oriental-lily,Oriental Lily,Lilium Oriental hybrids,Bulb,outdoor,full sun;partial shade,moderate,moderate,perennial,4,9,3,6,1
+persian-buttercup,Persian Buttercup,Ranunculus asiaticus,Bulb,outdoor,full sun,moderate,moderate,perennial,8,10,1,1.5,1
+tulip,Tulip,Tulipa gesneriana,Bulb,outdoor,full sun,moderate,easy,perennial,3,8,0.5,2,1
+blue-fescue,Blue Fescue,Festuca glauca,Ornamental Grass,outdoor,full sun,low,easy,perennial,4,8,0.5,1,1
+feather-reed-grass,Feather Reed Grass,Calamagrostis × acutiflora,Ornamental Grass,outdoor,full sun,moderate,easy,perennial,4,9,3,5,1
+fountain-grass,Fountain Grass,Cenchrus alopecuroides,Ornamental Grass,outdoor,full sun,moderate,easy,perennial,5,9,2,4,1
+maiden-grass,Maiden Grass,Miscanthus sinensis,Ornamental Grass,outdoor,full sun,moderate,easy,perennial,5,9,4,7,1
+pampas-grass,Pampas Grass,Cortaderia selloana,Ornamental Grass,outdoor,full sun,low,easy,perennial,7,11,8,12,1
+bermudagrass,Bermudagrass,Cynodon dactylon,Lawn Grass,outdoor,full sun,low,easy,perennial,7,10,0.05,0.15,1
+kentucky-bluegrass,Kentucky Bluegrass,Poa pratensis,Lawn Grass,outdoor,full sun,moderate,moderate,perennial,3,7,0.2,0.3,1
+tall-fescue,Tall Fescue,Festuca arundinacea,Lawn Grass,outdoor,full sun;partial shade,moderate,easy,perennial,4,7,0.2,0.3,1
+creeping-jenny,Creeping Jenny,Lysimachia nummularia,Groundcover,outdoor,full sun;partial shade;full shade,high,easy,perennial,3,8,0.1,0.3,1
+creeping-phlox,Creeping Phlox,Phlox subulata,Groundcover,outdoor,full sun,low,easy,perennial,3,9,0.3,0.5,1
+creeping-thyme,Creeping Thyme,Thymus serpyllum,Groundcover,outdoor,full sun,low,easy,perennial,4,8,0.1,0.3,1
+lily-of-the-valley,Lily of the Valley,Convallaria majalis,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,0.5,1,1
+lilyturf,Lilyturf,Liriope muscari,Groundcover,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,5,10,1,1.5,1
+azalea,Azalea,Rhododendron indicum,Shrub,outdoor,partial shade,moderate,moderate,perennial,6,9,3,6,1
+bigleaf-hydrangea,Bigleaf Hydrangea,Hydrangea macrophylla,Shrub,outdoor,partial shade,high,moderate,perennial,5,9,3,6,1
+butterfly-bush,Butterfly Bush,Buddleja davidii,Shrub,outdoor,full sun,moderate,easy,perennial,5,9,6,10,1
+camellia,Camellia,Camellia japonica,Shrub,outdoor,partial shade,moderate,moderate,perennial,7,9,6,12,1
+common-boxwood,Common Boxwood,Buxus sempervirens,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,2,15,1
+common-lilac,Common Lilac,Syringa vulgaris,Shrub,outdoor,full sun,moderate,easy,perennial,3,7,8,15,1
+forsythia,Forsythia,Forsythia × intermedia,Shrub,outdoor,full sun,moderate,easy,perennial,5,8,8,10,1
+gardenia,Gardenia,Gardenia jasminoides,Shrub,indoor;outdoor,full sun;partial shade,moderate,challenging,perennial,8,11,2,6,1
+hybrid-tea-rose,Hybrid Tea Rose,Rosa × hybrida,Shrub,outdoor,full sun,moderate,moderate,perennial,5,9,3,6,1
+lantana,Lantana,Lantana camara,Shrub,outdoor,full sun,low,easy,perennial,8,11,2,6,1
+panicle-hydrangea,Panicle Hydrangea,Hydrangea paniculata,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,6,15,1
+rhododendron,Rhododendron,Rhododendron catawbiense,Shrub,outdoor,partial shade;full shade,moderate,moderate,perennial,4,8,6,10,1
+rose-of-sharon,Rose of Sharon,Hibiscus syriacus,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,8,12,1
+smooth-hydrangea,Smooth Hydrangea,Hydrangea arborescens,Shrub,outdoor,partial shade;full shade,moderate,easy,perennial,3,9,3,5,1
+tropical-hibiscus,Tropical Hibiscus,Hibiscus rosa-sinensis,Shrub,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,4,10,1
+american-arborvitae,American Arborvitae,Thuja occidentalis,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,2,7,10,30,1
+colorado-blue-spruce,Colorado Blue Spruce,Picea pungens,Tree,outdoor,full sun,moderate,easy,perennial,2,7,30,60,1
+crape-myrtle,Crape Myrtle,Lagerstroemia indica,Tree,outdoor,full sun,low,easy,perennial,7,9,6,25,1
+eastern-redbud,Eastern Redbud,Cercis canadensis,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,20,30,1
+eastern-white-pine,Eastern White Pine,Pinus strobus,Tree,outdoor,full sun,moderate,easy,perennial,3,8,50,80,1
+flowering-dogwood,Flowering Dogwood,Cornus florida,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,5,9,20,30,1
+frangipani,Frangipani,Plumeria rubra,Tree,outdoor,full sun,low,easy,perennial,10,11,15,25,1
+ginkgo,Ginkgo,Ginkgo biloba,Tree,outdoor,full sun,moderate,easy,perennial,3,8,50,80,1
+jacaranda,Jacaranda,Jacaranda mimosifolia,Tree,outdoor,full sun,moderate,easy,perennial,9,11,25,40,1
+japanese-flowering-cherry,Japanese Flowering Cherry,Prunus serrulata,Tree,outdoor,full sun,moderate,easy,perennial,5,8,15,25,1
+japanese-maple,Japanese Maple,Acer palmatum,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,5,8,10,25,1
+red-maple,Red Maple,Acer rubrum,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,40,70,1
+saucer-magnolia,Saucer Magnolia,Magnolia × soulangeana,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,20,25,1
+southern-magnolia,Southern Magnolia,Magnolia grandiflora,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,6,10,60,80,1
+sugar-maple,Sugar Maple,Acer saccharum,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,60,75,1
+weeping-willow,Weeping Willow,Salix babylonica,Tree,outdoor,full sun;partial shade,high,easy,perennial,6,8,30,50,1
+coconut-palm,Coconut Palm,Cocos nucifera,Palm,outdoor,full sun,moderate,moderate,perennial,10,12,50,80,1
+date-palm,Date Palm,Phoenix dactylifera,Palm,outdoor,full sun,low,moderate,perennial,9,11,50,80,1
+bougainvillea,Bougainvillea,Bougainvillea glabra,Vine & Climber,outdoor,full sun,low,easy,perennial,9,11,15,30,1
+chinese-wisteria,Chinese Wisteria,Wisteria sinensis,Vine & Climber,outdoor,full sun,moderate,moderate,perennial,5,8,10,25,1
+common-jasmine,Common Jasmine,Jasminum officinale,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,7,10,10,15,1
+english-ivy,English Ivy,Hedera helix,Vine & Climber,indoor;outdoor,partial shade;full shade;bright indirect;medium indirect,moderate,easy,perennial,4,9,3,50,1
+jackman-clematis,Jackman Clematis,Clematis × jackmanii,Vine & Climber,outdoor,full sun;partial shade,moderate,moderate,perennial,4,8,8,12,1
+mandevilla,Mandevilla,Mandevilla sanderi,Vine & Climber,outdoor,full sun,moderate,easy,perennial,10,11,3,10,1
+morning-glory,Morning Glory,Ipomoea purpurea,Vine & Climber,outdoor,full sun,low,easy,annual,,,6,10,1
+star-jasmine,Star Jasmine,Trachelospermum jasminoides,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,8,10,10,20,1
+basil,Basil,Ocimum basilicum,Herb & Spice,indoor;outdoor,full sun,moderate,easy,annual,,,1,2,1
+chives,Chives,Allium schoenoprasum,Herb & Spice,indoor;outdoor,full sun;partial shade,moderate,easy,perennial,3,9,1,1.5,1
+cilantro,Cilantro,Coriandrum sativum,Herb & Spice,indoor;outdoor,full sun;partial shade,moderate,easy,annual,,,1,2,1
+common-sage,Common Sage,Salvia officinalis,Herb & Spice,indoor;outdoor,full sun,low,easy,perennial,5,8,1,2.5,1
+common-thyme,Common Thyme,Thymus vulgaris,Herb & Spice,indoor;outdoor,full sun,low,easy,perennial,5,9,0.5,1,1
+dill,Dill,Anethum graveolens,Herb & Spice,outdoor,full sun,moderate,easy,annual,,,2,4,1
+english-lavender,English Lavender,Lavandula angustifolia,Herb & Spice,outdoor,full sun,low,easy,perennial,5,8,1,3,1
+german-chamomile,German Chamomile,Matricaria chamomilla,Herb & Spice,outdoor,full sun,moderate,easy,annual,,,1,2,1
+ginger,Ginger,Zingiber officinale,Herb & Spice,indoor;outdoor,partial shade,high,easy,perennial,8,12,2,4,1
+lemongrass,Lemongrass,Cymbopogon citratus,Herb & Spice,indoor;outdoor,full sun,high,easy,perennial,10,12,3,6,1
+oregano,Oregano,Origanum vulgare,Herb & Spice,indoor;outdoor,full sun,low,easy,perennial,4,9,1,2,1
+parsley,Parsley,Petroselinum crispum,Herb & Spice,indoor;outdoor,full sun;partial shade,moderate,easy,biennial,5,9,1,1.5,1
+peppermint,Peppermint,Mentha × piperita,Herb & Spice,indoor;outdoor,full sun;partial shade,high,easy,perennial,3,8,1,2,1
+rosemary,Rosemary,Salvia rosmarinus,Herb & Spice,indoor;outdoor,full sun,low,easy,perennial,8,10,2,6,1
+spearmint,Spearmint,Mentha spicata,Herb & Spice,indoor;outdoor,full sun;partial shade,high,easy,perennial,4,9,1,2,1
+arugula,Arugula,Eruca vesicaria,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,0.5,1,1
+beet,Beet,Beta vulgaris,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,1
+broccoli,Broccoli,Brassica oleracea var. italica,Vegetable,outdoor,full sun,moderate,moderate,annual,,,1.5,2.5,1
+cabbage,Cabbage,Brassica oleracea var. capitata,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,1
+carrot,Carrot,Daucus carota subsp. sativus,Vegetable,outdoor,full sun,moderate,easy,annual,,,0.5,1,1
+cauliflower,Cauliflower,Brassica oleracea var. botrytis,Vegetable,outdoor,full sun,moderate,moderate,annual,,,1.5,2.5,1
+cucumber,Cucumber,Cucumis sativus,Vegetable,outdoor,full sun,high,easy,annual,,,1,6,1
+eggplant,Eggplant,Solanum melongena,Vegetable,outdoor,full sun,moderate,easy,annual,,,2,4,1
+garden-pea,Garden Pea,Pisum sativum,Vegetable,outdoor,full sun,moderate,easy,annual,,,2,6,1
+garlic,Garlic,Allium sativum,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,2,1
+green-bean,Green Bean,Phaseolus vulgaris,Vegetable,outdoor,full sun,moderate,easy,annual,,,1.5,10,1
+kale,Kale,Brassica oleracea var. sabellica,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,1,2,1
+lettuce,Lettuce,Lactuca sativa,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,0.5,1,1
+onion,Onion,Allium cepa,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,2,1
+pepper-bell-and-chili,Pepper (Bell & Chili),Capsicum annuum,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,3,1
+potato,Potato,Solanum tuberosum,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,3,1
+pumpkin,Pumpkin,Cucurbita maxima,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,2,1
+radish,Radish,Raphanus sativus,Vegetable,outdoor,full sun,moderate,easy,annual,,,0.5,1,1
+spinach,Spinach,Spinacia oleracea,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,0.5,1,1
+sweet-corn,Sweet Corn,Zea mays,Vegetable,outdoor,full sun,moderate,easy,annual,,,5,8,1
+sweet-potato,Sweet Potato,Ipomoea batatas,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,1
+swiss-chard,Swiss Chard,Beta vulgaris var. cicla,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,1,2,1
+tomato,Tomato,Solanum lycopersicum,Vegetable,outdoor,full sun,moderate,easy,annual,,,3,6,1
+zucchini,Zucchini,Cucurbita pepo,Vegetable,outdoor,full sun,high,easy,annual,,,2,3,1
+apple,Apple,Malus domestica,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,3,8,8,25,1
+avocado,Avocado,Persea americana,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,9,11,20,40,1
+banana,Banana,Musa acuminata,Fruit & Nut,outdoor,full sun,high,easy,perennial,9,11,5,25,1
+blackberry,Blackberry,Rubus fruticosus agg.,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,5,9,3,8,1
+cantaloupe,Cantaloupe,Cucumis melo,Fruit & Nut,outdoor,full sun,moderate,moderate,annual,,,1,2,1
+fig,Fig,Ficus carica,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,7,11,10,30,1
+grape,Grape,Vitis vinifera,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,6,9,15,30,1
+highbush-blueberry,Highbush Blueberry,Vaccinium corymbosum,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,4,7,6,12,1
+lemon,Lemon,Citrus × limon,Fruit & Nut,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,10,20,1
+mandarin-orange,Mandarin Orange,Citrus reticulata,Fruit & Nut,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,10,25,1
+mango,Mango,Mangifera indica,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,10,11,30,100,1
+meyer-lemon,Meyer Lemon,Citrus × meyeri,Fruit & Nut,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,6,10,1
+olive,Olive,Olea europaea,Fruit & Nut,indoor;outdoor,full sun,low,easy,perennial,8,11,4,30,1
+papaya,Papaya,Carica papaya,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,10,11,6,20,1
+peach,Peach,Prunus persica,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,5,8,15,25,1
+pear,Pear,Pyrus communis,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,4,8,10,30,1
+persian-lime,Persian Lime,Citrus × latifolia,Fruit & Nut,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,15,20,1
+pineapple,Pineapple,Ananas comosus,Fruit & Nut,indoor;outdoor,full sun,low,easy,perennial,10,12,2,5,1
+red-raspberry,Red Raspberry,Rubus idaeus,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,3,9,3,6,1
+strawberry,Strawberry,Fragaria × ananassa,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,4,9,0.5,1,1
+sweet-cherry,Sweet Cherry,Prunus avium,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,5,8,20,35,1
+sweet-orange,Sweet Orange,Citrus × sinensis,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,9,11,15,30,1
+watermelon,Watermelon,Citrullus lanatus,Fruit & Nut,outdoor,full sun,moderate,easy,annual,,,1,2,1
+hardy-water-lily,Hardy Water Lily,Nymphaea odorata,Aquatic,outdoor,full sun,high,moderate,perennial,3,11,0.2,0.5,1
+sacred-lotus,Sacred Lotus,Nelumbo nucifera,Aquatic,outdoor,full sun,high,moderate,perennial,4,10,3,6,1
+alocasia-zebrina,Alocasia Zebrina,Alocasia zebrina,Houseplant,indoor,bright indirect,moderate,challenging,perennial,10,12,2,3,2
+angel-wing-begonia,Angel Wing Begonia,Begonia coccinea,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,1,3,2
+areca-palm,Areca Palm,Dypsis lutescens,Houseplant,indoor;outdoor,bright indirect,moderate,moderate,perennial,10,12,6,10,2
+asparagus-fern,Asparagus Fern,Asparagus densiflorus,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,9,11,1,3,2
+bamboo-palm,Bamboo Palm,Chamaedorea seifrizii,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,4,8,2
+blushing-philodendron,Blushing Philodendron,Philodendron erubescens,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,3,6,2
+calathea-orbifolia,Calathea Orbifolia,Goeppertia orbifolia,Houseplant,indoor,medium indirect,high,challenging,perennial,11,12,2,3,2
+cast-iron-plant,Cast Iron Plant,Aspidistra elatior,Houseplant,indoor;outdoor,full shade;medium indirect;low light,low,easy,perennial,7,11,2,3,2
+cattleya-orchid,Cattleya Orchid,Cattleya spp.,Houseplant,indoor,bright indirect,moderate,challenging,perennial,10,12,1,2,2
+clivia,Clivia,Clivia miniata,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,9,11,1,2,2
+coffee-plant,Coffee Plant,Coffea arabica,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,3,6,2
+corn-plant,Corn Plant,Dracaena fragrans,Houseplant,indoor,bright indirect;medium indirect;low light,moderate,easy,perennial,10,12,4,6,2
+cylindrical-snake-plant,Cylindrical Snake Plant,Dracaena angolensis,Houseplant,indoor,bright indirect;medium indirect;low light,low,easy,perennial,10,12,1,3,2
+cymbidium-orchid,Cymbidium Orchid,Cymbidium spp.,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,9,11,2,3,2
+dendrobium-orchid,Dendrobium Orchid,Dendrobium nobile,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,1,2,2
+dumb-cane,Dumb Cane,Dieffenbachia seguine,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,3,6,2
+dwarf-umbrella-tree,Dwarf Umbrella Tree,Schefflera arboricola,Houseplant,indoor;outdoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,4,8,2
+florists-cyclamen,Florist's Cyclamen,Cyclamen persicum,Houseplant,indoor,bright indirect,moderate,moderate,perennial,9,11,0.5,1,2
+giant-taro,Giant Taro,Alocasia macrorrhizos,Houseplant,indoor;outdoor,partial shade;bright indirect,high,moderate,perennial,9,11,4,8,2
+ginseng-ficus,Ginseng Ficus,Ficus microcarpa,Houseplant,indoor;outdoor,bright indirect,moderate,easy,perennial,9,11,1,3,2
+guzmania-bromeliad,Guzmania Bromeliad,Guzmania lingulata,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,12,1,2,2
+kentia-palm,Kentia Palm,Howea forsteriana,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,9,11,5,10,2
+lady-palm,Lady Palm,Rhapis excelsa,Houseplant,indoor;outdoor,partial shade;bright indirect;medium indirect,moderate,easy,perennial,9,11,4,10,2
+lipstick-plant,Lipstick Plant,Aeschynanthus radicans,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,1,3,2
+majesty-palm,Majesty Palm,Ravenea rivularis,Houseplant,indoor,bright indirect,high,moderate,perennial,10,11,5,10,2
+mini-monstera,Mini Monstera,Rhaphidophora tetrasperma,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,12,4,8,2
+norfolk-island-pine,Norfolk Island Pine,Araucaria heterophylla,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,10,11,3,10,2
+peacock-plant,Peacock Plant,Goeppertia makoyana,Houseplant,indoor,medium indirect,high,challenging,perennial,11,12,1,2,2
+pinstripe-calathea,Pinstripe Calathea,Goeppertia ornata,Houseplant,indoor,medium indirect,high,challenging,perennial,11,12,2,3,2
+polka-dot-plant,Polka Dot Plant,Hypoestes phyllostachya,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,10,11,1,2,2
+ponytail-palm,Ponytail Palm,Beaucarnea recurvata,Houseplant,indoor;outdoor,full sun;bright indirect,low,easy,perennial,9,11,3,8,2
+purple-heart,Purple Heart,Tradescantia pallida,Houseplant,indoor;outdoor,full sun;bright indirect,low,easy,perennial,8,11,1,1.5,2
+pygmy-date-palm,Pygmy Date Palm,Phoenix roebelenii,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,easy,perennial,10,11,6,10,2
+rattlesnake-plant,Rattlesnake Plant,Goeppertia insignis,Houseplant,indoor,medium indirect,high,moderate,perennial,11,12,1,2.5,2
+rex-begonia,Rex Begonia,Begonia rex-cultorum,Houseplant,indoor,bright indirect;medium indirect,moderate,moderate,perennial,10,12,1,1.5,2
+ripple-peperomia,Ripple Peperomia,Peperomia caperata,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,0.5,1,2
+satin-pothos,Satin Pothos,Scindapsus pictus,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,3,10,2
+shamrock-plant,Shamrock Plant,Oxalis triangularis,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,8,11,0.5,1,2
+spineless-yucca,Spineless Yucca,Yucca gigantea,Houseplant,indoor,full sun;bright indirect,low,easy,perennial,9,11,4,10,2
+string-of-turtles,String of Turtles,Peperomia prostrata,Houseplant,indoor,bright indirect;medium indirect,moderate,moderate,perennial,10,12,0.5,1,2
+stromanthe-triostar,Stromanthe Triostar,Stromanthe thalia,Houseplant,indoor,bright indirect,high,challenging,perennial,10,12,2,3,2
+sweetheart-hoya,Sweetheart Hoya,Hoya kerrii,Houseplant,indoor,bright indirect,low,easy,perennial,10,12,1,4,2
+ti-plant,Ti Plant,Cordyline fruticosa,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,easy,perennial,10,12,3,10,2
+tree-philodendron,Tree Philodendron,Thaumatophyllum bipinnatifidum,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,9,11,4,8,2
+urn-plant,Urn Plant,Aechmea fasciata,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,12,1,2,2
+white-bird-of-paradise,White Bird of Paradise,Strelitzia nicolai,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,10,12,6,20,2
+adams-needle,Adam's Needle,Yucca filamentosa,Succulent & Cactus,outdoor,full sun,low,easy,perennial,4,10,2,3,2
+african-milk-tree,African Milk Tree,Euphorbia trigona,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,10,11,3,8,2
+bunny-ears-cactus,Bunny Ears Cactus,Opuntia microdasys,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,9,11,1,2,2
+burros-tail,Burro's Tail,Sedum morganianum,Succulent & Cactus,indoor;outdoor,full sun;bright indirect,low,easy,perennial,10,11,1,3,2
+crown-of-thorns,Crown of Thorns,Euphorbia milii,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,9,11,1,6,2
+desert-rose,Desert Rose,Adenium obesum,Succulent & Cactus,indoor;outdoor,full sun,low,moderate,perennial,10,12,1,6,2
+elephant-bush,Elephant Bush,Portulacaria afra,Succulent & Cactus,indoor;outdoor,full sun;bright indirect,low,easy,perennial,10,11,1,8,2
+fishbone-cactus,Fishbone Cactus,Disocactus anguliger,Succulent & Cactus,indoor,bright indirect,moderate,easy,perennial,10,11,1,3,2
+foxtail-agave,Foxtail Agave,Agave attenuata,Succulent & Cactus,outdoor,full sun;partial shade,low,easy,perennial,10,11,3,5,2
+golden-barrel-cactus,Golden Barrel Cactus,Echinocactus grusonii,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,9,11,1,3,2
+ice-plant,Ice Plant,Delosperma cooperi,Succulent & Cactus,outdoor,full sun,low,easy,perennial,5,9,0.2,0.5,2
+jelly-bean-plant,Jelly Bean Plant,Sedum rubrotinctum,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,9,11,0.5,0.7,2
+joshua-tree,Joshua Tree,Yucca brevifolia,Succulent & Cactus,outdoor,full sun,low,moderate,perennial,6,10,15,40,2
+living-stones,Living Stones,Lithops spp.,Succulent & Cactus,indoor,full sun,low,challenging,perennial,10,11,0.1,0.2,2
+moon-cactus,Moon Cactus,Gymnocalycium mihanovichii,Succulent & Cactus,indoor,bright indirect,low,easy,perennial,10,11,0.3,0.5,2
+mother-of-thousands,Mother of Thousands,Kalanchoe daigremontiana,Succulent & Cactus,indoor;outdoor,full sun;bright indirect,low,easy,perennial,9,11,1,3,2
+panda-plant,Panda Plant,Kalanchoe tomentosa,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,9,11,1,2,2
+pencil-cactus,Pencil Cactus,Euphorbia tirucalli,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,10,11,3,8,2
+prickly-pear,Prickly Pear,Opuntia ficus-indica,Succulent & Cactus,outdoor,full sun,low,easy,perennial,8,11,5,15,2
+saguaro,Saguaro,Carnegiea gigantea,Succulent & Cactus,outdoor,full sun,low,moderate,perennial,9,11,15,40,2
+string-of-bananas,String of Bananas,Curio radicans,Succulent & Cactus,indoor,bright indirect,low,easy,perennial,9,11,2,3,2
+string-of-dolphins,String of Dolphins,Curio × peregrinus,Succulent & Cactus,indoor,bright indirect,low,moderate,perennial,9,11,1,2,2
+thanksgiving-cactus,Thanksgiving Cactus,Schlumbergera truncata,Succulent & Cactus,indoor,bright indirect,moderate,easy,perennial,10,12,0.5,1,2
+tree-houseleek,Tree Houseleek,Aeonium arboreum,Succulent & Cactus,outdoor,full sun;partial shade,low,easy,perennial,9,11,2,3,2
+two-row-stonecrop,Two-Row Stonecrop,Phedimus spurius,Succulent & Cactus,outdoor,full sun,low,easy,perennial,3,8,0.2,0.5,2
+autumn-fern,Autumn Fern,Dryopteris erythrosora,Fern,outdoor,partial shade;full shade,moderate,easy,perennial,5,9,1.5,2,2
+blue-star-fern,Blue Star Fern,Phlebodium aureum,Fern,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,11,1,3,2
+christmas-fern,Christmas Fern,Polystichum acrostichoides,Fern,outdoor,partial shade;full shade,moderate,easy,perennial,3,9,1,2,2
+cinnamon-fern,Cinnamon Fern,Osmundastrum cinnamomeum,Fern,outdoor,partial shade;full shade,high,easy,perennial,3,9,2,4,2
+lady-fern,Lady Fern,Athyrium filix-femina,Fern,outdoor,partial shade;full shade,high,easy,perennial,4,8,2,3,2
+ostrich-fern,Ostrich Fern,Matteuccia struthiopteris,Fern,outdoor,partial shade;full shade,high,easy,perennial,3,7,3,6,2
+rabbits-foot-fern,Rabbit's Foot Fern,Davallia fejeensis,Fern,indoor,bright indirect,moderate,moderate,perennial,10,11,1,2,2
+cape-sundew,Cape Sundew,Drosera capensis,Carnivorous,indoor,full sun;bright indirect,high,easy,perennial,9,11,0.3,0.5,2
+purple-pitcher-plant,Purple Pitcher Plant,Sarracenia purpurea,Carnivorous,outdoor,full sun,high,moderate,perennial,3,9,0.5,1,2
+tropical-pitcher-plant,Tropical Pitcher Plant,Nepenthes spp.,Carnivorous,indoor,bright indirect,high,challenging,perennial,10,12,1,3,2
+anise-hyssop,Anise Hyssop,Agastache foeniculum,Perennial,outdoor,full sun,low,easy,perennial,4,8,2,4,2
+autumn-sage,Autumn Sage,Salvia greggii,Perennial,outdoor,full sun,low,easy,perennial,7,10,2,3,2
+balloon-flower,Balloon Flower,Platycodon grandiflorus,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,1,2.5,2
+blue-false-indigo,Blue False Indigo,Baptisia australis,Perennial,outdoor,full sun,low,easy,perennial,3,9,3,4,2
+brazilian-verbena,Brazilian Verbena,Verbena bonariensis,Perennial,outdoor,full sun,low,easy,perennial,7,11,3,6,2
+canterbury-bells,Canterbury Bells,Campanula medium,Perennial,outdoor,full sun;partial shade,moderate,easy,biennial,5,8,2,3,2
+cardinal-flower,Cardinal Flower,Lobelia cardinalis,Perennial,outdoor,full sun;partial shade,high,moderate,perennial,3,9,2,4,2
+cheddar-pinks,Cheddar Pinks,Dianthus gratianopolitanus,Perennial,outdoor,full sun,low,easy,perennial,3,9,0.5,1,2
+common-milkweed,Common Milkweed,Asclepias syriaca,Perennial,outdoor,full sun,low,easy,perennial,3,9,2,4,2
+dalmatian-bellflower,Dalmatian Bellflower,Campanula portenschlagiana,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,0.3,0.5,2
+edelweiss,Edelweiss,Leontopodium alpinum,Perennial,outdoor,full sun,low,moderate,perennial,4,7,0.5,1,2
+english-primrose,English Primrose,Primula vulgaris,Perennial,outdoor,partial shade;full shade,moderate,moderate,perennial,4,8,0.3,0.7,2
+evergreen-candytuft,Evergreen Candytuft,Iberis sempervirens,Perennial,outdoor,full sun,low,easy,perennial,3,8,0.5,1,2
+foxglove-beardtongue,Foxglove Beardtongue,Penstemon digitalis,Perennial,outdoor,full sun,moderate,easy,perennial,3,8,2,3,2
+gaura,Gaura,Oenothera lindheimeri,Perennial,outdoor,full sun,low,easy,perennial,5,9,2,4,2
+japanese-anemone,Japanese Anemone,Anemone × hybrida,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,2,4,2
+joe-pye-weed,Joe-Pye Weed,Eutrochium purpureum,Perennial,outdoor,full sun;partial shade,high,easy,perennial,4,9,4,7,2
+kangaroo-paw,Kangaroo Paw,Anigozanthos flavidus,Perennial,outdoor,full sun,low,moderate,perennial,9,11,2,6,2
+ladys-mantle,Lady's Mantle,Alchemilla mollis,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,1,1.5,2
+lanceleaf-coreopsis,Lanceleaf Coreopsis,Coreopsis lanceolata,Perennial,outdoor,full sun,low,easy,perennial,4,9,1,2,2
+lobster-claw,Lobster Claw,Heliconia rostrata,Perennial,outdoor,full sun;partial shade,high,moderate,perennial,10,12,3,6,2
+lungwort,Lungwort,Pulmonaria officinalis,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,0.5,1,2
+mexican-bush-sage,Mexican Bush Sage,Salvia leucantha,Perennial,outdoor,full sun,low,easy,perennial,8,10,3,4,2
+orange-coneflower,Orange Coneflower,Rudbeckia fulgida,Perennial,outdoor,full sun,moderate,easy,perennial,3,9,2,3,2
+oriental-poppy,Oriental Poppy,Papaver orientale,Perennial,outdoor,full sun,low,easy,perennial,3,7,2,3,2
+peach-leaved-bellflower,Peach-Leaved Bellflower,Campanula persicifolia,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,2,3,2
+pincushion-flower,Pincushion Flower,Scabiosa columbaria,Perennial,outdoor,full sun,moderate,easy,perennial,5,8,1,2,2
+red-hot-poker,Red Hot Poker,Kniphofia uvaria,Perennial,outdoor,full sun,moderate,easy,perennial,5,9,2,4,2
+rough-goldenrod,Rough Goldenrod,Solidago rugosa,Perennial,outdoor,full sun,moderate,easy,perennial,4,8,2,5,2
+sea-thrift,Sea Thrift,Armeria maritima,Perennial,outdoor,full sun,low,easy,perennial,4,8,0.5,1,2
+siberian-bugloss,Siberian Bugloss,Brunnera macrophylla,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,1,1.5,2
+solomons-seal,Solomon's Seal,Polygonatum biflorum,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,9,1,3,2
+spiked-speedwell,Spiked Speedwell,Veronica spicata,Perennial,outdoor,full sun,moderate,easy,perennial,3,8,1,2,2
+swamp-milkweed,Swamp Milkweed,Asclepias incarnata,Perennial,outdoor,full sun,high,easy,perennial,3,6,3,4,2
+sweet-william,Sweet William,Dianthus barbatus,Perennial,outdoor,full sun,moderate,easy,biennial,3,9,1,2,2
+threadleaf-coreopsis,Threadleaf Coreopsis,Coreopsis verticillata,Perennial,outdoor,full sun,low,easy,perennial,3,9,1,3,2
+virginia-bluebells,Virginia Bluebells,Mertensia virginica,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,1,2,2
+virginia-spiderwort,Virginia Spiderwort,Tradescantia virginiana,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,1,2,2
+wild-bergamot,Wild Bergamot,Monarda fistulosa,Perennial,outdoor,full sun,low,easy,perennial,3,9,2,4,2
+african-daisy,African Daisy,Osteospermum ecklonis,Annual,outdoor,full sun,moderate,easy,perennial,9,11,1,2,2
+african-marigold,African Marigold,Tagetes erecta,Annual,outdoor,full sun,moderate,easy,annual,,,1,3,2
+corn-poppy,Corn Poppy,Papaver rhoeas,Annual,outdoor,full sun,low,easy,annual,,,1,3,2
+dusty-miller,Dusty Miller,Jacobaea maritima,Annual,outdoor,full sun,low,easy,perennial,7,10,0.5,1.5,2
+edging-lobelia,Edging Lobelia,Lobelia erinus,Annual,outdoor,full sun;partial shade,moderate,moderate,annual,,,0.3,0.75,2
+egyptian-star-flower,Egyptian Star Flower,Pentas lanceolata,Annual,outdoor,full sun,moderate,easy,perennial,10,11,1,3,2
+floss-flower,Floss Flower,Ageratum houstonianum,Annual,outdoor,full sun;partial shade,moderate,easy,annual,,,0.5,2,2
+fuchsia,Fuchsia,Fuchsia × hybrida,Annual,outdoor,partial shade;full shade,moderate,moderate,perennial,10,11,1,3,2
+garden-verbena,Garden Verbena,Glandularia × hybrida,Annual,outdoor,full sun,moderate,easy,perennial,9,11,0.5,1.5,2
+gazania,Gazania,Gazania rigens,Annual,outdoor,full sun,low,easy,perennial,9,11,0.5,1,2
+globe-amaranth,Globe Amaranth,Gomphrena globosa,Annual,outdoor,full sun,low,easy,annual,,,1,2,2
+iceland-poppy,Iceland Poppy,Papaver nudicaule,Annual,outdoor,full sun,moderate,easy,annual,,,1,2,2
+johnny-jump-up,Johnny Jump-Up,Viola tricolor,Annual,outdoor,full sun;partial shade,moderate,easy,annual,,,0.3,0.5,2
+lisianthus,Lisianthus,Eustoma grandiflorum,Annual,outdoor,full sun,moderate,challenging,annual,,,1,3,2
+love-in-a-mist,Love-in-a-Mist,Nigella damascena,Annual,outdoor,full sun,moderate,easy,annual,,,1,2,2
+love-lies-bleeding,Love-Lies-Bleeding,Amaranthus caudatus,Annual,outdoor,full sun,moderate,easy,annual,,,3,5,2
+mexican-sunflower,Mexican Sunflower,Tithonia rotundifolia,Annual,outdoor,full sun,low,easy,annual,,,4,6,2
+new-guinea-impatiens,New Guinea Impatiens,Impatiens hawkeri,Annual,outdoor,partial shade;full shade,moderate,easy,perennial,10,12,1,2,2
+scarlet-sage,Scarlet Sage,Salvia splendens,Annual,outdoor,full sun,moderate,easy,perennial,10,11,1,2,2
+spider-flower,Spider Flower,Cleome hassleriana,Annual,outdoor,full sun,moderate,easy,annual,,,3,5,2
+stock,Stock,Matthiola incana,Annual,outdoor,full sun,moderate,moderate,annual,,,1,2.5,2
+strawflower,Strawflower,Xerochrysum bracteatum,Annual,outdoor,full sun,low,easy,annual,,,1,4,2
+summer-snapdragon,Summer Snapdragon,Angelonia angustifolia,Annual,outdoor,full sun,low,easy,perennial,9,11,1,2,2
+crocosmia,Crocosmia,Crocosmia × crocosmiiflora,Bulb,outdoor,full sun,moderate,easy,perennial,6,9,2,4,2
+dutch-iris,Dutch Iris,Iris × hollandica,Bulb,outdoor,full sun,moderate,easy,perennial,5,8,1,2,2
+easter-lily,Easter Lily,Lilium longiflorum,Bulb,indoor;outdoor,full sun;partial shade,moderate,easy,perennial,7,9,2,3,2
+english-bluebell,English Bluebell,Hyacinthoides non-scripta,Bulb,outdoor,partial shade;full shade,moderate,easy,perennial,4,9,1,1.5,2
+freesia,Freesia,Freesia spp.,Bulb,outdoor,full sun,moderate,moderate,perennial,9,10,1,1.5,2
+giant-allium,Giant Allium,Allium giganteum,Bulb,outdoor,full sun,low,easy,perennial,5,8,3,5,2
+grape-hyacinth,Grape Hyacinth,Muscari armeniacum,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,0.5,0.75,2
+paperwhite,Paperwhite,Narcissus papyraceus,Bulb,indoor;outdoor,full sun,moderate,easy,perennial,8,10,1,1.5,2
+peruvian-lily,Peruvian Lily,Alstroemeria aurea,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,7,10,2,3,2
+poppy-anemone,Poppy Anemone,Anemone coronaria,Bulb,outdoor,full sun,moderate,moderate,perennial,7,10,0.5,1.5,2
+red-spider-lily,Red Spider Lily,Lycoris radiata,Bulb,outdoor,full sun;partial shade,low,easy,perennial,6,10,1,2,2
+siberian-iris,Siberian Iris,Iris sibirica,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,2,3,2
+snowdrop,Snowdrop,Galanthus nivalis,Bulb,outdoor,partial shade;full shade,moderate,easy,perennial,3,7,0.3,0.5,2
+tiger-lily,Tiger Lily,Lilium lancifolium,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,2,5,2
+tuberose,Tuberose,Polianthes tuberosa,Bulb,outdoor,full sun,moderate,moderate,perennial,8,10,2,4,2
+tuberous-begonia,Tuberous Begonia,Begonia × tuberhybrida,Bulb,outdoor,partial shade;full shade,moderate,moderate,perennial,9,11,1,1.5,2
+blue-oat-grass,Blue Oat Grass,Helictotrichon sempervirens,Ornamental Grass,outdoor,full sun,low,easy,perennial,4,8,1.5,3,2
+golden-bamboo,Golden Bamboo,Phyllostachys aurea,Ornamental Grass,outdoor,full sun;partial shade,moderate,easy,perennial,6,10,10,25,2
+japanese-forest-grass,Japanese Forest Grass,Hakonechloa macra,Ornamental Grass,outdoor,partial shade;full shade,moderate,easy,perennial,5,9,1,1.5,2
+japanese-sedge,Japanese Sedge,Carex oshimensis,Ornamental Grass,outdoor,partial shade;full shade,moderate,easy,perennial,5,9,1,1.5,2
+little-bluestem,Little Bluestem,Schizachyrium scoparium,Ornamental Grass,outdoor,full sun,low,easy,perennial,3,9,2,4,2
+mexican-feather-grass,Mexican Feather Grass,Nassella tenuissima,Ornamental Grass,outdoor,full sun,low,easy,perennial,6,10,1,2,2
+pink-muhly-grass,Pink Muhly Grass,Muhlenbergia capillaris,Ornamental Grass,outdoor,full sun,low,easy,perennial,6,10,2,3,2
+purple-fountain-grass,Purple Fountain Grass,Cenchrus × advena,Ornamental Grass,outdoor,full sun,moderate,easy,perennial,9,11,3,5,2
+switchgrass,Switchgrass,Panicum virgatum,Ornamental Grass,outdoor,full sun,moderate,easy,perennial,4,9,3,6,2
+perennial-ryegrass,Perennial Ryegrass,Lolium perenne,Lawn Grass,outdoor,full sun;partial shade,moderate,easy,perennial,3,7,0.15,0.25,2
+st-augustine-grass,St. Augustine Grass,Stenotaphrum secundatum,Lawn Grass,outdoor,full sun;partial shade,moderate,easy,perennial,8,10,0.2,0.3,2
+zoysia-grass,Zoysia Grass,Zoysia japonica,Lawn Grass,outdoor,full sun;partial shade,low,easy,perennial,5,10,0.1,0.2,2
+bugleweed,Bugleweed,Ajuga reptans,Groundcover,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,3,9,0.3,0.5,2
+japanese-pachysandra,Japanese Pachysandra,Pachysandra terminalis,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,4,8,0.5,1,2
+mondo-grass,Mondo Grass,Ophiopogon japonicus,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,6,11,0.5,1,2
+periwinkle,Periwinkle,Vinca minor,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,4,8,0.3,0.5,2
+silver-falls-dichondra,Silver Falls Dichondra,Dichondra argentea,Groundcover,outdoor,full sun,low,easy,perennial,9,11,0.1,0.3,2
+spotted-dead-nettle,Spotted Dead Nettle,Lamium maculatum,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,0.5,1,2
+white-clover,White Clover,Trifolium repens,Groundcover,outdoor,full sun;partial shade,moderate,easy,perennial,3,10,0.2,0.5,2
+american-beautyberry,American Beautyberry,Callicarpa americana,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,6,10,3,8,2
+angels-trumpet,Angel's Trumpet,Brugmansia suaveolens,Shrub,outdoor,full sun;partial shade,high,moderate,perennial,9,11,6,15,2
+anglojapanese-yew,Anglojapanese Yew,Taxus × media,Shrub,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,4,7,2,20,2
+bluebeard,Bluebeard,Caryopteris × clandonensis,Shrub,outdoor,full sun,low,easy,perennial,5,9,2,3,2
+bridal-wreath-spirea,Bridal Wreath Spirea,Spiraea × vanhouttei,Shrub,outdoor,full sun,moderate,easy,perennial,3,8,6,8,2
+cape-plumbago,Cape Plumbago,Plumbago auriculata,Shrub,outdoor,full sun,moderate,easy,perennial,9,11,3,6,2
+cherry-laurel,Cherry Laurel,Prunus laurocerasus,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,6,8,10,20,2
+chinese-fringe-flower,Chinese Fringe Flower,Loropetalum chinense,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,7,9,3,10,2
+chinese-juniper,Chinese Juniper,Juniperus chinensis,Shrub,outdoor,full sun,low,easy,perennial,4,9,4,20,2
+common-witch-hazel,Common Witch Hazel,Hamamelis virginiana,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,15,20,2
+creeping-juniper,Creeping Juniper,Juniperus horizontalis,Shrub,outdoor,full sun,low,easy,perennial,3,9,0.5,1.5,2
+doublefile-viburnum,Doublefile Viburnum,Viburnum plicatum,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,8,10,2
+european-cranberrybush,European Cranberrybush,Viburnum opulus,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,8,15,2
+firethorn,Firethorn,Pyracantha coccinea,Shrub,outdoor,full sun;partial shade,low,easy,perennial,6,9,6,18,2
+glossy-abelia,Glossy Abelia,Abelia × grandiflora,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,6,9,3,6,2
+heather,Heather,Calluna vulgaris,Shrub,outdoor,full sun,moderate,moderate,perennial,4,6,1,2,2
+heavenly-bamboo,Heavenly Bamboo,Nandina domestica,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,6,9,4,8,2
+ixora,Ixora,Ixora coccinea,Shrub,outdoor,full sun,moderate,moderate,perennial,10,11,3,6,2
+japanese-andromeda,Japanese Andromeda,Pieris japonica,Shrub,outdoor,partial shade,moderate,moderate,perennial,5,8,9,12,2
+japanese-aralia,Japanese Aralia,Fatsia japonica,Shrub,outdoor,partial shade;full shade,moderate,easy,perennial,7,10,6,10,2
+japanese-boxwood,Japanese Boxwood,Buxus microphylla,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,6,9,3,6,2
+japanese-holly,Japanese Holly,Ilex crenata,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,3,10,2
+japanese-spirea,Japanese Spirea,Spiraea japonica,Shrub,outdoor,full sun,moderate,easy,perennial,4,8,1.5,5,2
+king-protea,King Protea,Protea cynaroides,Shrub,outdoor,full sun,low,challenging,perennial,9,11,3,5,2
+korean-spice-viburnum,Korean Spice Viburnum,Viburnum carlesii,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,4,7,4,8,2
+lemon-bottlebrush,Lemon Bottlebrush,Callistemon citrinus,Shrub,outdoor,full sun,low,easy,perennial,8,11,6,15,2
+mountain-laurel,Mountain Laurel,Kalmia latifolia,Shrub,outdoor,partial shade,moderate,moderate,perennial,4,9,5,15,2
+mugo-pine,Mugo Pine,Pinus mugo,Shrub,outdoor,full sun,low,easy,perennial,2,7,3,20,2
+ninebark,Ninebark,Physocarpus opulifolius,Shrub,outdoor,full sun;partial shade,low,easy,perennial,3,7,5,10,2
+oakleaf-hydrangea,Oakleaf Hydrangea,Hydrangea quercifolia,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,4,8,2
+oleander,Oleander,Nerium oleander,Shrub,outdoor,full sun,low,easy,perennial,8,11,6,12,2
+red-tip-photinia,Red Tip Photinia,Photinia × fraseri,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,7,9,10,15,2
+red-twig-dogwood,Red Twig Dogwood,Cornus sericea,Shrub,outdoor,full sun;partial shade,high,easy,perennial,3,8,6,9,2
+rugosa-rose,Rugosa Rose,Rosa rugosa,Shrub,outdoor,full sun,low,easy,perennial,2,7,4,6,2
+sasanqua-camellia,Sasanqua Camellia,Camellia sasanqua,Shrub,outdoor,partial shade,moderate,moderate,perennial,7,9,6,10,2
+shrubby-cinquefoil,Shrubby Cinquefoil,Dasiphora fruticosa,Shrub,outdoor,full sun,low,easy,perennial,2,7,1,4,2
+smoke-bush,Smoke Bush,Cotinus coggygria,Shrub,outdoor,full sun,low,easy,perennial,4,8,10,15,2
+weigela,Weigela,Weigela florida,Shrub,outdoor,full sun,moderate,easy,perennial,4,8,6,10,2
+winterberry,Winterberry,Ilex verticillata,Shrub,outdoor,full sun;partial shade,high,easy,perennial,3,9,3,12,2
+american-elm,American Elm,Ulmus americana,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,2,9,60,80,2
+american-holly,American Holly,Ilex opaca,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,15,30,2
+american-sycamore,American Sycamore,Platanus occidentalis,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,75,100,2
+bald-cypress,Bald Cypress,Taxodium distichum,Tree,outdoor,full sun;partial shade,high,easy,perennial,4,10,50,70,2
+balsam-fir,Balsam Fir,Abies balsamea,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,3,5,45,75,2
+black-gum,Black Gum,Nyssa sylvatica,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,30,50,2
+blue-atlas-cedar,Blue Atlas Cedar,Cedrus atlantica,Tree,outdoor,full sun,moderate,easy,perennial,6,9,40,60,2
+coast-redwood,Coast Redwood,Sequoia sempervirens,Tree,outdoor,full sun;partial shade,high,moderate,perennial,7,9,60,100,2
+dawn-redwood,Dawn Redwood,Metasequoia glyptostroboides,Tree,outdoor,full sun,high,easy,perennial,5,8,70,100,2
+deodar-cedar,Deodar Cedar,Cedrus deodara,Tree,outdoor,full sun,moderate,easy,perennial,7,8,40,70,2
+douglas-fir,Douglas Fir,Pseudotsuga menziesii,Tree,outdoor,full sun,moderate,easy,perennial,4,6,40,80,2
+eastern-hemlock,Eastern Hemlock,Tsuga canadensis,Tree,outdoor,full sun;partial shade;full shade,moderate,moderate,perennial,3,7,40,70,2
+eastern-red-cedar,Eastern Red Cedar,Juniperus virginiana,Tree,outdoor,full sun,low,easy,perennial,2,9,30,65,2
+english-oak,English Oak,Quercus robur,Tree,outdoor,full sun,moderate,easy,perennial,5,8,40,70,2
+european-beech,European Beech,Fagus sylvatica,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,4,7,50,60,2
+european-hornbeam,European Hornbeam,Carpinus betulus,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,40,60,2
+flowering-crabapple,Flowering Crabapple,Malus spp.,Tree,outdoor,full sun,moderate,easy,perennial,4,8,15,25,2
+fraser-fir,Fraser Fir,Abies fraseri,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,4,7,30,50,2
+giant-sequoia,Giant Sequoia,Sequoiadendron giganteum,Tree,outdoor,full sun,moderate,moderate,perennial,6,8,60,100,2
+green-giant-arborvitae,Green Giant Arborvitae,Thuja standishii × plicata,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,40,60,2
+hinoki-cypress,Hinoki Cypress,Chamaecyparis obtusa,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,50,75,2
+honey-locust,Honey Locust,Gleditsia triacanthos,Tree,outdoor,full sun,low,easy,perennial,3,8,30,70,2
+horse-chestnut,Horse Chestnut,Aesculus hippocastanum,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,7,50,75,2
+italian-cypress,Italian Cypress,Cupressus sempervirens,Tree,outdoor,full sun,low,easy,perennial,7,10,40,60,2
+kousa-dogwood,Kousa Dogwood,Cornus kousa,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,15,30,2
+lacebark-elm,Lacebark Elm,Ulmus parvifolia,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,40,50,2
+leyland-cypress,Leyland Cypress,Cupressus × leylandii,Tree,outdoor,full sun,moderate,easy,perennial,6,10,60,70,2
+littleleaf-linden,Littleleaf Linden,Tilia cordata,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,7,50,70,2
+northern-red-oak,Northern Red Oak,Quercus rubra,Tree,outdoor,full sun,moderate,easy,perennial,4,8,50,75,2
+norway-spruce,Norway Spruce,Picea abies,Tree,outdoor,full sun,moderate,easy,perennial,2,7,40,60,2
+paper-birch,Paper Birch,Betula papyrifera,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,2,7,50,70,2
+ponderosa-pine,Ponderosa Pine,Pinus ponderosa,Tree,outdoor,full sun,low,easy,perennial,3,7,60,100,2
+quaking-aspen,Quaking Aspen,Populus tremuloides,Tree,outdoor,full sun,moderate,moderate,perennial,1,6,20,50,2
+rainbow-eucalyptus,Rainbow Eucalyptus,Eucalyptus deglupta,Tree,outdoor,full sun,high,moderate,perennial,10,12,60,125,2
+river-birch,River Birch,Betula nigra,Tree,outdoor,full sun;partial shade,high,easy,perennial,4,9,40,70,2
+royal-poinciana,Royal Poinciana,Delonix regia,Tree,outdoor,full sun,moderate,easy,perennial,10,12,30,40,2
+scots-pine,Scots Pine,Pinus sylvestris,Tree,outdoor,full sun,low,easy,perennial,3,7,30,60,2
+serviceberry,Serviceberry,Amelanchier canadensis,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,15,25,2
+silver-birch,Silver Birch,Betula pendula,Tree,outdoor,full sun,moderate,moderate,perennial,2,7,40,50,2
+silver-dollar-eucalyptus,Silver Dollar Eucalyptus,Eucalyptus cinerea,Tree,outdoor,full sun,moderate,easy,perennial,8,10,20,50,2
+southern-live-oak,Southern Live Oak,Quercus virginiana,Tree,outdoor,full sun,moderate,easy,perennial,8,10,40,80,2
+star-magnolia,Star Magnolia,Magnolia stellata,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,15,20,2
+sweetgum,Sweetgum,Liquidambar styraciflua,Tree,outdoor,full sun,moderate,easy,perennial,5,9,60,75,2
+tulip-tree,Tulip Tree,Liriodendron tulipifera,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,60,90,2
+western-red-cedar,Western Red Cedar,Thuja plicata,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,5,7,50,70,2
+white-fir,White Fir,Abies concolor,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,7,30,50,2
+white-fringe-tree,White Fringe Tree,Chionanthus virginicus,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,12,20,2
+white-oak,White Oak,Quercus alba,Tree,outdoor,full sun,moderate,easy,perennial,3,9,50,80,2
+white-spruce,White Spruce,Picea glauca,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,2,6,40,60,2
+yoshino-cherry,Yoshino Cherry,Prunus × yedoensis,Tree,outdoor,full sun,moderate,easy,perennial,5,8,30,40,2
+bismarck-palm,Bismarck Palm,Bismarckia nobilis,Palm,outdoor,full sun,low,easy,perennial,9,11,30,60,2
+cabbage-palm,Cabbage Palm,Sabal palmetto,Palm,outdoor,full sun;partial shade,low,easy,perennial,8,11,40,50,2
+canary-island-date-palm,Canary Island Date Palm,Phoenix canariensis,Palm,outdoor,full sun,low,easy,perennial,9,11,40,60,2
+christmas-palm,Christmas Palm,Adonidia merrillii,Palm,outdoor,full sun,moderate,easy,perennial,10,11,15,25,2
+european-fan-palm,European Fan Palm,Chamaerops humilis,Palm,outdoor,full sun,low,easy,perennial,8,11,6,15,2
+foxtail-palm,Foxtail Palm,Wodyetia bifurcata,Palm,outdoor,full sun,moderate,easy,perennial,10,11,20,30,2
+mexican-fan-palm,Mexican Fan Palm,Washingtonia robusta,Palm,outdoor,full sun,low,easy,perennial,8,11,70,100,2
+queen-palm,Queen Palm,Syagrus romanzoffiana,Palm,outdoor,full sun,moderate,easy,perennial,9,11,25,50,2
+royal-palm,Royal Palm,Roystonea regia,Palm,outdoor,full sun,moderate,moderate,perennial,10,11,50,70,2
+windmill-palm,Windmill Palm,Trachycarpus fortunei,Palm,outdoor,full sun;partial shade,moderate,easy,perennial,7,11,10,25,2
+american-wisteria,American Wisteria,Wisteria frutescens,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,15,30,2
+arabian-jasmine,Arabian Jasmine,Jasminum sambac,Vine & Climber,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,3,10,2
+black-eyed-susan-vine,Black-Eyed Susan Vine,Thunbergia alata,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,10,11,3,8,2
+blue-passionflower,Blue Passionflower,Passiflora caerulea,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,7,10,10,30,2
+boston-ivy,Boston Ivy,Parthenocissus tricuspidata,Vine & Climber,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,4,8,30,50,2
+carolina-jessamine,Carolina Jessamine,Gelsemium sempervirens,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,7,10,10,20,2
+climbing-hydrangea,Climbing Hydrangea,Hydrangea petiolaris,Vine & Climber,outdoor,partial shade;full shade,moderate,moderate,perennial,4,8,30,50,2
+creeping-fig,Creeping Fig,Ficus pumila,Vine & Climber,indoor;outdoor,partial shade;full shade;bright indirect,moderate,easy,perennial,8,11,10,20,2
+golden-trumpet,Golden Trumpet,Allamanda cathartica,Vine & Climber,outdoor,full sun,moderate,easy,perennial,10,11,10,20,2
+japanese-wisteria,Japanese Wisteria,Wisteria floribunda,Vine & Climber,outdoor,full sun,moderate,moderate,perennial,4,9,10,30,2
+moonflower,Moonflower,Ipomoea alba,Vine & Climber,outdoor,full sun,moderate,easy,perennial,10,12,10,15,2
+purple-passionflower,Purple Passionflower,Passiflora incarnata,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,6,8,2
+trumpet-honeysuckle,Trumpet Honeysuckle,Lonicera sempervirens,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,10,20,2
+trumpet-vine,Trumpet Vine,Campsis radicans,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,25,40,2
+virginia-creeper,Virginia Creeper,Parthenocissus quinquefolia,Vine & Climber,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,3,9,30,50,2
+bay-laurel,Bay Laurel,Laurus nobilis,Herb & Spice,indoor;outdoor,full sun;partial shade,moderate,easy,perennial,8,10,4,30,2
+borage,Borage,Borago officinalis,Herb & Spice,outdoor,full sun,moderate,easy,annual,,,1,3,2
+catnip,Catnip,Nepeta cataria,Herb & Spice,outdoor,full sun;partial shade,low,easy,perennial,3,7,2,3,2
+curry-leaf,Curry Leaf,Murraya koenigii,Herb & Spice,outdoor,full sun,moderate,easy,perennial,9,11,6,15,2
+fennel,Fennel,Foeniculum vulgare,Herb & Spice,outdoor,full sun,moderate,easy,perennial,4,9,3,5,2
+french-tarragon,French Tarragon,Artemisia dracunculus,Herb & Spice,outdoor,full sun,low,moderate,perennial,4,8,1.5,3,2
+holy-basil,Holy Basil,Ocimum tenuiflorum,Herb & Spice,indoor;outdoor,full sun,moderate,easy,perennial,10,12,1,2,2
+kaffir-lime,Kaffir Lime,Citrus hystrix,Herb & Spice,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,6,15,2
+lavandin,Lavandin,Lavandula × intermedia,Herb & Spice,outdoor,full sun,low,easy,perennial,5,9,2,3,2
+lemon-balm,Lemon Balm,Melissa officinalis,Herb & Spice,indoor;outdoor,full sun;partial shade,moderate,easy,perennial,4,9,1,2,2
+pandan,Pandan,Pandanus amaryllifolius,Herb & Spice,outdoor,full sun;partial shade,high,easy,perennial,10,12,1.5,3,2
+shiso,Shiso,Perilla frutescens,Herb & Spice,outdoor,full sun;partial shade,moderate,easy,annual,,,2,3,2
+spanish-lavender,Spanish Lavender,Lavandula stoechas,Herb & Spice,outdoor,full sun,low,moderate,perennial,8,9,1,2,2
+stevia,Stevia,Stevia rebaudiana,Herb & Spice,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,1,3,2
+turmeric,Turmeric,Curcuma longa,Herb & Spice,outdoor,partial shade,high,easy,perennial,8,11,2,3,2
+asparagus,Asparagus,Asparagus officinalis,Vegetable,outdoor,full sun,moderate,moderate,perennial,3,8,3,5,2
+birds-eye-chili,Bird's Eye Chili,Capsicum frutescens,Vegetable,outdoor,full sun,moderate,easy,perennial,10,12,1,3,2
+bitter-melon,Bitter Melon,Momordica charantia,Vegetable,outdoor,full sun,moderate,easy,annual,,,6,15,2
+bok-choy,Bok Choy,Brassica rapa subsp. chinensis,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,1,1.5,2
+brussels-sprouts,Brussels Sprouts,Brassica oleracea var. gemmifera,Vegetable,outdoor,full sun,moderate,moderate,annual,,,2,3,2
+butternut-squash,Butternut Squash,Cucurbita moschata,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,2,2
+cassava,Cassava,Manihot esculenta,Vegetable,outdoor,full sun,low,easy,perennial,10,12,5,10,2
+celery,Celery,Apium graveolens,Vegetable,outdoor,full sun;partial shade,high,challenging,annual,,,1,2,2
+collard-greens,Collard Greens,Brassica oleracea var. viridis,Vegetable,outdoor,full sun,moderate,easy,annual,,,2,3,2
+edamame,Edamame,Glycine max,Vegetable,outdoor,full sun,moderate,easy,annual,,,2,3,2
+globe-artichoke,Globe Artichoke,Cynara scolymus,Vegetable,outdoor,full sun,moderate,moderate,perennial,7,11,3,5,2
+habanero-pepper,Habanero Pepper,Capsicum chinense,Vegetable,outdoor,full sun,moderate,moderate,annual,,,2,4,2
+leek,Leek,Allium ampeloprasum,Vegetable,outdoor,full sun,moderate,easy,annual,,,2,3,2
+moringa,Moringa,Moringa oleifera,Vegetable,outdoor,full sun,low,easy,perennial,10,12,15,30,2
+mustard-greens,Mustard Greens,Brassica juncea,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,1,2,2
+napa-cabbage,Napa Cabbage,Brassica rapa subsp. pekinensis,Vegetable,outdoor,full sun;partial shade,moderate,easy,annual,,,1,1.5,2
+okra,Okra,Abelmoschus esculentus,Vegetable,outdoor,full sun,moderate,easy,annual,,,3,6,2
+peanut,Peanut,Arachis hypogaea,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,2
+rhubarb,Rhubarb,Rheum rhabarbarum,Vegetable,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,2,4,2
+scallion,Scallion,Allium fistulosum,Vegetable,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,1,2,2
+turnip,Turnip,Brassica rapa subsp. rapa,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,2
+water-spinach,Water Spinach,Ipomoea aquatica,Vegetable,outdoor,full sun,high,easy,perennial,10,12,1,1.5,2
+yardlong-bean,Yardlong Bean,Vigna unguiculata subsp. sesquipedalis,Vegetable,outdoor,full sun,moderate,easy,annual,,,6,12,2
+almond,Almond,Prunus dulcis,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,7,9,15,30,2
+american-elderberry,American Elderberry,Sambucus canadensis,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,5,12,2
+apricot,Apricot,Prunus armeniaca,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,5,8,15,25,2
+black-walnut,Black Walnut,Juglans nigra,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,4,9,50,75,2
+cacao,Cacao,Theobroma cacao,Fruit & Nut,outdoor,partial shade,high,moderate,perennial,11,12,15,25,2
+calamondin,Calamondin,Citrus × microcarpa,Fruit & Nut,indoor;outdoor,full sun,moderate,moderate,perennial,9,11,3,15,2
+dragon-fruit,Dragon Fruit,Selenicereus undatus,Fruit & Nut,outdoor,full sun,low,easy,perennial,10,11,10,20,2
+durian,Durian,Durio zibethinus,Fruit & Nut,outdoor,full sun,high,challenging,perennial,11,12,40,80,2
+english-walnut,English Walnut,Juglans regia,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,5,9,40,60,2
+european-plum,European Plum,Prunus domestica,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,4,8,15,20,2
+grapefruit,Grapefruit,Citrus × paradisi,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,9,11,15,30,2
+guava,Guava,Psidium guajava,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,9,11,10,20,2
+hazelnut,Hazelnut,Corylus avellana,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,12,20,2
+jackfruit,Jackfruit,Artocarpus heterophyllus,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,10,12,30,70,2
+japanese-persimmon,Japanese Persimmon,Diospyros kaki,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,7,10,15,30,2
+key-lime,Key Lime,Citrus × aurantiifolia,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,11,6,13,2
+kiwifruit,Kiwifruit,Actinidia deliciosa,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,7,9,15,30,2
+kumquat,Kumquat,Citrus japonica,Fruit & Nut,indoor;outdoor,full sun,moderate,moderate,perennial,9,10,8,15,2
+lychee,Lychee,Litchi chinensis,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,11,30,40,2
+mangosteen,Mangosteen,Garcinia mangostana,Fruit & Nut,outdoor,full sun;partial shade,high,challenging,perennial,11,12,20,40,2
+passion-fruit,Passion Fruit,Passiflora edulis,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,12,15,25,2
+pecan,Pecan,Carya illinoinensis,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,5,9,70,100,2
+plantain,Plantain,Musa × paradisiaca,Fruit & Nut,outdoor,full sun,high,easy,perennial,9,11,10,25,2
+pomegranate,Pomegranate,Punica granatum,Fruit & Nut,outdoor,full sun,low,easy,perennial,8,11,6,20,2
+pomelo,Pomelo,Citrus maxima,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,11,15,50,2
+rambutan,Rambutan,Nephelium lappaceum,Fruit & Nut,outdoor,full sun,high,moderate,perennial,11,12,30,60,2
+sour-cherry,Sour Cherry,Prunus cerasus,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,4,7,15,20,2
+soursop,Soursop,Annona muricata,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,12,15,30,2
+starfruit,Starfruit,Averrhoa carambola,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,10,11,20,30,2
+tamarind,Tamarind,Tamarindus indica,Fruit & Nut,outdoor,full sun,low,easy,perennial,10,12,40,80,2
+anubias,Anubias,Anubias barteri,Aquatic,indoor,medium indirect;low light,high,easy,perennial,10,12,0.3,1,2
+broadleaf-cattail,Broadleaf Cattail,Typha latifolia,Aquatic,outdoor,full sun,high,easy,perennial,3,10,5,10,2
+java-fern,Java Fern,Microsorum pteropus,Aquatic,indoor,medium indirect;low light,high,easy,perennial,10,12,0.5,1,2
+papyrus,Papyrus,Cyperus papyrus,Aquatic,outdoor,full sun;partial shade,high,easy,perennial,9,11,5,8,2
+alocasia-black-velvet,Alocasia Black Velvet,Alocasia reginula,Houseplant,indoor,bright indirect;medium indirect,moderate,challenging,perennial,10,12,1,1.5,3
+alocasia-dragon-scale,Alocasia Dragon Scale,Alocasia baginda,Houseplant,indoor,bright indirect,moderate,challenging,perennial,10,12,1,3,3
+alocasia-frydek,Alocasia Frydek,Alocasia micholitziana,Houseplant,indoor,bright indirect,moderate,challenging,perennial,10,12,2,3,3
+aluminum-plant,Aluminum Plant,Pilea cadierei,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,0.5,1,3
+anthurium-clarinervium,Anthurium Clarinervium,Anthurium clarinervium,Houseplant,indoor,bright indirect,moderate,moderate,perennial,11,12,1,2,3
+audrey-ficus-banyan,Audrey Ficus (Banyan),Ficus benghalensis,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,5,10,3
+blushing-bromeliad,Blushing Bromeliad,Neoregelia carolinae,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,12,0.5,1,3
+cape-primrose,Cape Primrose,Streptocarpus × hybridus,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,0.5,1,3
+cat-palm,Cat Palm,Chamaedorea cataractarum,Houseplant,indoor,bright indirect;medium indirect,high,easy,perennial,10,11,3,6,3
+cebu-blue-pothos,Cebu Blue Pothos,Epipremnum pinnatum,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,4,10,3
+chenille-plant,Chenille Plant,Acalypha hispida,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,10,11,3,6,3
+crystal-anthurium,Crystal Anthurium,Anthurium crystallinum,Houseplant,indoor,bright indirect,moderate,challenging,perennial,11,12,1,3,3
+dancing-lady-orchid,Dancing Lady Orchid,Oncidium spp.,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,1,3,3
+earth-star,Earth Star,Cryptanthus bivittatus,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,0.3,0.5,3
+false-aralia,False Aralia,Plerandra elegantissima,Houseplant,indoor,bright indirect,moderate,challenging,perennial,10,12,4,6,3
+ficus-alii,Ficus Alii,Ficus binnendijkii,Houseplant,indoor,bright indirect;medium indirect,moderate,moderate,perennial,10,12,5,10,3
+fiddle-leaf-philodendron,Fiddle-Leaf Philodendron,Philodendron bipennifolium,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,3,6,3
+fishtail-palm,Fishtail Palm,Caryota mitis,Houseplant,indoor;outdoor,bright indirect,moderate,moderate,perennial,10,12,8,20,3
+flaming-sword,Flaming Sword,Vriesea splendens,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,12,1,2,3
+friendship-plant,Friendship Plant,Pilea involucrata,Houseplant,indoor,medium indirect,high,moderate,perennial,10,12,0.5,1,3
+gloxinia,Gloxinia,Sinningia speciosa,Houseplant,indoor,bright indirect,moderate,moderate,perennial,11,12,0.5,1,3
+goldfish-plant,Goldfish Plant,Nematanthus gregarius,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,1,2,3
+grape-ivy,Grape Ivy,Cissus rhombifolia,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,3,10,3
+hoya-linearis,Hoya Linearis,Hoya linearis,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,2,6,3
+hoya-pubicalyx,Hoya Pubicalyx,Hoya pubicalyx,Houseplant,indoor,bright indirect,low,easy,perennial,10,12,4,10,3
+iron-cross-begonia,Iron Cross Begonia,Begonia masoniana,Houseplant,indoor,bright indirect;medium indirect,moderate,moderate,perennial,10,12,1,1.5,3
+jewel-orchid,Jewel Orchid,Ludisia discolor,Houseplant,indoor,medium indirect;low light,moderate,easy,perennial,10,12,0.3,0.5,3
+lollipop-plant,Lollipop Plant,Pachystachys lutea,Houseplant,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,10,11,1,3,3
+ming-aralia,Ming Aralia,Polyscias fruticosa,Houseplant,indoor,bright indirect,moderate,challenging,perennial,10,12,3,6,3
+moses-in-the-cradle,Moses-in-the-Cradle,Tradescantia spathacea,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,9,11,1,1.5,3
+never-never-plant,Never Never Plant,Ctenanthe burle-marxii,Houseplant,indoor,medium indirect,high,moderate,perennial,10,12,1,2,3
+philodendron-gloriosum,Philodendron Gloriosum,Philodendron gloriosum,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,1,3,3
+philodendron-melanochrysum,Philodendron Melanochrysum,Philodendron melanochrysum,Houseplant,indoor,bright indirect,high,challenging,perennial,11,12,3,6,3
+philodendron-pedatum,Philodendron Pedatum,Philodendron pedatum,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,12,3,6,3
+plumosa-fern,Plumosa Fern,Asparagus setaceus,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,9,11,1,3,3
+purple-passion-plant,Purple Passion Plant,Gynura aurantiaca,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,11,1,2,3
+purple-waffle-plant,Purple Waffle Plant,Strobilanthes alternata,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,10,11,0.5,1,3
+raindrop-peperomia,Raindrop Peperomia,Peperomia polybotrya,Houseplant,indoor,bright indirect,low,easy,perennial,10,12,0.5,1,3
+rose-painted-calathea,Rose-Painted Calathea,Goeppertia roseopicta,Houseplant,indoor,medium indirect,high,challenging,perennial,11,12,1,2,3
+sensitive-plant,Sensitive Plant,Mimosa pudica,Houseplant,indoor,full sun;bright indirect,moderate,moderate,perennial,9,11,1,1.5,3
+shrimp-plant,Shrimp Plant,Justicia brandegeeana,Houseplant,indoor;outdoor,full sun;partial shade,moderate,easy,perennial,9,11,2,3,3
+silver-sword-philodendron,Silver Sword Philodendron,Philodendron hastatum,Houseplant,indoor,bright indirect,moderate,easy,perennial,10,12,3,6,3
+slipper-orchid,Slipper Orchid,Paphiopedilum spp.,Houseplant,indoor,medium indirect,moderate,moderate,perennial,10,12,0.5,1,3
+small-leaf-spiderwort,Small-Leaf Spiderwort,Tradescantia fluminensis,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,9,11,0.5,1,3
+song-of-india,Song of India,Dracaena reflexa,Houseplant,indoor,bright indirect,moderate,moderate,perennial,10,12,3,6,3
+swedish-ivy,Swedish Ivy,Plectranthus verticillatus,Houseplant,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,11,1,3,3
+umbrella-tree,Umbrella Tree,Schefflera actinophylla,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,10,12,6,15,3
+vanda-orchid,Vanda Orchid,Vanda spp.,Houseplant,indoor,full sun;bright indirect,high,challenging,perennial,11,12,1,3,3
+velvet-calathea,Velvet Calathea,Goeppertia rufibarba,Houseplant,indoor,medium indirect,high,moderate,perennial,11,12,2,3,3
+whale-fin-snake-plant,Whale Fin Snake Plant,Dracaena masoniana,Houseplant,indoor,bright indirect;medium indirect;low light,low,easy,perennial,10,12,1,4,3
+xanadu-philodendron,Xanadu Philodendron,Thaumatophyllum xanadu,Houseplant,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,9,11,2,4,3
+zebra-calathea,Zebra Calathea,Goeppertia zebrina,Houseplant,indoor,medium indirect,high,challenging,perennial,11,12,2,3,3
+zebra-plant,Zebra Plant,Aphelandra squarrosa,Houseplant,indoor,bright indirect,high,challenging,perennial,11,12,1,2,3
+bears-paw,Bear's Paw,Cotyledon tomentosa,Succulent & Cactus,indoor,full sun;bright indirect,low,moderate,perennial,9,11,0.5,1,3
+blue-agave,Blue Agave,Agave tequilana,Succulent & Cactus,outdoor,full sun,low,easy,perennial,9,11,4,6,3
+blue-chalksticks,Blue Chalksticks,Curio repens,Succulent & Cactus,outdoor,full sun,low,easy,perennial,9,11,0.5,1,3
+candelabra-aloe,Candelabra Aloe,Aloe arborescens,Succulent & Cactus,outdoor,full sun,low,easy,perennial,9,11,6,10,3
+cobweb-houseleek,Cobweb Houseleek,Sempervivum arachnoideum,Succulent & Cactus,outdoor,full sun,low,easy,perennial,5,8,0.1,0.3,3
+easter-cactus,Easter Cactus,Schlumbergera gaertneri,Succulent & Cactus,indoor,bright indirect,moderate,easy,perennial,10,12,0.5,1,3
+eastern-prickly-pear,Eastern Prickly Pear,Opuntia humifusa,Succulent & Cactus,outdoor,full sun,low,easy,perennial,4,9,0.5,1,3
+flapjack-plant,Flapjack Plant,Kalanchoe luciae,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,9,11,1,2,3
+ghost-plant,Ghost Plant,Graptopetalum paraguayense,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,7,11,0.5,1,3
+goldmoss-stonecrop,Goldmoss Stonecrop,Sedum acre,Succulent & Cactus,outdoor,full sun,low,easy,perennial,3,8,0.1,0.3,3
+lace-aloe,Lace Aloe,Aristaloe aristata,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,9,11,0.3,0.5,3
+ladyfinger-cactus,Ladyfinger Cactus,Mammillaria elongata,Succulent & Cactus,indoor,full sun,low,easy,perennial,9,11,0.3,0.5,3
+lipstick-echeveria,Lipstick Echeveria,Echeveria agavoides,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,9,11,0.3,0.7,3
+mistletoe-cactus,Mistletoe Cactus,Rhipsalis baccifera,Succulent & Cactus,indoor,bright indirect;medium indirect,moderate,easy,perennial,10,11,2,6,3
+moonstones,Moonstones,Pachyphytum oviferum,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,9,11,0.3,0.5,3
+ocotillo,Ocotillo,Fouquieria splendens,Succulent & Cactus,outdoor,full sun,low,moderate,perennial,8,11,10,20,3
+old-lady-cactus,Old Lady Cactus,Mammillaria hahniana,Succulent & Cactus,indoor,full sun,low,easy,perennial,9,11,0.3,0.8,3
+old-man-cactus,Old Man Cactus,Cephalocereus senilis,Succulent & Cactus,indoor;outdoor,full sun,low,easy,perennial,9,11,1,15,3
+organ-pipe-cactus,Organ Pipe Cactus,Stenocereus thurberi,Succulent & Cactus,outdoor,full sun,low,moderate,perennial,9,11,10,25,3
+ox-tongue,Ox Tongue,Gasteria bicolor,Succulent & Cactus,indoor,bright indirect;medium indirect,low,easy,perennial,9,11,0.3,1,3
+parrys-agave,Parry's Agave,Agave parryi,Succulent & Cactus,outdoor,full sun,low,easy,perennial,5,9,1,2,3
+pigs-ear,Pig's Ear,Cotyledon orbiculata,Succulent & Cactus,outdoor,full sun,low,easy,perennial,9,11,1,3,3
+queen-of-the-night,Queen of the Night,Epiphyllum oxypetalum,Succulent & Cactus,indoor,bright indirect,moderate,easy,perennial,10,12,3,10,3
+queen-victoria-agave,Queen Victoria Agave,Agave victoriae-reginae,Succulent & Cactus,outdoor,full sun,low,easy,perennial,8,11,1,1.5,3
+rat-tail-cactus,Rat Tail Cactus,Disocactus flagelliformis,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,10,11,2,6,3
+red-yucca,Red Yucca,Hesperaloe parviflora,Succulent & Cactus,outdoor,full sun,low,easy,perennial,5,11,2,4,3
+star-cactus,Star Cactus,Astrophytum asterias,Succulent & Cactus,indoor,full sun,low,moderate,perennial,9,11,0.1,0.2,3
+string-of-buttons,String of Buttons,Crassula perforata,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,9,11,0.5,2,3
+teddy-bear-cholla,Teddy Bear Cholla,Cylindropuntia bigelovii,Succulent & Cactus,outdoor,full sun,low,easy,perennial,8,10,3,5,3
+tiger-aloe,Tiger Aloe,Gonialoe variegata,Succulent & Cactus,indoor,full sun;bright indirect,low,easy,perennial,9,11,0.5,1,3
+window-haworthia,Window Haworthia,Haworthia cooperi,Succulent & Cactus,indoor,bright indirect,low,easy,perennial,9,11,0.2,0.3,3
+australian-tree-fern,Australian Tree Fern,Sphaeropteris cooperi,Fern,outdoor,partial shade,high,moderate,perennial,9,11,10,30,3
+button-fern,Button Fern,Pellaea rotundifolia,Fern,indoor,bright indirect;medium indirect,moderate,moderate,perennial,9,11,0.5,1,3
+cretan-brake-fern,Cretan Brake Fern,Pteris cretica,Fern,indoor,bright indirect;medium indirect,high,moderate,perennial,9,11,1,1.5,3
+crocodile-fern,Crocodile Fern,Microsorum musifolium,Fern,indoor,bright indirect;medium indirect,high,moderate,perennial,10,11,2,4,3
+harts-tongue-fern,Hart's Tongue Fern,Asplenium scolopendrium,Fern,outdoor,partial shade;full shade,moderate,moderate,perennial,5,9,1,1.5,3
+hay-scented-fern,Hay-Scented Fern,Dennstaedtia punctilobula,Fern,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,1,2,3
+holly-fern,Holly Fern,Cyrtomium falcatum,Fern,indoor;outdoor,partial shade;full shade,moderate,easy,perennial,6,10,1,2,3
+male-fern,Male Fern,Dryopteris filix-mas,Fern,outdoor,partial shade;full shade,moderate,easy,perennial,4,8,2,4,3
+northern-maidenhair-fern,Northern Maidenhair Fern,Adiantum pedatum,Fern,outdoor,partial shade;full shade,high,moderate,perennial,3,8,1,2,3
+royal-fern,Royal Fern,Osmunda regalis,Fern,outdoor,partial shade;full shade,high,easy,perennial,3,9,2,6,3
+sensitive-fern,Sensitive Fern,Onoclea sensibilis,Fern,outdoor,partial shade;full shade,high,easy,perennial,2,10,1,3,3
+soft-tree-fern,Soft Tree Fern,Dicksonia antarctica,Fern,outdoor,partial shade;full shade,high,moderate,perennial,8,11,5,15,3
+butterwort,Butterwort,Pinguicula spp.,Carnivorous,indoor,bright indirect,high,moderate,perennial,9,11,0.1,0.3,3
+cobra-lily,Cobra Lily,Darlingtonia californica,Carnivorous,outdoor,full sun;partial shade,high,challenging,perennial,7,10,1,3,3
+yellow-pitcher-plant,Yellow Pitcher Plant,Sarracenia flava,Carnivorous,outdoor,full sun,high,moderate,perennial,6,9,1,3,3
+anise-scented-sage,Anise-Scented Sage,Salvia guaranitica,Perennial,outdoor,full sun,moderate,easy,perennial,7,10,3,5,3
+aromatic-aster,Aromatic Aster,Symphyotrichum oblongifolium,Perennial,outdoor,full sun,low,easy,perennial,3,8,1,3,3
+basket-of-gold,Basket-of-Gold,Aurinia saxatilis,Perennial,outdoor,full sun,low,easy,perennial,3,7,0.5,1,3
+bears-breeches,Bear's Breeches,Acanthus mollis,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,7,10,3,5,3
+bigroot-geranium,Bigroot Geranium,Geranium macrorrhizum,Perennial,outdoor,partial shade;full shade,low,easy,perennial,4,8,1,1.5,3
+bloodroot,Bloodroot,Sanguinaria canadensis,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,0.5,1,3
+blue-flax,Blue Flax,Linum perenne,Perennial,outdoor,full sun,low,easy,perennial,5,8,1,2,3
+christmas-rose,Christmas Rose,Helleborus niger,Perennial,outdoor,partial shade;full shade,moderate,moderate,perennial,3,8,0.75,1,3
+common-blue-violet,Common Blue Violet,Viola sororia,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,7,0.3,0.5,3
+culvers-root,Culver's Root,Veronicastrum virginicum,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,4,6,3
+cushion-spurge,Cushion Spurge,Euphorbia epithymoides,Perennial,outdoor,full sun,low,easy,perennial,4,8,1,1.5,3
+eastern-bluestar,Eastern Bluestar,Amsonia tabernaemontana,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,9,1,3,3
+eastern-red-columbine,Eastern Red Columbine,Aquilegia canadensis,Perennial,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,1,3,3
+false-sunflower,False Sunflower,Heliopsis helianthoides,Perennial,outdoor,full sun,moderate,easy,perennial,3,9,3,5,3
+foamflower,Foamflower,Tiarella cordifolia,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,0.5,1,3
+globe-thistle,Globe Thistle,Echinops ritro,Perennial,outdoor,full sun,low,easy,perennial,3,8,2,4,3
+goats-beard,Goat's Beard,Aruncus dioicus,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,7,4,6,3
+great-blue-lobelia,Great Blue Lobelia,Lobelia siphilitica,Perennial,outdoor,full sun;partial shade,high,easy,perennial,4,9,2,3,3
+ironweed,Ironweed,Vernonia noveboracensis,Perennial,outdoor,full sun,moderate,easy,perennial,5,9,4,7,3
+jack-in-the-pulpit,Jack-in-the-Pulpit,Arisaema triphyllum,Perennial,outdoor,partial shade;full shade,high,easy,perennial,4,9,1,2,3
+jacobs-ladder,Jacob's Ladder,Polemonium caeruleum,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,7,1,2,3
+large-flowered-trillium,Large-Flowered Trillium,Trillium grandiflorum,Perennial,outdoor,partial shade;full shade,moderate,moderate,perennial,3,8,1,1.5,3
+lavender-cotton,Lavender Cotton,Santolina chamaecyparissus,Perennial,outdoor,full sun,low,easy,perennial,6,9,1,2,3
+leopard-plant,Leopard Plant,Ligularia dentata,Perennial,outdoor,partial shade;full shade,high,moderate,perennial,3,8,3,4,3
+maltese-cross,Maltese Cross,Silene chalcedonica,Perennial,outdoor,full sun,moderate,easy,perennial,3,9,2,3,3
+mexican-hat,Mexican Hat,Ratibida columnifera,Perennial,outdoor,full sun,low,easy,perennial,3,9,1,3,3
+monkshood,Monkshood,Aconitum napellus,Perennial,outdoor,full sun;partial shade,moderate,moderate,perennial,3,7,2,4,3
+mountain-bluet,Mountain Bluet,Centaurea montana,Perennial,outdoor,full sun,moderate,easy,perennial,3,8,1,2,3
+obedient-plant,Obedient Plant,Physostegia virginiana,Perennial,outdoor,full sun,moderate,easy,perennial,3,9,3,4,3
+painted-daisy,Painted Daisy,Tanacetum coccineum,Perennial,outdoor,full sun,moderate,easy,perennial,3,7,1,3,3
+pale-purple-coneflower,Pale Purple Coneflower,Echinacea pallida,Perennial,outdoor,full sun,low,easy,perennial,3,8,2,3,3
+pigsqueak,Pigsqueak,Bergenia cordifolia,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,1,1.5,3
+pink-turtlehead,Pink Turtlehead,Chelone lyonii,Perennial,outdoor,full sun;partial shade,high,easy,perennial,3,8,1,3,3
+rattlesnake-master,Rattlesnake Master,Eryngium yuccifolium,Perennial,outdoor,full sun,low,easy,perennial,3,8,4,5,3
+red-valerian,Red Valerian,Centranthus ruber,Perennial,outdoor,full sun,low,easy,perennial,5,8,1,3,3
+rock-cress,Rock Cress,Aubrieta deltoidea,Perennial,outdoor,full sun,low,easy,perennial,4,8,0.2,0.5,3
+rose-campion,Rose Campion,Silene coronaria,Perennial,outdoor,full sun,low,easy,perennial,4,8,2,3,3
+sea-holly,Sea Holly,Eryngium planum,Perennial,outdoor,full sun,low,easy,perennial,5,9,2,3,3
+shell-ginger,Shell Ginger,Alpinia zerumbet,Perennial,outdoor,full sun;partial shade,high,easy,perennial,8,11,4,8,3
+showy-evening-primrose,Showy Evening Primrose,Oenothera speciosa,Perennial,outdoor,full sun,low,easy,perennial,5,8,1,2,3
+silver-mound,Silver Mound,Artemisia schmidtiana,Perennial,outdoor,full sun,low,easy,perennial,3,7,0.5,1,3
+sneezeweed,Sneezeweed,Helenium autumnale,Perennial,outdoor,full sun,high,easy,perennial,3,8,3,5,3
+stokes-aster,Stokes' Aster,Stokesia laevis,Perennial,outdoor,full sun,moderate,easy,perennial,5,9,1,2,3
+sundrops,Sundrops,Oenothera fruticosa,Perennial,outdoor,full sun,low,easy,perennial,4,8,1,2,3
+swamp-sunflower,Swamp Sunflower,Helianthus angustifolius,Perennial,outdoor,full sun,high,easy,perennial,6,9,5,8,3
+toad-lily,Toad Lily,Tricyrtis hirta,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,4,9,2,3,3
+torch-ginger,Torch Ginger,Etlingera elatior,Perennial,outdoor,partial shade,high,moderate,perennial,10,12,10,20,3
+wild-geranium,Wild Geranium,Geranium maculatum,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,1,2,3
+woodland-phlox,Woodland Phlox,Phlox divaricata,Perennial,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,1,1.5,3
+annual-phlox,Annual Phlox,Phlox drummondii,Annual,outdoor,full sun,moderate,easy,annual,,,0.5,1.5,3
+bacopa,Bacopa,Chaenostoma cordatum,Annual,outdoor,full sun;partial shade,moderate,easy,perennial,9,11,0.3,0.5,3
+bells-of-ireland,Bells of Ireland,Moluccella laevis,Annual,outdoor,full sun,moderate,moderate,annual,,,2,3,3
+china-aster,China Aster,Callistephus chinensis,Annual,outdoor,full sun,moderate,moderate,annual,,,1,3,3
+china-pinks,China Pinks,Dianthus chinensis,Annual,outdoor,full sun,moderate,easy,annual,,,0.5,1.5,3
+fan-flower,Fan Flower,Scaevola aemula,Annual,outdoor,full sun,low,easy,perennial,10,11,0.5,1.5,3
+four-oclock,Four O'Clock,Mirabilis jalapa,Annual,outdoor,full sun;partial shade,moderate,easy,perennial,8,11,2,3,3
+ivy-geranium,Ivy Geranium,Pelargonium peltatum,Annual,outdoor,full sun,moderate,easy,perennial,9,11,1,3,3
+larkspur,Larkspur,Consolida ajacis,Annual,outdoor,full sun,moderate,easy,annual,,,1,4,3
+marguerite-daisy,Marguerite Daisy,Argyranthemum frutescens,Annual,outdoor,full sun,moderate,easy,perennial,9,11,1,3,3
+mealycup-sage,Mealycup Sage,Salvia farinacea,Annual,outdoor,full sun,moderate,easy,perennial,8,10,1,3,3
+narrow-leaf-zinnia,Narrow-Leaf Zinnia,Zinnia angustifolia,Annual,outdoor,full sun,low,easy,annual,,,0.5,1.5,3
+nemesia,Nemesia,Nemesia strumosa,Annual,outdoor,full sun,moderate,easy,annual,,,0.5,1,3
+persian-shield,Persian Shield,Strobilanthes dyeriana,Annual,indoor;outdoor,partial shade;bright indirect,moderate,easy,perennial,10,11,3,4,3
+rose-geranium,Rose Geranium,Pelargonium graveolens,Annual,indoor;outdoor,full sun,low,easy,perennial,10,11,1,3,3
+statice,Statice,Limonium sinuatum,Annual,outdoor,full sun,low,easy,annual,,,1,2,3
+sulphur-cosmos,Sulphur Cosmos,Cosmos sulphureus,Annual,outdoor,full sun,low,easy,annual,,,1,6,3
+wishbone-flower,Wishbone Flower,Torenia fournieri,Annual,outdoor,partial shade;full shade,moderate,easy,annual,,,0.5,1,3
+camassia,Camassia,Camassia quamash,Bulb,outdoor,full sun;partial shade,high,easy,perennial,4,8,1,2,3
+checkered-lily,Checkered Lily,Fritillaria meleagris,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,0.5,1,3
+crinum-lily,Crinum Lily,Crinum asiaticum,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,8,11,3,5,3
+crown-imperial,Crown Imperial,Fritillaria imperialis,Bulb,outdoor,full sun,moderate,moderate,perennial,5,8,2,4,3
+drumstick-allium,Drumstick Allium,Allium sphaerocephalon,Bulb,outdoor,full sun,low,easy,perennial,4,9,2,3,3
+dwarf-crested-iris,Dwarf Crested Iris,Iris cristata,Bulb,outdoor,partial shade;full shade,moderate,easy,perennial,3,9,0.3,0.5,3
+flame-lily,Flame Lily,Gloriosa superba,Bulb,outdoor,full sun;partial shade,moderate,moderate,perennial,8,11,5,8,3
+glory-of-the-snow,Glory of the Snow,Scilla forbesii,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,0.3,0.5,3
+grecian-windflower,Grecian Windflower,Anemone blanda,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,0.3,0.5,3
+hardy-cyclamen,Hardy Cyclamen,Cyclamen hederifolium,Bulb,outdoor,partial shade;full shade,moderate,easy,perennial,5,9,0.3,0.5,3
+japanese-iris,Japanese Iris,Iris ensata,Bulb,outdoor,full sun;partial shade,high,moderate,perennial,5,8,2,3,3
+madonna-lily,Madonna Lily,Lilium candidum,Bulb,outdoor,full sun,moderate,moderate,perennial,6,9,3,4,3
+netted-iris,Netted Iris,Iris reticulata,Bulb,outdoor,full sun,moderate,easy,perennial,5,9,0.3,0.5,3
+pineapple-lily,Pineapple Lily,Eucomis comosa,Bulb,outdoor,full sun,moderate,easy,perennial,7,10,1,2,3
+rain-lily,Rain Lily,Zephyranthes candida,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,7,10,0.5,1,3
+regal-lily,Regal Lily,Lilium regale,Bulb,outdoor,full sun,moderate,easy,perennial,4,8,4,6,3
+saffron-crocus,Saffron Crocus,Crocus sativus,Bulb,outdoor,full sun,low,easy,perennial,6,9,0.3,0.5,3
+siberian-squill,Siberian Squill,Scilla siberica,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,2,8,0.3,0.5,3
+star-of-persia,Star of Persia,Allium cristophii,Bulb,outdoor,full sun,low,easy,perennial,4,8,1,2,3
+surprise-lily,Surprise Lily,Lycoris squamigera,Bulb,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,1.5,2,3
+winter-aconite,Winter Aconite,Eranthis hyemalis,Bulb,outdoor,partial shade;full shade,moderate,easy,perennial,3,7,0.2,0.3,3
+big-bluestem,Big Bluestem,Andropogon gerardii,Ornamental Grass,outdoor,full sun,low,easy,perennial,3,9,4,8,3
+indian-grass,Indian Grass,Sorghastrum nutans,Ornamental Grass,outdoor,full sun,low,easy,perennial,4,9,3,5,3
+northern-sea-oats,Northern Sea Oats,Chasmanthium latifolium,Ornamental Grass,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,2,4,3
+pennsylvania-sedge,Pennsylvania Sedge,Carex pensylvanica,Ornamental Grass,outdoor,partial shade;full shade,low,easy,perennial,3,8,0.5,1,3
+prairie-dropseed,Prairie Dropseed,Sporobolus heterolepis,Ornamental Grass,outdoor,full sun,low,easy,perennial,3,9,2,3,3
+tufted-hair-grass,Tufted Hair Grass,Deschampsia cespitosa,Ornamental Grass,outdoor,partial shade;full shade,moderate,easy,perennial,4,9,2,3,3
+umbrella-bamboo,Umbrella Bamboo,Fargesia murielae,Ornamental Grass,outdoor,partial shade;full shade,moderate,easy,perennial,5,9,8,12,3
+buffalograss,Buffalograss,Bouteloua dactyloides,Lawn Grass,outdoor,full sun,low,easy,perennial,4,8,0.1,0.3,3
+carpet-grass,Carpet Grass,Axonopus compressus,Lawn Grass,outdoor,full sun;partial shade,moderate,easy,perennial,9,11,0.1,0.2,3
+centipede-grass,Centipede Grass,Eremochloa ophiuroides,Lawn Grass,outdoor,full sun;partial shade,low,easy,perennial,7,10,0.1,0.2,3
+fine-fescue,Fine Fescue,Festuca rubra,Lawn Grass,outdoor,partial shade;full shade,low,easy,perennial,3,7,0.2,0.3,3
+bearberry,Bearberry,Arctostaphylos uva-ursi,Groundcover,outdoor,full sun;partial shade,low,moderate,perennial,2,6,0.5,1,3
+black-mondo-grass,Black Mondo Grass,Ophiopogon planiscapus,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,6,10,0.5,1,3
+blue-star-creeper,Blue Star Creeper,Isotoma fluviatilis,Groundcover,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,0.1,0.2,3
+canadian-wild-ginger,Canadian Wild Ginger,Asarum canadense,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,3,8,0.3,0.5,3
+european-wild-ginger,European Wild Ginger,Asarum europaeum,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,4,8,0.3,0.5,3
+irish-moss,Irish Moss,Sagina subulata,Groundcover,outdoor,full sun;partial shade,moderate,moderate,perennial,4,8,0.1,0.2,3
+leadwort,Leadwort,Ceratostigma plumbaginoides,Groundcover,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,0.5,1,3
+snow-in-summer,Snow-in-Summer,Cerastium tomentosum,Groundcover,outdoor,full sun,low,easy,perennial,3,7,0.5,1,3
+sweet-woodruff,Sweet Woodruff,Galium odoratum,Groundcover,outdoor,partial shade;full shade,moderate,easy,perennial,4,8,0.5,1,3
+arrowwood-viburnum,Arrowwood Viburnum,Viburnum dentatum,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,2,8,6,10,3
+black-elder,Black Elder,Sambucus nigra,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,4,7,6,20,3
+buttonbush,Buttonbush,Cephalanthus occidentalis,Shrub,outdoor,full sun;partial shade,high,easy,perennial,5,9,5,12,3
+chinese-snowball-viburnum,Chinese Snowball Viburnum,Viburnum macrocephalum,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,6,9,12,20,3
+damask-rose,Damask Rose,Rosa × damascena,Shrub,outdoor,full sun,moderate,moderate,perennial,4,9,4,6,3
+dwarf-korean-lilac,Dwarf Korean Lilac,Syringa meyeri,Shrub,outdoor,full sun,moderate,easy,perennial,3,7,4,5,3
+firebush,Firebush,Hamelia patens,Shrub,outdoor,full sun,moderate,easy,perennial,9,11,5,10,3
+flowering-quince,Flowering Quince,Chaenomeles speciosa,Shrub,outdoor,full sun,low,easy,perennial,4,8,6,10,3
+gold-dust-plant,Gold Dust Plant,Aucuba japonica,Shrub,outdoor,partial shade;full shade,moderate,easy,perennial,6,10,6,10,3
+golden-dewdrop,Golden Dewdrop,Duranta erecta,Shrub,outdoor,full sun,moderate,easy,perennial,8,11,4,15,3
+hybrid-witch-hazel,Hybrid Witch Hazel,Hamamelis × intermedia,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,12,15,3
+indian-hawthorn,Indian Hawthorn,Rhaphiolepis indica,Shrub,outdoor,full sun;partial shade,low,easy,perennial,7,10,3,6,3
+inkberry,Inkberry,Ilex glabra,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,5,8,3
+japanese-euonymus,Japanese Euonymus,Euonymus japonicus,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,6,9,10,15,3
+japanese-kerria,Japanese Kerria,Kerria japonica,Shrub,outdoor,partial shade,moderate,easy,perennial,4,9,3,6,3
+japanese-pittosporum,Japanese Pittosporum,Pittosporum tobira,Shrub,outdoor,full sun;partial shade,low,easy,perennial,8,10,8,12,3
+large-fothergilla,Large Fothergilla,Fothergilla major,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,6,10,3
+mock-orange,Mock Orange,Philadelphus coronarius,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,8,12,3
+mountain-hydrangea,Mountain Hydrangea,Hydrangea serrata,Shrub,outdoor,partial shade,moderate,moderate,perennial,5,9,2,4,3
+night-blooming-jasmine,Night-Blooming Jasmine,Cestrum nocturnum,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,8,11,8,12,3
+oregon-grape,Oregon Grape,Berberis aquifolium,Shrub,outdoor,partial shade;full shade,moderate,easy,perennial,5,9,3,6,3
+princess-flower,Princess Flower,Pleroma urvilleanum,Shrub,outdoor,full sun;partial shade,moderate,moderate,perennial,9,11,10,15,3
+purple-leaf-sand-cherry,Purple-Leaf Sand Cherry,Prunus × cistena,Shrub,outdoor,full sun,moderate,easy,perennial,2,8,6,10,3
+rockspray-cotoneaster,Rockspray Cotoneaster,Cotoneaster horizontalis,Shrub,outdoor,full sun;partial shade,low,easy,perennial,5,7,2,3,3
+shore-juniper,Shore Juniper,Juniperus conferta,Shrub,outdoor,full sun,low,easy,perennial,6,9,1,1.5,3
+slender-deutzia,Slender Deutzia,Deutzia gracilis,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,2,4,3
+staghorn-sumac,Staghorn Sumac,Rhus typhina,Shrub,outdoor,full sun,low,easy,perennial,3,8,15,25,3
+summersweet,Summersweet,Clethra alnifolia,Shrub,outdoor,full sun;partial shade;full shade,high,easy,perennial,3,9,3,8,3
+sweet-box,Sweet Box,Sarcococca hookeriana,Shrub,outdoor,partial shade;full shade,moderate,easy,perennial,5,8,1.5,2,3
+sweet-viburnum,Sweet Viburnum,Viburnum odoratissimum,Shrub,outdoor,full sun;partial shade,moderate,easy,perennial,8,10,10,20,3
+sweetshrub,Sweetshrub,Calycanthus floridus,Shrub,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,4,9,6,9,3
+tea-plant,Tea Plant,Camellia sinensis,Shrub,outdoor,full sun;partial shade,moderate,moderate,perennial,7,9,3,7,3
+tree-peony,Tree Peony,Paeonia suffruticosa,Shrub,outdoor,full sun;partial shade,moderate,moderate,perennial,4,8,4,7,3
+virginia-sweetspire,Virginia Sweetspire,Itea virginica,Shrub,outdoor,full sun;partial shade;full shade,high,easy,perennial,5,9,3,6,3
+winter-daphne,Winter Daphne,Daphne odora,Shrub,outdoor,partial shade,moderate,challenging,perennial,7,9,3,4,3
+winter-heath,Winter Heath,Erica carnea,Shrub,outdoor,full sun;partial shade,moderate,moderate,perennial,5,7,0.5,1,3
+yaupon-holly,Yaupon Holly,Ilex vomitoria,Shrub,outdoor,full sun;partial shade,low,easy,perennial,7,10,10,20,3
+yellow-bells,Yellow Bells,Tecoma stans,Shrub,outdoor,full sun,low,easy,perennial,8,11,3,15,3
+american-basswood,American Basswood,Tilia americana,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,50,80,3
+american-beech,American Beech,Fagus grandifolia,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,3,9,50,70,3
+american-hornbeam,American Hornbeam,Carpinus caroliniana,Tree,outdoor,full sun;partial shade;full shade,moderate,easy,perennial,3,9,20,35,3
+austrian-pine,Austrian Pine,Pinus nigra,Tree,outdoor,full sun,low,easy,perennial,4,7,50,60,3
+baobab,Baobab,Adansonia digitata,Tree,outdoor,full sun,low,moderate,perennial,10,12,30,75,3
+blue-palo-verde,Blue Palo Verde,Parkinsonia florida,Tree,outdoor,full sun,low,easy,perennial,8,11,20,30,3
+bristlecone-pine,Bristlecone Pine,Pinus aristata,Tree,outdoor,full sun,low,moderate,perennial,4,7,8,20,3
+bur-oak,Bur Oak,Quercus macrocarpa,Tree,outdoor,full sun,low,easy,perennial,3,8,60,80,3
+cedar-of-lebanon,Cedar of Lebanon,Cedrus libani,Tree,outdoor,full sun,moderate,moderate,perennial,5,7,40,70,3
+chinese-pistache,Chinese Pistache,Pistacia chinensis,Tree,outdoor,full sun,low,easy,perennial,6,9,25,35,3
+common-hackberry,Common Hackberry,Celtis occidentalis,Tree,outdoor,full sun;partial shade,low,easy,perennial,2,9,40,60,3
+desert-willow,Desert Willow,Chilopsis linearis,Tree,outdoor,full sun,low,easy,perennial,7,11,15,25,3
+english-holly,English Holly,Ilex aquifolium,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,6,9,15,50,3
+european-larch,European Larch,Larix decidua,Tree,outdoor,full sun,moderate,easy,perennial,2,6,70,75,3
+european-mountain-ash,European Mountain Ash,Sorbus aucuparia,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,3,6,20,40,3
+golden-rain-tree,Golden Rain Tree,Koelreuteria paniculata,Tree,outdoor,full sun,low,easy,perennial,5,9,30,40,3
+golden-shower-tree,Golden Shower Tree,Cassia fistula,Tree,outdoor,full sun,low,easy,perennial,10,11,30,40,3
+higan-cherry,Higan Cherry,Prunus subhirtella,Tree,outdoor,full sun,moderate,easy,perennial,4,8,20,40,3
+himalayan-birch,Himalayan Birch,Betula utilis,Tree,outdoor,full sun,moderate,moderate,perennial,5,7,30,40,3
+honey-mesquite,Honey Mesquite,Prosopis glandulosa,Tree,outdoor,full sun,low,easy,perennial,6,9,20,30,3
+japanese-black-pine,Japanese Black Pine,Pinus thunbergii,Tree,outdoor,full sun,low,easy,perennial,5,8,20,80,3
+japanese-cedar,Japanese Cedar,Cryptomeria japonica,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,50,60,3
+japanese-snowbell,Japanese Snowbell,Styrax japonicus,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,5,8,20,30,3
+japanese-tree-lilac,Japanese Tree Lilac,Syringa reticulata,Tree,outdoor,full sun,moderate,easy,perennial,3,7,20,30,3
+japanese-zelkova,Japanese Zelkova,Zelkova serrata,Tree,outdoor,full sun,moderate,easy,perennial,5,8,50,80,3
+katsura-tree,Katsura Tree,Cercidiphyllum japonicum,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,4,8,40,60,3
+kentucky-coffeetree,Kentucky Coffeetree,Gymnocladus dioicus,Tree,outdoor,full sun,low,easy,perennial,3,8,60,75,3
+loblolly-pine,Loblolly Pine,Pinus taeda,Tree,outdoor,full sun,moderate,easy,perennial,6,9,60,90,3
+london-plane-tree,London Plane Tree,Platanus × acerifolia,Tree,outdoor,full sun,moderate,easy,perennial,5,8,75,100,3
+longleaf-pine,Longleaf Pine,Pinus palustris,Tree,outdoor,full sun,low,easy,perennial,7,10,80,100,3
+monkey-puzzle-tree,Monkey Puzzle Tree,Araucaria araucana,Tree,outdoor,full sun,moderate,moderate,perennial,7,10,50,80,3
+nordmann-fir,Nordmann Fir,Abies nordmanniana,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,4,6,40,60,3
+northern-catalpa,Northern Catalpa,Catalpa speciosa,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,40,60,3
+ohio-buckeye,Ohio Buckeye,Aesculus glabra,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,3,7,20,40,3
+pagoda-dogwood,Pagoda Dogwood,Cornus alternifolia,Tree,outdoor,partial shade;full shade,moderate,easy,perennial,3,7,15,25,3
+paperbark-maple,Paperbark Maple,Acer griseum,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,4,8,20,30,3
+persian-ironwood,Persian Ironwood,Parrotia persica,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,20,40,3
+pin-oak,Pin Oak,Quercus palustris,Tree,outdoor,full sun,moderate,easy,perennial,4,8,50,70,3
+pink-trumpet-tree,Pink Trumpet Tree,Tabebuia rosea,Tree,outdoor,full sun,moderate,easy,perennial,10,11,30,60,3
+pussy-willow,Pussy Willow,Salix discolor,Tree,outdoor,full sun;partial shade,high,easy,perennial,4,8,6,15,3
+rain-tree,Rain Tree,Samanea saman,Tree,outdoor,full sun,moderate,easy,perennial,10,12,50,80,3
+sacred-fig,Sacred Fig,Ficus religiosa,Tree,outdoor,full sun,moderate,easy,perennial,10,12,50,100,3
+sassafras,Sassafras,Sassafras albidum,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,30,60,3
+serbian-spruce,Serbian Spruce,Picea omorika,Tree,outdoor,full sun;partial shade,moderate,easy,perennial,4,7,50,60,3
+silk-tree,Silk Tree,Albizia julibrissin,Tree,outdoor,full sun,low,easy,perennial,6,9,20,40,3
+silver-maple,Silver Maple,Acer saccharinum,Tree,outdoor,full sun;partial shade,high,easy,perennial,3,9,50,80,3
+sourwood,Sourwood,Oxydendrum arboreum,Tree,outdoor,full sun;partial shade,moderate,moderate,perennial,5,9,25,30,3
+sweetbay-magnolia,Sweetbay Magnolia,Magnolia virginiana,Tree,outdoor,full sun;partial shade,high,easy,perennial,5,10,10,35,3
+washington-hawthorn,Washington Hawthorn,Crataegus phaenopyrum,Tree,outdoor,full sun,low,easy,perennial,4,8,25,30,3
+willow-oak,Willow Oak,Quercus phellos,Tree,outdoor,full sun,moderate,easy,perennial,5,9,40,75,3
+betel-nut-palm,Betel Nut Palm,Areca catechu,Palm,outdoor,full sun;partial shade,high,easy,perennial,10,12,30,60,3
+bottle-palm,Bottle Palm,Hyophorbe lagenicaulis,Palm,outdoor,full sun,low,moderate,perennial,10,11,10,12,3
+california-fan-palm,California Fan Palm,Washingtonia filifera,Palm,outdoor,full sun,low,easy,perennial,8,11,30,60,3
+chinese-fan-palm,Chinese Fan Palm,Livistona chinensis,Palm,outdoor,full sun;partial shade,moderate,easy,perennial,9,11,20,30,3
+lipstick-palm,Lipstick Palm,Cyrtostachys renda,Palm,outdoor,full sun;partial shade,high,moderate,perennial,11,12,15,30,3
+needle-palm,Needle Palm,Rhapidophyllum hystrix,Palm,outdoor,partial shade;full shade,moderate,easy,perennial,6,10,3,6,3
+pindo-palm,Pindo Palm,Butia capitata,Palm,outdoor,full sun,low,easy,perennial,8,11,10,20,3
+saw-palmetto,Saw Palmetto,Serenoa repens,Palm,outdoor,full sun;partial shade,low,easy,perennial,7,11,3,10,3
+travelers-palm,Traveler's Palm,Ravenala madagascariensis,Palm,outdoor,full sun,moderate,easy,perennial,10,11,20,30,3
+bleeding-heart-vine,Bleeding Heart Vine,Clerodendrum thomsoniae,Vine & Climber,indoor;outdoor,partial shade;bright indirect,moderate,moderate,perennial,10,12,8,15,3
+common-hop,Common Hop,Humulus lupulus,Vine & Climber,outdoor,full sun,moderate,easy,perennial,3,8,15,25,3
+coral-vine,Coral Vine,Antigonon leptopus,Vine & Climber,outdoor,full sun,low,easy,perennial,8,11,20,40,3
+crossvine,Crossvine,Bignonia capreolata,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,30,50,3
+cypress-vine,Cypress Vine,Ipomoea quamoclit,Vine & Climber,outdoor,full sun,moderate,easy,annual,,,6,20,3
+dutchmans-pipe,Dutchman's Pipe,Aristolochia macrophylla,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,20,30,3
+hyacinth-bean,Hyacinth Bean,Lablab purpureus,Vine & Climber,outdoor,full sun,moderate,easy,annual,,,10,20,3
+madagascar-jasmine,Madagascar Jasmine,Stephanotis floribunda,Vine & Climber,indoor;outdoor,full sun;bright indirect,moderate,moderate,perennial,10,11,10,20,3
+pink-jasmine,Pink Jasmine,Jasminum polyanthum,Vine & Climber,indoor;outdoor,full sun;partial shade,moderate,easy,perennial,8,10,10,20,3
+rangoon-creeper,Rangoon Creeper,Combretum indicum,Vine & Climber,outdoor,full sun,moderate,easy,perennial,10,11,10,30,3
+sweet-autumn-clematis,Sweet Autumn Clematis,Clematis terniflora,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,5,9,15,30,3
+winter-jasmine,Winter Jasmine,Jasminum nudiflorum,Vine & Climber,outdoor,full sun;partial shade,moderate,easy,perennial,6,10,4,15,3
+black-pepper,Black Pepper,Piper nigrum,Herb & Spice,outdoor,partial shade,high,moderate,perennial,10,12,10,15,3
+cardamom,Cardamom,Elettaria cardamomum,Herb & Spice,indoor;outdoor,partial shade;full shade,high,moderate,perennial,10,12,5,10,3
+ceylon-cinnamon,Ceylon Cinnamon,Cinnamomum verum,Herb & Spice,outdoor,full sun;partial shade,moderate,moderate,perennial,10,12,20,50,3
+chervil,Chervil,Anthriscus cerefolium,Herb & Spice,outdoor,partial shade;full shade,moderate,easy,annual,,,1,2,3
+cuban-oregano,Cuban Oregano,Coleus amboinicus,Herb & Spice,indoor;outdoor,full sun;partial shade,low,easy,perennial,10,11,1,2,3
+culantro,Culantro,Eryngium foetidum,Herb & Spice,outdoor,partial shade,high,easy,perennial,10,11,0.5,1,3
+cumin,Cumin,Cuminum cyminum,Herb & Spice,outdoor,full sun,low,moderate,annual,,,1,1.5,3
+feverfew,Feverfew,Tanacetum parthenium,Herb & Spice,outdoor,full sun,low,easy,perennial,5,8,1,2.5,3
+french-lavender,French Lavender,Lavandula dentata,Herb & Spice,outdoor,full sun,low,moderate,perennial,8,11,1,3,3
+galangal,Galangal,Alpinia galanga,Herb & Spice,outdoor,partial shade,high,easy,perennial,9,12,4,7,3
+garden-sorrel,Garden Sorrel,Rumex acetosa,Herb & Spice,outdoor,full sun;partial shade,moderate,easy,perennial,3,7,1,2,3
+garlic-chives,Garlic Chives,Allium tuberosum,Herb & Spice,indoor;outdoor,full sun;partial shade,moderate,easy,perennial,4,8,1,1.5,3
+hyssop,Hyssop,Hyssopus officinalis,Herb & Spice,outdoor,full sun,low,easy,perennial,4,9,1,2,3
+lemon-verbena,Lemon Verbena,Aloysia citrodora,Herb & Spice,outdoor,full sun,moderate,easy,perennial,8,11,2,5,3
+lovage,Lovage,Levisticum officinale,Herb & Spice,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,3,6,3
+pineapple-sage,Pineapple Sage,Salvia elegans,Herb & Spice,outdoor,full sun,moderate,easy,perennial,8,11,3,4,3
+roman-chamomile,Roman Chamomile,Chamaemelum nobile,Herb & Spice,outdoor,full sun;partial shade,moderate,easy,perennial,4,9,0.3,1,3
+summer-savory,Summer Savory,Satureja hortensis,Herb & Spice,outdoor,full sun,low,easy,annual,,,1,1.5,3
+sweet-marjoram,Sweet Marjoram,Origanum majorana,Herb & Spice,indoor;outdoor,full sun,low,easy,perennial,9,10,1,2,3
+vanilla,Vanilla,Vanilla planifolia,Herb & Spice,outdoor,partial shade,high,challenging,perennial,10,12,10,30,3
+vietnamese-coriander,Vietnamese Coriander,Persicaria odorata,Herb & Spice,indoor;outdoor,partial shade,high,easy,perennial,9,11,1,1.5,3
+wormwood,Wormwood,Artemisia absinthium,Herb & Spice,outdoor,full sun,low,easy,perennial,4,9,2,3,3
+black-eyed-pea,Black-Eyed Pea,Vigna unguiculata,Vegetable,outdoor,full sun,low,easy,annual,,,2,3,3
+bottle-gourd,Bottle Gourd,Lagenaria siceraria,Vegetable,outdoor,full sun,moderate,easy,annual,,,10,15,3
+chayote,Chayote,Sechium edule,Vegetable,outdoor,full sun,moderate,easy,perennial,8,11,20,30,3
+chickpea,Chickpea,Cicer arietinum,Vegetable,outdoor,full sun,low,easy,annual,,,1,2,3
+endive,Endive,Cichorium endivia,Vegetable,outdoor,full sun;partial shade,moderate,moderate,annual,,,0.5,1,3
+fava-bean,Fava Bean,Vicia faba,Vegetable,outdoor,full sun,moderate,easy,annual,,,2,5,3
+horseradish,Horseradish,Armoracia rusticana,Vegetable,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,2,3,3
+jerusalem-artichoke,Jerusalem Artichoke,Helianthus tuberosus,Vegetable,outdoor,full sun,moderate,easy,perennial,3,8,5,10,3
+kohlrabi,Kohlrabi,Brassica oleracea var. gongylodes,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,3
+leaf-amaranth,Leaf Amaranth,Amaranthus tricolor,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,4,3
+lima-bean,Lima Bean,Phaseolus lunatus,Vegetable,outdoor,full sun,moderate,easy,annual,,,2,12,3
+luffa,Luffa,Luffa aegyptiaca,Vegetable,outdoor,full sun,moderate,easy,annual,,,10,30,3
+malabar-spinach,Malabar Spinach,Basella alba,Vegetable,outdoor,full sun;partial shade,high,easy,perennial,10,11,6,10,3
+parsnip,Parsnip,Pastinaca sativa,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,3
+radicchio,Radicchio,Cichorium intybus,Vegetable,outdoor,full sun;partial shade,moderate,moderate,perennial,3,8,0.5,1,3
+runner-bean,Runner Bean,Phaseolus coccineus,Vegetable,outdoor,full sun,moderate,easy,annual,,,6,12,3
+rutabaga,Rutabaga,Brassica napus,Vegetable,outdoor,full sun,moderate,easy,annual,,,1,1.5,3
+tomatillo,Tomatillo,Physalis philadelphica,Vegetable,outdoor,full sun,moderate,easy,annual,,,3,4,3
+watercress,Watercress,Nasturtium officinale,Vegetable,outdoor,full sun;partial shade,high,moderate,perennial,4,9,0.3,0.5,3
+american-persimmon,American Persimmon,Diospyros virginiana,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,4,9,35,60,3
+aronia,Aronia,Aronia melanocarpa,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,3,6,3
+asian-pear,Asian Pear,Pyrus pyrifolia,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,5,9,15,30,3
+black-currant,Black Currant,Ribes nigrum,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,3,6,3
+black-mulberry,Black Mulberry,Morus nigra,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,5,9,20,30,3
+black-raspberry,Black Raspberry,Rubus occidentalis,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,4,8,3,6,3
+breadfruit,Breadfruit,Artocarpus altilis,Fruit & Nut,outdoor,full sun,high,moderate,perennial,11,12,40,80,3
+cashew,Cashew,Anacardium occidentale,Fruit & Nut,outdoor,full sun,low,easy,perennial,10,12,20,40,3
+cherimoya,Cherimoya,Annona cherimola,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,11,15,30,3
+chinese-chestnut,Chinese Chestnut,Castanea mollissima,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,4,8,40,60,3
+concord-grape,Concord Grape,Vitis labrusca,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,5,8,15,30,3
+cranberry,Cranberry,Vaccinium macrocarpon,Fruit & Nut,outdoor,full sun,high,challenging,perennial,2,7,0.5,1,3
+feijoa,Feijoa,Acca sellowiana,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,8,11,10,15,3
+goji-berry,Goji Berry,Lycium barbarum,Fruit & Nut,outdoor,full sun,low,easy,perennial,5,9,3,8,3
+gooseberry,Gooseberry,Ribes uva-crispa,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,3,5,3
+hardy-kiwi,Hardy Kiwi,Actinidia arguta,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,4,8,20,40,3
+haskap,Haskap,Lonicera caerulea,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,2,7,4,6,3
+japanese-plum,Japanese Plum,Prunus salicina,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,5,9,15,25,3
+jujube,Jujube,Ziziphus jujuba,Fruit & Nut,outdoor,full sun,low,easy,perennial,6,10,15,30,3
+longan,Longan,Dimocarpus longan,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,11,30,40,3
+loquat,Loquat,Eriobotrya japonica,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,8,10,15,30,3
+macadamia,Macadamia,Macadamia integrifolia,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,10,11,30,40,3
+muscadine-grape,Muscadine Grape,Vitis rotundifolia,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,7,10,15,30,3
+pawpaw,Pawpaw,Asimina triloba,Fruit & Nut,outdoor,full sun;partial shade,moderate,moderate,perennial,5,8,15,30,3
+pistachio,Pistachio,Pistacia vera,Fruit & Nut,outdoor,full sun,low,moderate,perennial,7,10,20,30,3
+quince,Quince,Cydonia oblonga,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,5,9,10,20,3
+rabbiteye-blueberry,Rabbiteye Blueberry,Vaccinium virgatum,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,7,9,6,15,3
+red-currant,Red Currant,Ribes rubrum,Fruit & Nut,outdoor,full sun;partial shade,moderate,easy,perennial,3,8,3,5,3
+snake-fruit,Snake Fruit,Salacca zalacca,Fruit & Nut,outdoor,partial shade,high,moderate,perennial,11,12,10,20,3
+sugar-apple,Sugar Apple,Annona squamosa,Fruit & Nut,outdoor,full sun,moderate,easy,perennial,10,12,10,20,3
+wax-apple,Wax Apple,Syzygium samarangense,Fruit & Nut,outdoor,full sun,high,easy,perennial,10,12,15,40,3
+yuzu,Yuzu,Citrus junos,Fruit & Nut,outdoor,full sun,moderate,moderate,perennial,7,10,10,20,3
+amazon-sword,Amazon Sword,Echinodorus grisebachii,Aquatic,indoor,bright indirect,high,easy,perennial,10,12,1,1.5,3
+blue-egyptian-water-lily,Blue Egyptian Water Lily,Nymphaea caerulea,Aquatic,outdoor,full sun,high,moderate,perennial,10,11,0.2,0.5,3
+blue-flag-iris,Blue Flag Iris,Iris versicolor,Aquatic,outdoor,full sun;partial shade,high,easy,perennial,3,9,2,3,3
+broadleaf-arrowhead,Broadleaf Arrowhead,Sagittaria latifolia,Aquatic,outdoor,full sun;partial shade,high,easy,perennial,4,10,1,3,3
+marsh-marigold,Marsh Marigold,Caltha palustris,Aquatic,outdoor,full sun;partial shade,high,easy,perennial,3,7,1,1.5,3
+pickerelweed,Pickerelweed,Pontederia cordata,Aquatic,outdoor,full sun;partial shade,high,easy,perennial,3,10,2,4,3
+scouring-rush-horsetail,Scouring Rush Horsetail,Equisetum hyemale,Aquatic,outdoor,full sun;partial shade,high,easy,perennial,3,11,2,4,3
+umbrella-sedge,Umbrella Sedge,Cyperus involucratus,Aquatic,indoor;outdoor,full sun;partial shade,high,easy,perennial,8,11,2,5,3
+star-sansevieria,Star Sansevieria,Dracaena pethera,Houseplant,indoor,full sun;bright indirect,low,easy,perennial,10,12,1,3,2
+blue-sansevieria,Blue Sansevieria,Dracaena hanningtonii,Houseplant,indoor,full sun;bright indirect,low,easy,perennial,10,12,1,4,3
+ceylon-bowstring-hemp,Ceylon Bowstring Hemp,Dracaena zeylanica,Houseplant,indoor,bright indirect;medium indirect;low light,low,easy,perennial,10,12,1,2.5,3
+african-bowstring-hemp,African Bowstring Hemp,Dracaena hyacinthoides,Houseplant,indoor,bright indirect;medium indirect,low,easy,perennial,10,12,0.75,1.5,3
+kenya-hyacinth,Kenya Hyacinth,Dracaena parva,Houseplant,indoor,bright indirect;medium indirect,low,easy,perennial,10,12,0.75,1.5,3
+walking-sansevieria,Walking Sansevieria,Dracaena pinguicula,Houseplant,indoor,full sun;bright indirect,low,moderate,perennial,10,12,0.5,1,3

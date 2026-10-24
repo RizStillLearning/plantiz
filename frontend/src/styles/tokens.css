@@ -1,0 +1,177 @@
+/*
+  Design tokens (documented in DESIGN.md at the repo root). Every color, font,
+  type size, weight, spacing step, radius, shadow and timing in the site comes
+  from this file; component styles never hard-code those.
+
+  Breakpoints (custom properties cannot be used inside media queries, so these
+  are the agreed values): sm 40rem (640px), md 48rem (768px), lg 64rem (1024px).
+*/
+
+:root {
+  /* Color: emerald, the single accent family */
+  --emerald-50: #ecfdf5;
+  --emerald-100: #d1fae5;
+  --emerald-200: #a7f3d0;
+  --emerald-300: #6ee7b7;
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --emerald-700: #047857;
+  --emerald-800: #065f46;
+  --emerald-900: #064e3b;
+
+  /* Color: slate, for body text and borders */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+
+  /* Color: ink, for headings and dark surfaces */
+  --ink-900: #0c1512;
+  --ink-850: #111c18;
+  --ink-800: #16241f;
+  --ink-700: #1f322b;
+  --white: #ffffff;
+
+  /* Color: red, reserved for errors (always paired with an icon and text) */
+  --red-50: #fef2f2;
+  --red-700: #b91c1c;
+
+  /* Color roles. Contrast ratios are measured against the surface named. */
+  --surface: var(--white);
+  --surface-tint: var(--emerald-50);
+  --surface-dark: var(--ink-900);
+  --surface-raised-on-dark: rgb(255 255 255 / 0.06);
+
+  --text: var(--ink-900); /* 17.6:1 on tint */
+  --text-muted: var(--slate-600); /* 7.2:1 on tint */
+  --text-subtle: var(--slate-500); /* 4.8:1, white surfaces only */
+  --text-accent: var(--emerald-700); /* 5.2:1 on tint */
+  --text-accent-strong: var(--emerald-800);
+  --text-on-accent: var(--white); /* 5.5:1 on emerald-700 */
+  --text-on-dark: var(--white);
+  --text-on-dark-muted: rgb(209 250 229 / 0.75); /* 9.5:1 on ink */
+  --text-on-dark-label: rgb(110 231 183 / 0.8); /* 7.6:1 on ink */
+  --icon-on-dark: var(--emerald-300);
+
+  --border: var(--slate-200);
+  --border-soft: var(--slate-100);
+  --border-strong: var(--slate-300);
+  --border-accent: var(--emerald-100);
+  --border-accent-strong: var(--emerald-200);
+  --border-on-dark: rgb(255 255 255 / 0.1);
+  --grid-line-on-dark: rgb(255 255 255 / 0.05);
+
+  --focus-ring: var(--emerald-700);
+  --focus-ring-on-dark: var(--emerald-300);
+
+  /* Form controls */
+  --input-fill: var(--slate-50);
+  --input-border: var(--slate-500); /* 4.8:1 on white, so the field edge passes 3:1 */
+  --input-border-hover: var(--slate-600);
+  --input-border-focus: var(--emerald-700);
+  --choice-selected-fill: var(--emerald-50);
+  --choice-selected-border: var(--emerald-700);
+  --danger: var(--red-700); /* 6.5:1 on white */
+  --danger-surface: var(--red-50);
+
+  /* Color: charts. Validated with the dataviz palette checks. */
+  --chart-bar: var(--emerald-600); /* 3.8:1 on white */
+  --chart-bar-hover: var(--emerald-800);
+  --chart-baseline: var(--slate-200);
+  --chart-row-hover: var(--slate-50);
+  --chart-ordinal-1: var(--emerald-200); /* ordinal ramp on ink, light end 3.4:1 */
+  --chart-ordinal-2: var(--emerald-400);
+  --chart-ordinal-3: var(--emerald-700);
+  --meter-track: var(--emerald-100);
+  --meter-fill: var(--emerald-600);
+
+  /* Type */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-body: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --text-2xs: 0.75rem; /* 12px: overlines, stat labels */
+  --text-xs: 0.8125rem; /* 13px: chips, legends, notes */
+  --text-sm: 0.875rem; /* 14px: nav, table rows */
+  --text-md: 0.9375rem; /* 15px: buttons, card body */
+  --text-base: 1rem; /* 16px: body */
+  --text-lg: 1.125rem; /* 18px: lede */
+  --text-xl: 1.375rem; /* 22px: h3 */
+  --text-2xl: clamp(1.75rem, 1.45rem + 1.1vw, 2.25rem); /* 28-36px: h2 */
+  --text-3xl: clamp(2.375rem, 1.7rem + 2.9vw, 3.75rem); /* 38-60px: h1 */
+  --text-figure: clamp(3rem, 2.5rem + 2vw, 4rem); /* 48-64px: hero figure */
+  --text-page-title: clamp(2rem, 1.6rem + 1.6vw, 2.75rem); /* 32-44px: member page h1 */
+  --text-card-title: 2.25rem; /* 36px: specimen name */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-tight: 1.06;
+  --leading-snug: 1.3;
+  --leading-body: 1.6;
+
+  --tracking-tight: -0.02em;
+  --tracking-tighter: -0.03em;
+  --tracking-label: 0.12em;
+  --tracking-overline: 0.14em;
+
+  /* Space, on a 4px base */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-28: 7rem;
+
+  /* Layout */
+  --container-max: 75rem; /* 1200px */
+  --container-narrow: 67.5rem; /* 1080px */
+  --gutter: 1rem; /* 16px on phones; widened below */
+  --header-height: 4rem;
+  --tap-target: 2.75rem; /* 44px minimum touch target */
+  --control-height: 3rem;
+
+  /* Radius */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 1.75rem;
+  --radius-full: 999px;
+
+  /* Shadow */
+  --shadow-card: 0 40px 80px -32px rgb(15 53 41 / 0.3), 0 12px 32px -16px rgb(15 53 41 / 0.18);
+  --shadow-raised: 0 1px 2px rgb(15 53 41 / 0.06), 0 6px 16px -10px rgb(15 53 41 / 0.2);
+  --shadow-btn: 0 14px 28px -12px rgb(4 120 87 / 0.55);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --duration-fast: 140ms;
+  --duration-base: 220ms;
+  --nudge-distance: 3px;
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --gutter: 1.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --gutter: 2rem;
+  }
+}
