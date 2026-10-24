@@ -26,9 +26,13 @@ A website that provides information about various plant species. The website als
 - The project has to be build monorepo structure, separating `frontend/` and `backend/` folder.
 - The website pages can be viewed at `contents/pages.md`.
 - The recommendation system rules can be viewed at `contents/recommendation.md`.
+- The plant classification calls PlantNet API to fetch the predicted species and confidence score.
 
 ## How to Work
 - Design the welcome page first, then stop and show me. If I approve the page, continue with the other pages.
 - When I ask for a revision, change only that thing. Don't regenerate whole sections.
-- Don't edit content/, references/ or this file unless I ask.
+- Don't edit `content/`, `references/` or this file unless I ask.
 - After the website is complete, write `DESIGN.md` from what was built.
+
+## Deployment
+This website will be deployed on Vercel. Write the Docker configuration and use NGINX as load-balancer.

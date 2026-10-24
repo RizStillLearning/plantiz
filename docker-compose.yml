@@ -1,20 +1,55 @@
+# Self-hosted stack:
+#   nginx    serves the prerendered site and load-balances /api (port 80)
+#   backend  FastAPI, run as several replicas behind NGINX
+#   migrate  creates the database tables once, before the replicas start
+#   db       Postgres
+#
+#   cp .env.example .env   # then fill in the secrets
+#   docker compose up -d --build
+
+x-backend-build: &backend-build
+  context: .
+  dockerfile: backend/Dockerfile
+
+x-backend-env: &backend-env
+  DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-plantiz}:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@db:5432/${POSTGRES_DB:-plantiz}
+  JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
+  PLANTNET_API_KEY: ${PLANTNET_API_KEY:-}
+  CORS_ORIGINS: ${CORS_ORIGINS:-}
+
 services:
-  app:
+  nginx:
     build:
       context: .
-      args:
-        VITE_API_BASE_URL: ""
-    environment:
-      PLANTNET_API_KEY: ${PLANTNET_API_KEY:-}
-      CORS_ORIGINS: ${CORS_ORIGINS:-}
-      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-plantiz}:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@db:5432/${POSTGRES_DB:-plantiz}
-      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
+      dockerfile: nginx/Dockerfile
+    ports:
+      - "${HTTP_PORT:-80}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
     restart: unless-stopped
+
+  backend:
+    build: *backend-build
+    environment: *backend-env
+    expose:
+      - "8000"
+    deploy:
+      replicas: ${BACKEND_REPLICAS:-3}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  # Replicas would race each other creating tables on a fresh database.
+  migrate:
+    build: *backend-build
+    environment: *backend-env
+    command: ["python", "-c", "from app.db import init_db; init_db()"]
     depends_on:
       db:
         condition: service_healthy
-    expose:
-      - "8000"
+    restart: "no"
 
   db:
     image: postgres:17-alpine
@@ -23,8 +58,9 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-plantiz}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
       POSTGRES_DB: ${POSTGRES_DB:-plantiz}
+    # Reachable from this machine only, for running the backend outside Docker.
     ports:
-      - "127.0.0.1:5432:5432"
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -33,20 +69,5 @@ services:
       timeout: 5s
       retries: 5
 
-  caddy:
-    image: caddy:2-alpine
-    restart: unless-stopped
-    depends_on:
-      - app
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
-
 volumes:
-  caddy_data:
-  caddy_config:
   postgres_data:

@@ -17,10 +17,10 @@ The signup pages contains a for that has these following fields:
 After the user has input all of these data correctly, redirect them to plants page.
 
 ## Plants Page
-This page contains information about available plant species on this website, such as species, origins, characteristics, etc. Build this page using drop-downs on each plant species.
+This page contains information about available plant species on this website. Build this page using drop-downs on each plant species.
 
 ## Recommendation Page
-This page contains the recommendation system based on user's environment. The form contains weather, temperature, indoor/outdoor, have pets/no, and other necessary field if required. After the user clicks `Recommend Plants` button, the recommended plants (up to 5) will be shown with their respective confidence score.
+This page contains the recommendation system based on user's environment. After the user fill all of the required fields clicks `Recommend Plants` button, the recommended plants (up to 5) will be shown with their respective confidence score.
 
 ## Plant Classification Page
 In this page, the user can upload a photo of plant image. Then, the system will detect the plant and classify its species. The page also displays the confidence score.

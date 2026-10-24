@@ -1,147 +1,167 @@
-import json
+"""Content-based plant recommendations (see contents/recommendation.md).
+
+1. Hard constraints remove plants that cannot survive the environment (the
+   setting, and outdoors the hardiness zone) and, when the visitor picked a
+   plant group, plants from any other group. A preference that only nudged
+   the score let a non-matching plant that fit everything else outrank every
+   plant of the requested group.
+2. Plant features are encoded with scikit-learn. Ordinal features (water,
+   care level, size) are label encoded in their natural order; categorical
+   features (light, plant group) are one-hot encoded.
+3. The visitor's answers are encoded with the same fitted encoders, and every
+   remaining plant is ranked by cosine similarity to that answer vector. The
+   similarity is the confidence score.
+
+Each feature becomes its own block of columns, scaled to unit length and then
+by the square root of its weight. With every block unit length, the cosine
+similarity of two vectors equals the weighted average of the per-feature
+similarities, so a score of 0.9 reads as "agrees on 90% of what matters".
+"""
+
 import math
+from dataclasses import dataclass
 from functools import lru_cache
-from pathlib import Path
 
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import MultiLabelBinarizer, OneHotEncoder, OrdinalEncoder, normalize
 
-from app.schemas import EnvironmentRequest, PlantResult
+from app.services.plants import Plant, categories, load_plants
 
-DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "plants.json"
+LIGHT_LEVELS = ("full sun", "partial shade", "full shade", "bright indirect", "medium indirect", "low light")
+WATER_LEVELS = ("low", "moderate", "high")
+CARE_LEVELS = ("easy", "moderate", "challenging")
+SPACE_LEVELS = ("small", "medium", "large")
 
-_LIGHT_LEVELS = ["low", "medium", "bright", "direct"]
-_HUMIDITY_LEVELS = ["low", "medium", "high"]
-_SPACE_LEVELS = ["small", "medium", "large"]
-_WATER_LEVELS = ["low", "medium", "high"]
-_DIFFICULTY_LEVELS = ["beginner", "intermediate", "expert"]
+ORDINAL_FEATURES = ("water", "care_level", "space")
+ORDINAL_LEVELS = (WATER_LEVELS, CARE_LEVELS, SPACE_LEVELS)
 
-_TEMPERATURE_MIN_C = -10.0
-_TEMPERATURE_MAX_C = 50.0
+# How much each feature counts towards the confidence score.
+WEIGHTS = {"light": 3.0, "water": 2.0, "care_level": 2.0, "space": 1.5, "category": 2.0}
 
-_LIGHT_WEIGHT = 2.5
-_HUMIDITY_WEIGHT = 2.0
-_TEMPERATURE_WEIGHT = 2.0
-_SPACE_WEIGHT = 1.5
-_WATER_WEIGHT = 1.5
-_DIFFICULTY_WEIGHT = 1.2
-_PET_WEIGHT = 1.0
+MAX_RESULTS = 5
+
+
+def space_for_height(height_ft: float) -> str:
+    """Bucket a plant's mature height into the room it needs."""
+    if height_ft <= 2:
+        return "small"
+    if height_ft <= 6:
+        return "medium"
+    return "large"
+
+
+def _angular(codes: np.ndarray, level_count: int) -> np.ndarray:
+    """Place label-encoded ordinal values on a quarter circle.
+
+    Cosine similarity ignores a feature whose value is 0, so raw label codes
+    would make the lowest level ("low" water, "easy" care) invisible. As an
+    angle, code k becomes the unit vector at k / (n - 1) * 90 degrees: two
+    values then agree by cos(distance), 1.0 when equal, 0.71 one step apart on a
+    three-level scale and 0 at opposite ends.
+    """
+    angles = codes / (level_count - 1) * (math.pi / 2)
+    return np.column_stack([np.cos(angles), np.sin(angles)])
+
+
+@dataclass(frozen=True)
+class Environment:
+    setting: str
+    light: str
+    water: str
+    care_level: str
+    space: str
+    zone: int | None = None
+    category: str | None = None
+
+
+@dataclass(frozen=True)
+class Recommendation:
+    plant: Plant
+    confidence: float
+
+
+class _Model:
+    """Encoders fitted on the whole dataset, plus the encoded plant blocks."""
+
+    def __init__(self, plants: tuple[Plant, ...]) -> None:
+        self.plants = plants
+
+        self.ordinal = OrdinalEncoder(categories=[list(levels) for levels in ORDINAL_LEVELS])
+        self.category = OneHotEncoder(categories=[list(categories())], sparse_output=False)
+        self.light = MultiLabelBinarizer(classes=list(LIGHT_LEVELS))
+
+        ordinal_codes = self.ordinal.fit_transform(
+            [[plant.water, plant.care_level, space_for_height(plant.height_ft_max)] for plant in plants]
+        )
+        self.blocks = {
+            **self._ordinal_blocks(ordinal_codes),
+            # A plant can tolerate several light levels: one-hot per level, then
+            # scaled to unit length like every other block.
+            "light": normalize(self.light.fit_transform([plant.light for plant in plants])),
+            "category": self.category.fit_transform([[plant.category] for plant in plants]),
+        }
+
+    @staticmethod
+    def _ordinal_blocks(codes: np.ndarray) -> dict[str, np.ndarray]:
+        return {
+            feature: _angular(codes[:, index], len(levels))
+            for index, (feature, levels) in enumerate(zip(ORDINAL_FEATURES, ORDINAL_LEVELS))
+        }
+
+    def encode(self, environment: Environment) -> dict[str, np.ndarray]:
+        codes = self.ordinal.transform([[environment.water, environment.care_level, environment.space]])
+        blocks = {
+            **self._ordinal_blocks(codes),
+            "light": normalize(self.light.transform([[environment.light]])),
+        }
+        if environment.category:
+            blocks["category"] = self.category.transform([[environment.category]])
+        return blocks
 
 
 @lru_cache
-def _load_plants() -> list[dict]:
-    with DATA_PATH.open(encoding="utf-8") as f:
-        return json.load(f)
+def _model() -> _Model:
+    return _Model(load_plants())
 
 
-def _one_hot(levels: list[str], value: str, weight: float) -> list[float]:
-    scale = math.sqrt(weight)
-    return [scale if level == value else 0.0 for level in levels]
+def _is_candidate(plant: Plant, environment: Environment) -> bool:
+    if environment.setting not in plant.settings:
+        return False
+    if environment.category and plant.category != environment.category:
+        return False
+    if environment.setting == "outdoor" and environment.zone is not None:
+        return plant.grows_in_zone(environment.zone)
+    return True
 
 
-def _multi_hot(levels: list[str], values: list[str], weight: float) -> list[float]:
-    scale = math.sqrt(weight)
-    return [scale if level in values else 0.0 for level in levels]
+def recommend(environment: Environment, limit: int = MAX_RESULTS) -> list[Recommendation]:
+    if environment.category and environment.category not in categories():
+        raise ValueError(f"Unknown plant group: {environment.category}")
 
-
-def _cumulative_hot(levels: list[str], up_to: str, weight: float) -> list[float]:
-    scale = math.sqrt(weight)
-    cutoff = levels.index(up_to)
-    return [scale if index <= cutoff else 0.0 for index in range(len(levels))]
-
-
-def _normalized(value: float, low: float, high: float) -> float:
-    clamped = min(max(value, low), high)
-    return (clamped - low) / (high - low)
-
-
-def _temperature_features(min_c: float, max_c: float, weight: float) -> list[float]:
-    scale = math.sqrt(weight / 2)
-    return [
-        scale * _normalized(min_c, _TEMPERATURE_MIN_C, _TEMPERATURE_MAX_C),
-        scale * _normalized(max_c, _TEMPERATURE_MIN_C, _TEMPERATURE_MAX_C),
-    ]
-
-
-def _target_water_level(weather: str, dryness: str) -> str:
-    """Blend forecast weather with soil dryness into a target watering demand."""
-    if dryness == "high" or weather == "sunny":
-        return "low"
-    if dryness == "low" or weather == "rainy":
-        return "high"
-    return "medium"
-
-
-def _plant_vector(plant: dict, include_pet: bool) -> list[float]:
-    vector = [
-        *_multi_hot(_LIGHT_LEVELS, plant["light"], _LIGHT_WEIGHT),
-        *_one_hot(_HUMIDITY_LEVELS, plant["humidity"], _HUMIDITY_WEIGHT),
-        *_temperature_features(plant["temperature_min_c"], plant["temperature_max_c"], _TEMPERATURE_WEIGHT),
-        *_multi_hot(_SPACE_LEVELS, plant["space"], _SPACE_WEIGHT),
-        *_one_hot(_WATER_LEVELS, plant["water_frequency"], _WATER_WEIGHT),
-        *_one_hot(_DIFFICULTY_LEVELS, plant["difficulty"], _DIFFICULTY_WEIGHT),
-    ]
-    if include_pet:
-        vector.append(math.sqrt(_PET_WEIGHT) if plant["pet_friendly"] else 0.0)
-    return vector
-
-
-def _environment_vector(env: EnvironmentRequest) -> list[float]:
-    temperature_scale = math.sqrt(_TEMPERATURE_WEIGHT / 2)
-    temperature_norm = _normalized(env.temperature_c, _TEMPERATURE_MIN_C, _TEMPERATURE_MAX_C)
-    vector = [
-        *_one_hot(_LIGHT_LEVELS, env.light, _LIGHT_WEIGHT),
-        *_one_hot(_HUMIDITY_LEVELS, env.humidity, _HUMIDITY_WEIGHT),
-        temperature_scale * temperature_norm,
-        temperature_scale * temperature_norm,
-        *_one_hot(_SPACE_LEVELS, env.space, _SPACE_WEIGHT),
-        *_one_hot(_WATER_LEVELS, _target_water_level(env.weather, env.dryness), _WATER_WEIGHT),
-        *_cumulative_hot(_DIFFICULTY_LEVELS, env.experience, _DIFFICULTY_WEIGHT),
-    ]
-    if env.pets:
-        vector.append(math.sqrt(_PET_WEIGHT))
-    return vector
-
-
-def score_plants(plants: list[dict], env: EnvironmentRequest) -> list[int]:
-    plant_matrix = np.array([_plant_vector(plant, include_pet=env.pets) for plant in plants])
-    env_vector = np.array([_environment_vector(env)])
-    similarities = cosine_similarity(plant_matrix, env_vector).flatten()
-    return [round(max(0.0, min(1.0, similarity)) * 100) for similarity in similarities]
-
-
-def _to_result(plant: dict, score: int) -> PlantResult:
-    return PlantResult(
-        id=plant["id"],
-        common_name=plant["common_name"],
-        scientific_name=plant["scientific_name"],
-        match_score=score,
-        light=plant["light"],
-        water_frequency=plant["water_frequency"],
-        humidity=plant["humidity"],
-        difficulty=plant["difficulty"],
-        pet_friendly=plant["pet_friendly"],
-        description=plant["description"],
-        care_tips=plant["care_tips"],
-    )
-
-
-def recommend_plants(env: EnvironmentRequest, top_n: int = 5) -> list[PlantResult]:
-    plants = _load_plants()
-    # Pet safety is a hard constraint, not a similarity signal: never recommend a
-    # toxic plant to a pet owner just because it scores well on other features.
-    candidates = [plant for plant in plants if plant["pet_friendly"]] if env.pets else plants
+    model = _model()
+    candidates = [index for index, plant in enumerate(model.plants) if _is_candidate(plant, environment)]
     if not candidates:
         return []
-    scored = list(zip(candidates, score_plants(candidates, env)))
-    scored.sort(key=lambda pair: pair[1], reverse=True)
-    return [_to_result(plant, score) for plant, score in scored[:top_n]]
 
+    user_blocks = model.encode(environment)
+    # The plant group only counts when one was chosen. Every candidate then
+    # matches it, so it lifts all scores alike: the confidence still reads as
+    # agreement with everything the visitor asked for.
+    features = list(user_blocks)
+    scale = {feature: math.sqrt(WEIGHTS[feature]) for feature in features}
 
-def find_plant_by_scientific_name(scientific_name: str) -> dict | None:
-    needle_parts = scientific_name.strip().lower().split(" ")[:2]
-    for plant in _load_plants():
-        plant_parts = plant["scientific_name"].strip().lower().split(" ")[:2]
-        if plant_parts == needle_parts:
-            return plant
-    return None
+    plant_matrix = np.hstack([model.blocks[feature][candidates] * scale[feature] for feature in features])
+    user_vector = np.hstack([user_blocks[feature] * scale[feature] for feature in features])
+    scores = cosine_similarity(user_vector, plant_matrix)[0]
+
+    # Best score first; ties go to the better-known plant (popularity 1 is the
+    # most familiar), then alphabetically so results are stable.
+    ranked = sorted(
+        zip(candidates, scores),
+        key=lambda pair: (-pair[1], model.plants[pair[0]].popularity, model.plants[pair[0]].common_name),
+    )
+    return [
+        Recommendation(plant=model.plants[index], confidence=round(float(np.clip(score, 0, 1)), 4))
+        for index, score in ranked[:limit]
+    ]

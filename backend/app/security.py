@@ -20,7 +20,11 @@ def hash_password(password: str) -> str:
 
 
 def verify_password(password: str, hashed_password: str) -> bool:
-    return bcrypt.checkpw(password.encode("utf-8"), hashed_password.encode("utf-8"))
+    encoded = password.encode("utf-8")
+    # bcrypt>=5 raises on input over 72 bytes; no stored password can be that long.
+    if len(encoded) > 72:
+        return False
+    return bcrypt.checkpw(encoded, hashed_password.encode("utf-8"))
 
 
 def create_access_token(user_id: uuid.UUID) -> str:
