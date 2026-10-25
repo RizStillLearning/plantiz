@@ -1,7 +1,7 @@
 # Build context is the repo root (see docker-compose.yml).
 # Stage 1 prerenders the frontend; stage 2 is NGINX serving those files and
 # load-balancing /api across the backend replicas.
-FROM node:22-alpine AS frontend
+FROM node:22.23.4-alpine AS frontend
 
 WORKDIR /srv/frontend
 COPY frontend/package.json frontend/package-lock.json ./
