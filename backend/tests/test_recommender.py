@@ -1,5 +1,10 @@
-import pytest
+import math
 
+import numpy as np
+import pytest
+from sklearn.metrics.pairwise import cosine_similarity
+
+from app.services import recommender
 from app.services.plants import load_plants
 from app.services.recommender import Environment, recommend, space_for_height
 
@@ -89,3 +94,34 @@ def test_lowest_ordinal_level_still_counts():
 def test_unknown_plant_group_is_rejected():
     with pytest.raises(ValueError):
         recommend(Environment("indoor", "low light", "low", "easy", "small", category="Moon Rocks"))
+
+
+@pytest.mark.parametrize(
+    "environment",
+    [
+        Environment("indoor", "low light", "low", "easy", "small"),
+        # Many plants tie for first place here: ties must break the same way.
+        Environment("indoor", "bright indirect", "moderate", "easy", "small", category="Houseplant"),
+        Environment("outdoor", "full sun", "low", "challenging", "medium", zone=7, category="Fern"),
+        Environment("outdoor", "partial shade", "high", "moderate", "large", zone=5),
+    ],
+)
+def test_knn_returns_the_plants_with_highest_cosine_similarity(environment):
+    # Reference: score every candidate with cosine_similarity and sort, with the
+    # same tie rule (popularity, then name). KNN must return exactly its top 5.
+    model = recommender._model()
+    candidates = [i for i, plant in enumerate(model.plants) if recommender._is_candidate(plant, environment)]
+    user_blocks = model.encode(environment)
+    weights = {feature: math.sqrt(recommender.WEIGHTS[feature]) for feature in user_blocks}
+    plant_matrix = np.hstack([model.blocks[f][candidates] * w for f, w in weights.items()])
+    user_vector = np.hstack([user_blocks[f] * w for f, w in weights.items()])
+    similarities = cosine_similarity(user_vector, plant_matrix)[0]
+    expected = sorted(
+        zip(candidates, similarities),
+        key=lambda pair: (round(1 - pair[1], 9), model.plants[pair[0]].popularity, model.plants[pair[0]].common_name),
+    )[:5]
+
+    results = recommend(environment)
+
+    assert [result.plant.id for result in results] == [model.plants[i].id for i, _ in expected]
+    assert [result.confidence for result in results] == pytest.approx([float(s) for _, s in expected], abs=1e-4)

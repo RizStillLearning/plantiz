@@ -8,9 +8,10 @@
 2. Plant features are encoded with scikit-learn. Ordinal features (water,
    care level, size) are label encoded in their natural order; categorical
    features (light, plant group) are one-hot encoded.
-3. The visitor's answers are encoded with the same fitted encoders, and every
-   remaining plant is ranked by cosine similarity to that answer vector. The
-   similarity is the confidence score.
+3. The visitor's answers are encoded with the same fitted encoders. A
+   k-nearest-neighbours search (scikit-learn NearestNeighbors, cosine metric)
+   over the remaining plants finds the k closest to that answer vector. Cosine
+   distance is 1 - cosine similarity; the similarity is the confidence score.
 
 Each feature becomes its own block of columns, scaled to unit length and then
 by the square root of its weight. With every block unit length, the cosine
@@ -23,7 +24,7 @@ from dataclasses import dataclass
 from functools import lru_cache
 
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import MultiLabelBinarizer, OneHotEncoder, OrdinalEncoder, normalize
 
 from app.services.plants import Plant, categories, load_plants
@@ -40,6 +41,10 @@ ORDINAL_LEVELS = (WATER_LEVELS, CARE_LEVELS, SPACE_LEVELS)
 WEIGHTS = {"light": 3.0, "water": 2.0, "care_level": 2.0, "space": 1.5, "category": 2.0}
 
 MAX_RESULTS = 5
+
+# Distances closer than this count as a tie (floating-point noise, not a
+# real difference in fit).
+TIE_TOLERANCE = 1e-9
 
 
 def space_for_height(height_ft: float) -> str:
@@ -153,15 +158,30 @@ def recommend(environment: Environment, limit: int = MAX_RESULTS) -> list[Recomm
 
     plant_matrix = np.hstack([model.blocks[feature][candidates] * scale[feature] for feature in features])
     user_vector = np.hstack([user_blocks[feature] * scale[feature] for feature in features])
-    scores = cosine_similarity(user_vector, plant_matrix)[0]
 
-    # Best score first; ties go to the better-known plant (popularity 1 is the
-    # most familiar), then alphabetically so results are stable.
-    ranked = sorted(
-        zip(candidates, scores),
-        key=lambda pair: (-pair[1], model.plants[pair[0]].popularity, model.plants[pair[0]].common_name),
+    # Fitted per request on the plants that passed the filters (at most ~1,000
+    # rows, so a brute-force search is instant).
+    knn = NearestNeighbors(metric="cosine", algorithm="brute").fit(plant_matrix)
+    distances, _ = knn.kneighbors(user_vector, n_neighbors=min(limit, len(candidates)))
+
+    # kneighbors breaks ties arbitrarily, and many plants share identical
+    # needs. Gather every plant as near as the k-th neighbour so a tie goes to
+    # the better-known plant (popularity 1 is the most familiar), then
+    # alphabetically so results are stable. Distances are rounded first:
+    # mathematically equal ones can differ in the last floating-point bits.
+    tie_distances, tie_rows = knn.radius_neighbors(user_vector, radius=distances[0, -1] + TIE_TOLERANCE)
+    nearest = sorted(
+        zip(tie_rows[0], tie_distances[0]),
+        key=lambda pair: (
+            round(pair[1], 9),
+            model.plants[candidates[pair[0]]].popularity,
+            model.plants[candidates[pair[0]]].common_name,
+        ),
     )
     return [
-        Recommendation(plant=model.plants[index], confidence=round(float(np.clip(score, 0, 1)), 4))
-        for index, score in ranked[:limit]
+        Recommendation(
+            plant=model.plants[candidates[row]],
+            confidence=round(float(np.clip(1 - distance, 0, 1)), 4),
+        )
+        for row, distance in nearest[:limit]
     ]

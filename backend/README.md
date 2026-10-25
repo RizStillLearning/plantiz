@@ -73,9 +73,13 @@ All under `/api`. Endpoints marked * need `Authorization: Bearer <token>`.
    mature height). Categorical features are one-hot encoded: plant group with
    `OneHotEncoder`, light with `MultiLabelBinarizer`, since a plant can
    tolerate several light levels.
-3. **Cosine similarity.** The visitor's answers go through the same fitted
-   encoders, and `cosine_similarity` scores every remaining plant. The top
-   five are returned; the similarity is the confidence score.
+3. **K-nearest neighbours with cosine similarity.** The visitor's answers go
+   through the same fitted encoders. `NearestNeighbors(metric="cosine")`,
+   fitted on the plants that passed the filters, finds the 5 nearest to the
+   answers. Cosine distance is 1 − cosine similarity, and the similarity is
+   the confidence score. Plants exactly as near as the 5th (common, since
+   many share the same needs) are gathered with `radius_neighbors`, and ties
+   go to the better-known plant.
 
 Two details make the score meaningful:
 

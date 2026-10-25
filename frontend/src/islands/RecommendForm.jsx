@@ -85,11 +85,11 @@ function HowItWorks() {
     },
     {
       title: 'Every plant is compared',
-      text: 'Plants that cannot survive indoors, outdoors or in your zone, or that are not the kind you asked for, are set aside. The rest are scored by cosine similarity to your profile.',
+      text: 'Plants that cannot survive indoors, outdoors or in your zone, or that are not the kind you asked for, are set aside. The rest are compared with your profile by cosine similarity.',
     },
     {
       title: 'The closest five are shown',
-      text: 'The confidence score is how closely a plant matches your answers, from 0 to 100%.',
+      text: 'A k-nearest-neighbours search picks the five plants closest to your profile. The confidence score is how closely each one matches your answers, from 0 to 100%.',
     },
   ]
   return (
