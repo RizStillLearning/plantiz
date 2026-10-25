@@ -21,6 +21,55 @@ api/        Vercel entry point for the backend
 DESIGN.md   The design system the site is built on
 ```
 
+## Tech stack
+
+Versions as pinned in `frontend/.nvmrc`, `frontend/package-lock.json`,
+`backend/requirements.txt` and the Dockerfiles.
+
+### Frontend
+
+| Tool | Version | Used for |
+| --- | --- | --- |
+| Node.js | 22.23.4 | Dev server and build |
+| npm | 10.9.9 | Packages (bundled with Node.js) |
+| React | 19.3.1 | Page components, prerendered to HTML; forms hydrate in the browser |
+| Vite | 8.3.5 | Dev server, bundling and server rendering |
+| @vitejs/plugin-react | 6.1.2 | JSX support in Vite |
+| Fraunces and Inter (`@fontsource-variable`) | 5.3.0 | Self-hosted fonts |
+| oxlint | 1.89.0 | Linting |
+
+Styling is plain CSS with custom properties; there is no UI kit.
+
+### Backend
+
+| Tool | Version | Used for |
+| --- | --- | --- |
+| Python | 3.13 (Docker), 3.12 (Vercel) | Runtime |
+| FastAPI | 0.162.0 | API |
+| Uvicorn | 0.54.0 | ASGI server |
+| pydantic-settings | 2.16.1 | Configuration from environment variables |
+| SQLAlchemy | 2.1.6 | Database access |
+| psycopg | 3.3.6 | PostgreSQL driver |
+| scikit-learn | 1.9.1 | Recommendations: encoders and k-nearest neighbours |
+| pandas | 3.1.0 | Loading `data/plants.csv` |
+| NumPy | 2.5.4 | Feature vectors |
+| bcrypt | 5.0.0 | Password hashing |
+| PyJWT | 2.15.1 | Login tokens |
+| httpx | 0.28.1 | Calls to the Pl@ntNet API |
+| python-multipart | 0.0.32 | Photo uploads |
+| email-validator | 2.3.0 | Email address validation |
+| pytest | 9.1.1 | Tests |
+
+### Services and deployment
+
+| Tool | Version | Used for |
+| --- | --- | --- |
+| PostgreSQL | 17 | Database (`postgres:17-alpine`) |
+| NGINX | 1.28 | Serves the site and load-balances `/api` (`nginx:1.28-alpine`) |
+| Docker Compose | | Self-hosted stack (`docker-compose.yml`) |
+| Vercel | | Hosting for the live site |
+| Pl@ntNet API | v2 | Plant identification |
+
 ## Develop
 
 Two terminals:
