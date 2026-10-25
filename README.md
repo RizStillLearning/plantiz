@@ -7,7 +7,8 @@ A field guide to over 1,000 plant species, with:
 - **Plant library**: every species in a drop-down with its light, water,
   care, hardiness and height, filterable by name, group, setting and care.
 - **Recommendations**: describe where a plant will live and get up to five
-  matches, each with a confidence score (scikit-learn, cosine similarity).
+  matches, each with a confidence score (scikit-learn k-nearest neighbours,
+  cosine similarity).
 - **Identification**: upload a photo and [Pl@ntNet](https://plantnet.org)
   suggests the species, with a confidence score.
 
