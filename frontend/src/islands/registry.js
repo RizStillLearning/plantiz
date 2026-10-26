@@ -1,5 +1,4 @@
-// Browser-side loaders for each island, keyed by the name passed to <Island>.
-// Dynamic imports keep each island (and React) out of pages that don't use it.
+// Dynamic imports keep each island, and React, out of pages that don't use it.
 export const islands = {
   LoginForm: () => import('./LoginForm.jsx'),
   SignupForm: () => import('./SignupForm.jsx'),

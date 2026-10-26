@@ -2,8 +2,7 @@ import LevelMeter from '../components/LevelMeter.jsx'
 import { capitalize, formatOptions, formatRange, formatSettings } from './format.js'
 import { CARE_LEVELS, WATER_LEVELS } from './levels.js'
 
-// The core facts every plant view shows, in display order. Plants come either
-// from the build-time dataset or from the API (via toPlant), in one shape.
+// Works for plants from the dataset and from the API (see toPlant): same shape.
 export function plantFacts(plant) {
   return [
     { key: 'light', icon: 'sun', label: 'Light', value: formatOptions(plant.light) },

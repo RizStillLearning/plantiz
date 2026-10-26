@@ -1,7 +1,5 @@
 import { formatNumber } from '../lib/format.js'
 
-// Filters the server-rendered plant list in place. Without this script the
-// full list still works; it just can't be narrowed.
 export function initPlantLibrary(root) {
   const form = root.querySelector('[data-plant-filter]')
   const count = root.querySelector('[data-plant-count]')
@@ -53,7 +51,7 @@ export function initPlantLibrary(root) {
   form.addEventListener('submit', (event) => event.preventDefault())
   // Reset fires before the fields are cleared; filter on the next tick.
   form.addEventListener('reset', () => setTimeout(apply))
-  root.querySelector('[data-plant-clear]')?.addEventListener('click', () => form.reset())
+  root.querySelector('[data-plant-clear]').addEventListener('click', () => form.reset())
 
   // Links like /plants#monstera open that plant's drop-down.
   function openFromHash() {

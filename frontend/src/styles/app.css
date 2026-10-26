@@ -1,6 +1,3 @@
-/* Account pages (log in, sign up) and member pages (plants, recommend,
-   identify). Builds on the welcome page's split card and dark panel. */
-
 .section--compact {
   padding-block: var(--space-10) var(--space-20);
 }

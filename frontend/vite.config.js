@@ -23,7 +23,7 @@ function staticPages() {
       })
 
       server.middlewares.use(async (req, res, next) => {
-        const url = req.originalUrl ?? '/'
+        const url = req.originalUrl
         const pathname = url.split('?')[0]
         const isPageRequest =
           req.method === 'GET' &&

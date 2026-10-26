@@ -1,4 +1,4 @@
-from typing import Literal, Optional
+from typing import Literal
 
 from pydantic import BaseModel, EmailStr, Field, field_validator, model_validator
 
@@ -16,9 +16,6 @@ Organ = Literal["leaf", "flower", "fruit", "bark", "auto"]
 PASSWORD_MAX_BYTES = 72
 
 
-# Auth
-
-
 class SignUpRequest(BaseModel):
     name: str = Field(min_length=1, max_length=100)
     email: EmailStr
@@ -27,9 +24,10 @@ class SignUpRequest(BaseModel):
     @field_validator("name")
     @classmethod
     def strip_name(cls, name: str) -> str:
-        if not name.strip():
+        name = name.strip()
+        if not name:
             raise ValueError("Enter your name.")
-        return name.strip()
+        return name
 
     @field_validator("email")
     @classmethod
@@ -66,9 +64,6 @@ class AuthResponse(BaseModel):
     user: UserResponse
 
 
-# Plants
-
-
 class PlantSummary(BaseModel):
     id: str
     common_name: str
@@ -79,8 +74,8 @@ class PlantSummary(BaseModel):
     water: str
     care_level: str
     lifecycle: str
-    zone_min: Optional[int]
-    zone_max: Optional[int]
+    zone_min: int | None
+    zone_max: int | None
     height_ft_min: float
     height_ft_max: float
 
@@ -103,17 +98,14 @@ class PlantSummary(BaseModel):
         )
 
 
-# Recommendations
-
-
 class RecommendRequest(BaseModel):
     setting: Setting
     light: Light
     water: Water
     care_level: CareLevel
     space: Space
-    zone: Optional[int] = Field(default=None, ge=1, le=12)
-    category: Optional[str] = None
+    zone: int | None = Field(default=None, ge=1, le=12)
+    category: str | None = None
 
     @model_validator(mode="after")
     def zone_needed_outdoors(self) -> "RecommendRequest":
@@ -131,17 +123,14 @@ class RecommendResponse(BaseModel):
     results: list[RecommendedPlant]
 
 
-# Identification
-
-
 class IdentificationCandidate(BaseModel):
     scientific_name: str
     common_names: list[str]
-    family: Optional[str] = None
+    family: str
     confidence: float = Field(ge=0, le=1)
-    plant: Optional[PlantSummary] = None
+    plant: PlantSummary | None
 
 
 class IdentifyResponse(BaseModel):
     candidates: list[IdentificationCandidate]
-    remaining_requests: Optional[int] = None
+    remaining_requests: int

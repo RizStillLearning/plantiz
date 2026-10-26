@@ -62,7 +62,6 @@ function validate(answers) {
   }
 }
 
-// Which facts agree with the answers, so each result can show why it fits.
 function matchingFacts(plant, answers) {
   const zone = Number(answers.zone)
   return [
@@ -167,7 +166,7 @@ function Results({ results, answers, headingRef }) {
   )
 }
 
-export default function RecommendForm({ groups = [] }) {
+export default function RecommendForm({ groups }) {
   const [answers, setAnswers] = useState(EMPTY)
   const [errors, setErrors] = useState({})
   const [formError, setFormError] = useState('')
@@ -183,7 +182,7 @@ export default function RecommendForm({ groups = [] }) {
 
   // Move focus to the new results so keyboard and screen reader users land on them.
   useEffect(() => {
-    if (outcome) resultsHeading.current?.focus()
+    if (outcome) resultsHeading.current.focus()
   }, [outcome])
 
   const set = (field) => (value) => {
@@ -201,8 +200,8 @@ export default function RecommendForm({ groups = [] }) {
       zone: zoneRef,
     }
     const target = fieldRefs[field].current
-    if (target?.tagName === 'FIELDSET') target.querySelector('input').focus()
-    else target?.focus()
+    if (target.tagName === 'FIELDSET') target.querySelector('input').focus()
+    else target.focus()
   }
 
   async function handleSubmit(event) {
@@ -229,7 +228,7 @@ export default function RecommendForm({ groups = [] }) {
     setPending(true)
     try {
       const results = await recommendPlants(request)
-      setOutcome({ results, answers: { ...answers } })
+      setOutcome({ results, answers })
     } catch (error) {
       setFormError(error.message)
     } finally {

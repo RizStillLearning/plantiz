@@ -9,7 +9,8 @@ def test_signup_login_and_me(client):
         json={"name": "  Ivy Green ", "email": "Ivy@Example.com", "password": "pothos-123"},
     )
     assert signup.status_code == 201
-    assert signup.json()["user"] == {**signup.json()["user"], "name": "Ivy Green", "email": "ivy@example.com"}
+    assert signup.json()["user"]["name"] == "Ivy Green"
+    assert signup.json()["user"]["email"] == "ivy@example.com"
 
     duplicate = client.post(
         "/api/auth/signup", json={"name": "Ivy", "email": "ivy@example.com", "password": "pothos-123"}
@@ -74,22 +75,26 @@ def test_identify_without_api_key_explains_setup(client, auth_headers):
     assert response.status_code == 503
 
 
+def plantnet_match(score, name, common_names, family):
+    return {
+        "score": score,
+        "species": {
+            "scientificNameWithoutAuthor": name,
+            "commonNames": common_names,
+            "family": {"scientificNameWithoutAuthor": family},
+        },
+    }
+
+
 def test_plantnet_results_link_to_local_plants():
-    payload = {
+    body = {
         "results": [
-            {
-                "score": 0.91,
-                "species": {
-                    "scientificNameWithoutAuthor": "Monstera deliciosa",
-                    "commonNames": ["Swiss cheese plant"],
-                    "family": {"scientificNameWithoutAuthor": "Araceae"},
-                },
-            },
-            {"score": 0.02, "species": {"scientificNameWithoutAuthor": "Nonexistus imaginarius"}},
+            plantnet_match(0.91, "Monstera deliciosa", ["Swiss cheese plant"], "Araceae"),
+            plantnet_match(0.02, "Philodendron bipinnatifidum", [], "Araceae"),
         ]
     }
 
-    first, second = to_candidates(payload)
+    first, second = to_candidates(body)
 
     assert first.plant is not None and first.plant.id == "monstera"
     assert first.family == "Araceae"

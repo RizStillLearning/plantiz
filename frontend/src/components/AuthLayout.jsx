@@ -9,8 +9,6 @@ const features = [
   { icon: 'camera', label: 'Identification', text: 'Name a plant from a photo, with a confidence score' },
 ]
 
-// The split card from the welcome page, reused for the account forms: the
-// form on white, what an account unlocks on the dark panel.
 export default function AuthLayout({ currentPath, title, lede, form, switchPrompt }) {
   return (
     <SiteLayout currentPath={currentPath}>

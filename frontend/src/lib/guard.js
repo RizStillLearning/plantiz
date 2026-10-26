@@ -1,17 +1,20 @@
-// Inline <head> scripts that send visitors to the right place before the page
-// paints. They run before any bundle loads, so they carry their own copy of
-// the token check.
-import { HOME_PATH, TOKEN_KEY, tokenIsValid } from './session.js'
+import { HOME_PATH, TOKEN_KEY } from './session.js'
 
-const hasSession = `(${tokenIsValid.toString()})((function(){try{return localStorage.getItem(${JSON.stringify(TOKEN_KEY)})}catch(e){return null}})())`
+// Runs inline in <head>, before any bundle loads, so the visitor is sent to
+// the right page before anything paints.
+const signedIn = `(function () {
+  try {
+    var token = localStorage.getItem(${JSON.stringify(TOKEN_KEY)});
+    var exp = JSON.parse(atob(token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))).exp;
+    return !exp || exp * 1000 > Date.now();
+  } catch (e) {
+    return false;
+  }
+})()`
 
 const scripts = {
-  // Member pages: no valid session -> log in, then come back here.
-  member: `if(!${hasSession}){location.replace('/login?next='+encodeURIComponent(location.pathname+location.search+location.hash))}`,
-  // Welcome, log in and sign up: already signed in -> straight to the library.
-  guest: `if(${hasSession}){location.replace(${JSON.stringify(HOME_PATH)})}`,
+  member: `if (!${signedIn}) location.replace('/login?next=' + encodeURIComponent(location.pathname + location.search + location.hash));`,
+  guest: `if (${signedIn}) location.replace(${JSON.stringify(HOME_PATH)});`,
 }
 
-export function guardScript(access) {
-  return scripts[access] ? `<script>${scripts[access]}</script>` : ''
-}
+export const guardScript = (access) => (access ? `<script>${scripts[access]}</script>` : '')

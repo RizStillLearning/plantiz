@@ -1,5 +1,4 @@
-// A three-step scale drawn as segments. The word next to it says the same
-// thing, so the drawing itself is hidden from screen readers.
+// Hidden from screen readers: the word next to it says the same thing.
 export default function LevelMeter({ levels, value }) {
   const filled = levels.indexOf(value) + 1
   return (

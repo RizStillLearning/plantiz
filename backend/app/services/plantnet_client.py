@@ -5,26 +5,24 @@ from app.config import get_settings
 from app.schemas import IdentificationCandidate, IdentifyResponse, PlantSummary
 from app.services.plants import find_by_botanical_name
 
-PLANTNET_BASE_URL = "https://my-api.plantnet.org/v2/identify"
+PLANTNET_URL = "https://my-api.plantnet.org/v2/identify"
 MAX_CANDIDATES = 5
 NOT_IDENTIFIED = "Pl@ntNet could not identify this photo. Try a sharper photo of a single leaf or flower."
 
 
-def to_candidates(payload: dict) -> list[IdentificationCandidate]:
-    """Map Pl@ntNet's response to candidates, linking species we have data for."""
+def to_candidates(body: dict) -> list[IdentificationCandidate]:
     candidates = []
-    for result in payload.get("results", [])[:MAX_CANDIDATES]:
-        species = result.get("species") or {}
-        family = species.get("family") or {}
-        scientific_name = species.get("scientificNameWithoutAuthor") or "Unknown species"
-        local_plant = find_by_botanical_name(scientific_name)
+    for match in body["results"][:MAX_CANDIDATES]:
+        species = match["species"]
+        name = species["scientificNameWithoutAuthor"]
+        plant = find_by_botanical_name(name)
         candidates.append(
             IdentificationCandidate(
-                scientific_name=scientific_name,
-                common_names=species.get("commonNames") or [],
-                family=family.get("scientificNameWithoutAuthor") or family.get("scientificName"),
-                confidence=min(max(float(result.get("score") or 0), 0.0), 1.0),
-                plant=PlantSummary.from_plant(local_plant) if local_plant else None,
+                scientific_name=name,
+                common_names=species["commonNames"],
+                family=species["family"]["scientificNameWithoutAuthor"],
+                confidence=match["score"],
+                plant=PlantSummary.from_plant(plant) if plant else None,
             )
         )
     return candidates
@@ -38,14 +36,14 @@ async def identify_image(image_bytes: bytes, filename: str, content_type: str, o
             detail="Plant identification is not set up yet. Add a Pl@ntNet API key to the server settings.",
         )
 
-    url = f"{PLANTNET_BASE_URL}/{settings.plantnet_project}"
-    params = {"api-key": settings.plantnet_api_key, "lang": "en", "nb-results": MAX_CANDIDATES}
-    files = {"images": (filename, image_bytes, content_type)}
-    data = {"organs": organ}
-
     try:
         async with httpx.AsyncClient(timeout=30) as client:
-            response = await client.post(url, params=params, files=files, data=data)
+            response = await client.post(
+                f"{PLANTNET_URL}/{settings.plantnet_project}",
+                params={"api-key": settings.plantnet_api_key, "lang": "en", "nb-results": MAX_CANDIDATES},
+                files={"images": (filename, image_bytes, content_type)},
+                data={"organs": organ},
+            )
     except httpx.RequestError as exc:
         raise HTTPException(
             status_code=status.HTTP_502_BAD_GATEWAY,
@@ -67,9 +65,9 @@ async def identify_image(image_bytes: bytes, filename: str, content_type: str, o
             detail=f"Pl@ntNet returned an error ({response.status_code}). Please try again.",
         )
 
-    payload = response.json()
-    candidates = to_candidates(payload)
+    body = response.json()
+    candidates = to_candidates(body)
     if not candidates:
         raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_CONTENT, detail=NOT_IDENTIFIED)
 
-    return IdentifyResponse(candidates=candidates, remaining_requests=payload.get("remainingIdentificationRequests"))
+    return IdentifyResponse(candidates=candidates, remaining_requests=body["remainingIdentificationRequests"])
