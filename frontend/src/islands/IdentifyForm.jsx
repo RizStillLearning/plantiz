@@ -9,8 +9,8 @@ import { identifyPlant } from '../lib/api.js'
 import { prepareForUpload } from '../lib/image.js'
 
 const ACCEPTED_TYPES = ['image/jpeg', 'image/png']
-// Large photos are shrunk before upload (lib/image.js), so the server's 10 MB
-// limit only applies to photos the browser could not shrink.
+// Above the server's 10 MB limit on purpose: photos are shrunk before upload
+// (lib/image.js).
 const MAX_MB = 20
 const LOW_CONFIDENCE = 0.25
 
@@ -25,7 +25,7 @@ const ORGANS = [
 function fileError(file) {
   if (!ACCEPTED_TYPES.includes(file.type)) return 'Choose a JPEG or PNG photo.'
   if (file.size > MAX_MB * 1024 * 1024) return `Choose a photo smaller than ${MAX_MB} MB.`
-  return null
+  return ''
 }
 
 const displayName = (candidate) => candidate.commonNames[0] ?? candidate.scientificName
@@ -72,12 +72,10 @@ function Result({ candidates, headingRef }) {
             <p className="best-match__name">{displayName(best)}</p>
             <p className="match__botanical">
               {best.commonNames.length > 0 && best.scientificName}
-              {best.family && (
-                <span className="best-match__family">
-                  {best.commonNames.length > 0 && ' · '}
-                  {best.family}
-                </span>
-              )}
+              <span className="best-match__family">
+                {best.commonNames.length > 0 && ' · '}
+                {best.family}
+              </span>
             </p>
           </div>
           <Confidence value={best.confidence} size="lg" />
@@ -147,13 +145,13 @@ export default function IdentifyForm() {
   useEffect(() => () => previewUrl && URL.revokeObjectURL(previewUrl), [previewUrl])
 
   useEffect(() => {
-    if (candidates) resultsHeading.current?.focus()
+    if (candidates) resultsHeading.current.focus()
   }, [candidates])
 
   function choose(chosen) {
     if (!chosen) return
     const error = fileError(chosen)
-    setPhotoError(error ?? '')
+    setPhotoError(error)
     setFormError('')
     if (!error) {
       setFile(chosen)
@@ -164,8 +162,8 @@ export default function IdentifyForm() {
   function clearPhoto() {
     setFile(null)
     setCandidates(null)
-    if (inputRef.current) inputRef.current.value = ''
-    inputRef.current?.focus()
+    inputRef.current.value = ''
+    inputRef.current.focus()
   }
 
   function handleDrop(event) {
@@ -179,7 +177,7 @@ export default function IdentifyForm() {
     setFormError('')
     if (!file) {
       setPhotoError('Choose a photo to identify.')
-      inputRef.current?.focus()
+      inputRef.current.focus()
       return
     }
 

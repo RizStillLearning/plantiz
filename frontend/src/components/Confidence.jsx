@@ -1,7 +1,5 @@
 import { formatPercent } from '../lib/format.js'
 
-// A confidence score as a number plus a meter. The meter is decoration for the
-// number beside it, so it is hidden from screen readers.
 export default function Confidence({ value, size = 'md' }) {
   return (
     <div className={`confidence confidence--${size}`}>

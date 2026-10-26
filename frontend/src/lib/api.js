@@ -1,7 +1,6 @@
 import { clearSession, getToken } from './session.js'
 
-// Empty by default: the API is served from the same origin under /api (Vite
-// proxies it in dev; NGINX or Vercel route it in production).
+// Empty means same origin: Vite proxies /api in dev, NGINX or Vercel in production.
 const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? ''
 
 export class ApiError extends Error {
@@ -14,7 +13,7 @@ export class ApiError extends Error {
 function messageFrom(body, status) {
   const detail = body?.detail
   if (typeof detail === 'string') return detail
-  // FastAPI validation errors: a list of { msg } objects.
+  // FastAPI validation errors come as a list.
   if (Array.isArray(detail) && detail[0]?.msg) return detail[0].msg.replace(/^Value error, /, '')
   return status >= 500
     ? 'Something went wrong on our side. Please try again in a moment.'
@@ -40,8 +39,7 @@ async function request(path, { json, form } = {}) {
 
   const body = await response.json().catch(() => null)
 
-  // A rejected token means the session expired: start a fresh login and
-  // come back to this page afterwards.
+  // The session expired: log in again, then come back here.
   if (response.status === 401 && token) {
     clearSession()
     const here = window.location.pathname + window.location.search
@@ -52,8 +50,7 @@ async function request(path, { json, form } = {}) {
   return body
 }
 
-// API plants use snake_case; pages share one camelCase shape with the
-// build-time dataset (src/data/plants.js).
+// Same shape as the plants in src/data/plants.js.
 export function toPlant(plant) {
   return {
     id: plant.id,

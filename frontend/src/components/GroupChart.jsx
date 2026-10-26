@@ -1,8 +1,7 @@
 import { groups } from '../data/stats.js'
 import { formatNumber, formatPercent } from '../lib/format.js'
 
-// Horizontal bars built on a real table, so the numbers stay readable without
-// the drawing. Nominal categories, one series: every bar shares one color.
+// A real table under the bars, so the numbers don't depend on the drawing.
 export default function GroupChart({ titleId }) {
   const largest = groups[0].count
   return (

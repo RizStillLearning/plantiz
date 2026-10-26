@@ -9,5 +9,4 @@ export function emailError(email) {
   return null
 }
 
-// The first invalid field, in the order the form shows them.
 export const firstInvalid = (errors, order) => order.find((field) => errors[field])

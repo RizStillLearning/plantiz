@@ -1,6 +1,6 @@
 import Icon from '../Icon.jsx'
 
-// Form-level error, announced as soon as it appears.
+// Always rendered, so screen readers announce the message when it appears.
 export function FormAlert({ children }) {
   return (
     <div className="form-alert" role="alert">

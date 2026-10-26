@@ -18,7 +18,7 @@ def recommend_plants(request: RecommendRequest, _: User = Depends(get_current_us
 
     return RecommendResponse(
         results=[
-            RecommendedPlant(plant=PlantSummary.from_plant(item.plant), confidence=item.confidence)
-            for item in recommendations
+            RecommendedPlant(plant=PlantSummary.from_plant(match.plant), confidence=match.confidence)
+            for match in recommendations
         ]
     )

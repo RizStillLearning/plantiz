@@ -1,8 +1,7 @@
 import { plantFacts } from '../lib/plantFacts.jsx'
 import Icon from './Icon.jsx'
 
-// `matches` lists fact keys that agree with what the visitor asked for; each
-// gets a labelled badge so the agreement is never shown by color alone.
+// Matching facts get a labelled badge so agreement isn't shown by color alone.
 export default function PlantFacts({ plant, extra = [], matches = [] }) {
   return (
     <dl className="facts">

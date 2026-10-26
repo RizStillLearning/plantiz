@@ -17,7 +17,7 @@ export const indoorCount = plants.filter(growsIndoors).length
 
 export const easyCareCount = plants.filter((plant) => plant.careLevel === 'easy').length
 
-const zonedPlants = plants.filter((plant) => plant.zoneMin !== null && plant.zoneMax !== null)
+const zonedPlants = plants.filter((plant) => plant.zoneMin !== null)
 export const zoneRange = {
   min: Math.min(...zonedPlants.map((plant) => plant.zoneMin)),
   max: Math.max(...zonedPlants.map((plant) => plant.zoneMax)),

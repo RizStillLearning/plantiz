@@ -12,10 +12,9 @@ import Welcome from './pages/Welcome.jsx'
 
 const species = formatNumber(speciesCount)
 
-// access: 'guest' pages send signed-in visitors to their home page; 'member'
-//   pages send everyone else to log in. Both checks run inline in <head>.
-// client: whether the page needs src/client/main.js (islands, filters, the
-//   log-out button). Pages without it ship no JavaScript bundle at all.
+// access: 'guest' pages send signed-in visitors to /plants, 'member' pages send
+// everyone else to log in (see lib/guard.js). client: false pages ship no
+// JavaScript bundle.
 const pages = {
   '/': {
     Page: Welcome,

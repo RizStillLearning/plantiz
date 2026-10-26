@@ -1,4 +1,3 @@
-// The tinted band that opens every member page: overline, the page's h1, lede.
 export default function PageIntro({ id, overline, title, children }) {
   return (
     <section className="page-intro" aria-labelledby={id}>

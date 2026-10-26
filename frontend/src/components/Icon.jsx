@@ -1,5 +1,5 @@
-// Inline stroke icons on a 24px grid. Every icon here is decorative: the text
-// beside it carries the meaning, so each one is hidden from assistive tech.
+// All icons are decorative (the text beside them carries the meaning), so
+// they're hidden from assistive tech.
 const icons = {
   leaf: (
     <>

@@ -27,8 +27,8 @@ class Plant:
 
     def grows_in_zone(self, zone: int) -> bool:
         # Plants without a zone range are annuals: grown for one season, so
-        # winter hardiness does not limit where they can be planted.
-        if self.zone_min is None or self.zone_max is None:
+        # winter hardiness doesn't limit where they can be planted.
+        if self.zone_min is None:
             return True
         return self.zone_min <= zone <= self.zone_max
 
@@ -38,7 +38,7 @@ def _optional_int(value) -> int | None:
 
 
 def _split(value: str) -> tuple[str, ...]:
-    return tuple(part.strip() for part in value.split(";") if part.strip())
+    return tuple(value.split(";"))
 
 
 @lru_cache

@@ -1,22 +1,14 @@
-"""Content-based plant recommendations (see contents/recommendation.md).
+"""Plant recommendations, as described in contents/recommendation.md.
 
-1. Hard constraints remove plants that cannot survive the environment (the
-   setting, and outdoors the hardiness zone) and, when the visitor picked a
-   plant group, plants from any other group. A preference that only nudged
-   the score let a non-matching plant that fit everything else outrank every
-   plant of the requested group.
-2. Plant features are encoded with scikit-learn. Ordinal features (water,
-   care level, size) are label encoded in their natural order; categorical
-   features (light, plant group) are one-hot encoded.
-3. The visitor's answers are encoded with the same fitted encoders. A
-   k-nearest-neighbours search (scikit-learn NearestNeighbors, cosine metric)
-   over the remaining plants finds the k closest to that answer vector. Cosine
-   distance is 1 - cosine similarity; the similarity is the confidence score.
+Plants that can't live in the visitor's setting or zone, or aren't the plant
+group they asked for, are filtered out. The rest are ranked with k-nearest
+neighbours under cosine distance, and 1 - distance (the cosine similarity) is
+the confidence score.
 
-Each feature becomes its own block of columns, scaled to unit length and then
-by the square root of its weight. With every block unit length, the cosine
-similarity of two vectors equals the weighted average of the per-feature
-similarities, so a score of 0.9 reads as "agrees on 90% of what matters".
+Each feature gets its own block of columns, scaled to unit length and then by
+the square root of its weight. That makes the cosine similarity a weighted
+average of how well each feature matches, so 0.9 reads as "agrees on 90% of
+what matters".
 """
 
 import math
@@ -42,13 +34,11 @@ WEIGHTS = {"light": 3.0, "water": 2.0, "care_level": 2.0, "space": 1.5, "categor
 
 MAX_RESULTS = 5
 
-# Distances closer than this count as a tie (floating-point noise, not a
-# real difference in fit).
+# Equal similarities can differ in the last floating-point bits.
 TIE_TOLERANCE = 1e-9
 
 
 def space_for_height(height_ft: float) -> str:
-    """Bucket a plant's mature height into the room it needs."""
     if height_ft <= 2:
         return "small"
     if height_ft <= 6:
@@ -87,8 +77,6 @@ class Recommendation:
 
 
 class _Model:
-    """Encoders fitted on the whole dataset, plus the encoded plant blocks."""
-
     def __init__(self, plants: tuple[Plant, ...]) -> None:
         self.plants = plants
 
@@ -101,8 +89,7 @@ class _Model:
         )
         self.blocks = {
             **self._ordinal_blocks(ordinal_codes),
-            # A plant can tolerate several light levels: one-hot per level, then
-            # scaled to unit length like every other block.
+            # A plant can tolerate several light levels, so this one is multi-hot.
             "light": normalize(self.light.fit_transform([plant.light for plant in plants])),
             "category": self.category.fit_transform([[plant.category] for plant in plants]),
         }
@@ -135,7 +122,7 @@ def _is_candidate(plant: Plant, environment: Environment) -> bool:
         return False
     if environment.category and plant.category != environment.category:
         return False
-    if environment.setting == "outdoor" and environment.zone is not None:
+    if environment.setting == "outdoor":
         return plant.grows_in_zone(environment.zone)
     return True
 
@@ -150,38 +137,23 @@ def recommend(environment: Environment, limit: int = MAX_RESULTS) -> list[Recomm
         return []
 
     user_blocks = model.encode(environment)
-    # The plant group only counts when one was chosen. Every candidate then
-    # matches it, so it lifts all scores alike: the confidence still reads as
-    # agreement with everything the visitor asked for.
+    # The plant group only counts when one was chosen.
     features = list(user_blocks)
     scale = {feature: math.sqrt(WEIGHTS[feature]) for feature in features}
 
     plant_matrix = np.hstack([model.blocks[feature][candidates] * scale[feature] for feature in features])
     user_vector = np.hstack([user_blocks[feature] * scale[feature] for feature in features])
 
-    # Fitted per request on the plants that passed the filters (at most ~1,000
-    # rows, so a brute-force search is instant).
     knn = NearestNeighbors(metric="cosine", algorithm="brute").fit(plant_matrix)
     distances, _ = knn.kneighbors(user_vector, n_neighbors=min(limit, len(candidates)))
 
-    # kneighbors breaks ties arbitrarily, and many plants share identical
-    # needs. Gather every plant as near as the k-th neighbour so a tie goes to
-    # the better-known plant (popularity 1 is the most familiar), then
-    # alphabetically so results are stable. Distances are rounded first:
-    # mathematically equal ones can differ in the last floating-point bits.
+    # Many plants have identical needs and kneighbors picks among ties
+    # arbitrarily. Take everything as near as the k-th neighbour and let the
+    # better-known plant win (popularity 1 is the most familiar).
     tie_distances, tie_rows = knn.radius_neighbors(user_vector, radius=distances[0, -1] + TIE_TOLERANCE)
-    nearest = sorted(
-        zip(tie_rows[0], tie_distances[0]),
-        key=lambda pair: (
-            round(pair[1], 9),
-            model.plants[candidates[pair[0]]].popularity,
-            model.plants[candidates[pair[0]]].common_name,
-        ),
-    )
+    nearest = [(model.plants[candidates[row]], distance) for row, distance in zip(tie_rows[0], tie_distances[0])]
+    nearest.sort(key=lambda pair: (round(pair[1], 9), pair[0].popularity, pair[0].common_name))
     return [
-        Recommendation(
-            plant=model.plants[candidates[row]],
-            confidence=round(float(np.clip(1 - distance, 0, 1)), 4),
-        )
-        for row, distance in nearest[:limit]
+        Recommendation(plant=plant, confidence=round(float(np.clip(1 - distance, 0, 1)), 4))
+        for plant, distance in nearest[:limit]
     ]

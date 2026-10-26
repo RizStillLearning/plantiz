@@ -1,10 +1,8 @@
-// Server-only: pages read the dataset while they are rendered to HTML, so the
-// CSV never ships to the browser.
+// Only imported while rendering pages, so the CSV never ships to the browser.
 import csv from '@data/plants.csv?raw'
 
-// Plain comma-separated text with no quoted fields; multi-value columns
-// (setting, light) separate their values with ';'. Fail the build loudly if a
-// row ever stops matching that shape instead of rendering shifted columns.
+// The file has no quoted fields, so a plain split is enough. Stop the build if
+// that ever changes rather than render shifted columns.
 function parse(text) {
   const [header, ...lines] = text.trim().split(/\r?\n/)
   const keys = header.split(',')

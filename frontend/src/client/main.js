@@ -1,5 +1,3 @@
-// The only script pages load. Pages that need none of this (the welcome page)
-// ship without it; see scripts/prerender.js.
 import { islands } from '../islands/registry.js'
 import { initAccount } from './account.js'
 
@@ -18,7 +16,7 @@ async function hydrateIslands(elements) {
       const load = islands[element.dataset.island]
       if (!load) throw new Error(`Unknown island "${element.dataset.island}"`)
       const { default: Component } = await load()
-      hydrateRoot(element, createElement(Component, JSON.parse(element.dataset.props || '{}')))
+      hydrateRoot(element, createElement(Component, JSON.parse(element.dataset.props)))
     }),
   )
 }
