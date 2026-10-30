@@ -65,4 +65,4 @@ A website that provides information about various plant species. The website als
 - After the website is complete, write `DESIGN.md` from what was built.
 
 ## Deployment
-This website will be deployed on Vercel. Write the Docker configuration and use NGINX as load-balancer.
+This website will be deployed on Vercel. Write the `vercel.json` configuration to deploy both frontend and backend.

@@ -21,8 +21,8 @@ async function writePage(file, page) {
   console.log(`  prerendered ${file.slice(root.length)}${page.client ? '' : ' (no JS)'}`)
 }
 
-// Flat files (/plants -> plants.html): served without a trailing slash by
-// NGINX (try_files $uri.html), Vercel (cleanUrls) and `vite preview` alike.
+// Flat files (/plants -> plants.html), which Vercel (cleanUrls) and `vite preview`
+// both serve without a trailing slash.
 for (const route of routes) {
   const file = route === '/' ? join(dist, 'index.html') : join(dist, `${route.slice(1)}.html`)
   await writePage(file, render(route))

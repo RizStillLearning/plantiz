@@ -16,15 +16,14 @@ A field guide to over 1,000 plant species, with:
 frontend/   Vite + React, prerendered to static HTML (see frontend/README.md)
 backend/    FastAPI API: accounts, recommendations, identification
 data/       plants.csv, the dataset both read
-nginx/      NGINX image: serves the site, load-balances /api
 api/        Vercel entry point for the backend
 DESIGN.md   The design system the site is built on
 ```
 
 ## Tech stack
 
-Versions as pinned in `frontend/.nvmrc`, `frontend/package-lock.json`,
-`backend/requirements.txt` and the Dockerfiles.
+Versions as pinned in `frontend/.nvmrc`, `frontend/package-lock.json` and
+`backend/requirements.txt`.
 
 ### Frontend
 
@@ -44,7 +43,7 @@ Styling is plain CSS with custom properties; there is no UI kit.
 
 | Tool | Version | Used for |
 | --- | --- | --- |
-| Python | 3.13 (Docker), 3.12 (Vercel) | Runtime |
+| Python | 3.12 (Vercel) | Runtime |
 | FastAPI | 0.162.0 | API |
 | Uvicorn | 0.54.0 | ASGI server |
 | pydantic-settings | 2.16.1 | Configuration from environment variables |
@@ -64,9 +63,7 @@ Styling is plain CSS with custom properties; there is no UI kit.
 
 | Tool | Version | Used for |
 | --- | --- | --- |
-| PostgreSQL | 17 | Database (`postgres:17-alpine`) |
-| NGINX | 1.28 | Serves the site and load-balances `/api` (`nginx:1.28-alpine`) |
-| Docker Compose | | Self-hosted stack (`docker-compose.yml`) |
+| PostgreSQL | Hosted on Neon | Database |
 | Vercel | | Hosting for the live site |
 | Pl@ntNet API | v2 | Plant identification |
 
@@ -91,21 +88,6 @@ npm run dev
 Tests: `pytest` in `backend/`. Lint: `npm run lint` in `frontend/`.
 
 ## Deploy
-
-### Docker, with NGINX load balancing
-
-```bash
-cp .env.example .env     # set POSTGRES_PASSWORD and JWT_SECRET
-docker compose up -d --build
-```
-
-NGINX listens on port 80 (`HTTP_PORT`). It serves the prerendered pages and
-spreads `/api` requests across `BACKEND_REPLICAS` FastAPI containers (3 by
-default), using least connections, retrying another replica when one is
-down. A one-off `migrate` service creates the database tables before the
-replicas start. Postgres keeps its data in the `postgres_data` volume.
-
-### Vercel
 
 `vercel.json` builds the frontend into static files and runs the backend as a
 Python function at `/api` (`api/index.py`). Set these environment variables in

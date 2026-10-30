@@ -1,6 +1,6 @@
 import { clearSession, getToken } from './session.js'
 
-// Empty means same origin: Vite proxies /api in dev, NGINX or Vercel in production.
+// Empty means same origin: Vite proxies /api in dev, Vercel routes it in production.
 const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? ''
 
 export class ApiError extends Error {
