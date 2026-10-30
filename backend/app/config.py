@@ -3,8 +3,7 @@ from pathlib import Path
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-# backend/app/config.py -> repo root. Docker images keep the same layout
-# (/srv/backend/app, /srv/data) so this resolves there too.
+# backend/app/config.py -> repo root, where data/ lives.
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 

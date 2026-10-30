@@ -9,8 +9,8 @@ settings = get_settings()
 
 init_db()
 
-# Everything lives under /api: NGINX (Docker) and Vercel both route that
-# prefix to this app and serve the prerendered frontend for every other path.
+# Everything lives under /api: vercel.json routes that prefix to this app and
+# serves the prerendered frontend for every other path.
 app = FastAPI(
     title="Plantiz API",
     version="2.0.0",

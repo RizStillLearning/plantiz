@@ -14,9 +14,9 @@ pip install -r requirements-dev.txt
 cp .env.example .env               # Windows: copy .env.example .env
 ```
 
-In `.env`, set `JWT_SECRET` (`openssl rand -hex 32`) and `DATABASE_URL`. For a
-Postgres database, run `docker compose up -d db` from the repo root. For quick
-local work, `DATABASE_URL=sqlite:///./plantiz.db` also works.
+In `.env`, set `JWT_SECRET` (`openssl rand -hex 32`) and `DATABASE_URL`: a
+Postgres database such as a Neon branch, or `sqlite:///./plantiz.db` for quick
+local work.
 
 ## Run
 
@@ -90,8 +90,3 @@ Two details make the score meaningful:
 - Each feature's columns are scaled to unit length and weighted (light 3,
   water 2, care 2, plant group 2, size 1.5). The cosine similarity is then
   the weighted average of the per-feature agreement.
-
-## Docker
-
-`Dockerfile` builds from the repo root so the image includes `data/`. See the
-root `docker-compose.yml`, which runs several replicas behind NGINX.

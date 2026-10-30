@@ -17,7 +17,7 @@ npm run lint
 
 `/api` is proxied to the backend at `http://localhost:8000` in dev and
 preview; set `PLANTIZ_API_URL` to point elsewhere. In production the API is
-on the same origin (NGINX or Vercel). Set `VITE_API_BASE_URL` at build time
+on the same origin (Vercel). Set `VITE_API_BASE_URL` at build time
 only if it is not.
 
 ## How pages are built
